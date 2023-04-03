@@ -11,6 +11,8 @@ $controleur = new MyControleurs();
 
 if ($id === 'accueil') {
     $controleur->pageAccueil();
+}else if ($id === 'contact'){
+    $controleur->pageContact();
 }else {
     echo 'Page non trouvée';
 }

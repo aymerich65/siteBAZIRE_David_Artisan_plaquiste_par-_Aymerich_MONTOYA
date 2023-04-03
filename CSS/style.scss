@@ -33,20 +33,27 @@ body{
 
         }
 
+
+        
+        /* Boutons */
         .buttonstyle{
             margin-top: 2%;
             background-color: yellow;
+            border : 1px solid rgb(0, 0, 0);
+            width:50%;  
+            height: 5vh; }
 
-            width:50%; 
-            
-            height: 7vh;
             .pagelinkpolice{
                 color: black;            
                 font-weight: bold;
-                font-size: 22px;
+                font-size: 80%;
                 text-decoration: none;
             }
-        }
+       
+
+
+
+
 
             .Apropospolice{
                 margin-top: 6%;
@@ -61,7 +68,7 @@ body{
     
     .mainstyle{
         height: 50vh;
-        background-color: #505050;
+        background-color: #ffffff;
         font-size: 20px;
         font-weight: 600px;
         color: black;

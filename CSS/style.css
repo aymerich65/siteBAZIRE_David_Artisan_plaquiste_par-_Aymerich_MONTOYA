@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   background: radial-gradient(white, rgb(232, 232, 232));
+  /* Boutons */
 }
 body .stylehomepage .headerstyle {
   height: 15vh;
@@ -20,13 +21,14 @@ body .footerstyle {
 body .buttonstyle {
   margin-top: 2%;
   background-color: yellow;
+  border: 1px solid rgb(0, 0, 0);
   width: 50%;
-  height: 7vh;
+  height: 5vh;
 }
-body .buttonstyle .pagelinkpolice {
+body .pagelinkpolice {
   color: black;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 80%;
   text-decoration: none;
 }
 body .Apropospolice {
@@ -39,7 +41,7 @@ body .Apropospolice {
 
 .mainstyle {
   height: 50vh;
-  background-color: #505050;
+  background-color: #ffffff;
   font-size: 20px;
   font-weight: 600px;
   color: black;
