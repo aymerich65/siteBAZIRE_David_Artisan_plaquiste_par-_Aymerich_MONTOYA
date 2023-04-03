@@ -1,0 +1,16 @@
+<?php
+/*if(session_status() === PHP_SESSION_NONE){
+    session_start();
+}*/
+require_once 'Controleurs/controleurs.php';
+
+
+$id= 'accueil';
+$id = isset($_GET['page']) ? $_GET['page'] : 'accueil';
+$controleur = new MyControleurs();
+
+if ($id === 'accueil') {
+    $controleur->pageAccueil();
+}else {
+    echo 'Page non trouvée';
+}

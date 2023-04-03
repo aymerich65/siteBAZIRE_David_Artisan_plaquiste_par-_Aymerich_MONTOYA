@@ -1,0 +1,54 @@
+body {
+  height: 100vh;
+  background: radial-gradient(white, rgb(232, 232, 232));
+}
+body .stylehomepage .headerstyle {
+  height: 15vh;
+}
+body .stylehomepage .headerstyle h1 {
+  font-size: 40px;
+}
+body .stylehomepage .headerstyle h1 .undertitle {
+  font-size: 14px;
+  padding-right: 41%;
+  margin-left: 5%;
+  line-height: 2%;
+}
+body .footerstyle {
+  height: 35vh;
+}
+body .buttonstyle {
+  margin-top: 2%;
+  background-color: yellow;
+  width: 50%;
+  height: 7vh;
+}
+body .buttonstyle .pagelinkpolice {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+body .Apropospolice {
+  margin-top: 6%;
+  font-size: 18px;
+  font-weight: 800px;
+  color: black;
+  text-decoration: none;
+}
+
+.mainstyle {
+  height: 50vh;
+  background-color: #505050;
+  font-size: 20px;
+  font-weight: 600px;
+  color: black;
+  padding-left: 2%;
+}
+.mainstyle .styleprestationtitle1 {
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.mainstyle .styleprestationtitle2 {
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
