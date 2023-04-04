@@ -1,37 +1,10 @@
+@charset "UTF-8";
 body {
   height: 100vh;
   background: radial-gradient(white, rgb(232, 232, 232));
-  /* Boutons */
 }
-body .stylehomepage .headerstyle {
-  height: 15vh;
-}
-body .stylehomepage .headerstyle h1 {
-  font-size: 40px;
-}
-body .stylehomepage .headerstyle h1 .undertitle {
-  font-size: 14px;
-  padding-right: 41%;
-  margin-left: 5%;
-  line-height: 2%;
-}
-body .footerstyle {
-  height: 35vh;
-}
-body .buttonstyle {
-  margin-top: 2%;
-  background-color: yellow;
-  border: 1px solid rgb(0, 0, 0);
-  width: 50%;
-  height: 5vh;
-}
-body .pagelinkpolice {
-  color: black;
-  font-weight: bold;
-  font-size: 80%;
-  text-decoration: none;
-}
-body .Apropospolice {
+
+.Apropospolice {
   margin-top: 6%;
   font-size: 18px;
   font-weight: 800px;
@@ -39,18 +12,78 @@ body .Apropospolice {
   text-decoration: none;
 }
 
-.mainstyle {
-  height: 50vh;
-  background-color: #ffffff;
-  font-size: 20px;
-  font-weight: 600px;
-  color: black;
-  padding-left: 2%;
-}
-.mainstyle .styleprestationtitle1 {
+.styleprestationtitle1 {
   font-weight: 600;
   color: rgb(0, 0, 0);
 }
-.mainstyle .styleprestationtitle2 {
+
+.styleprestationtitle2 {
   font-weight: 600;
+}
+
+/* Responsive Mobile */
+@media screen and (orientation: portrait) {
+  /*En tête : */
+  .headerstyle {
+    height: 15vh;
+  }
+  .headerstyle h1 {
+    font-size: 40px;
+  }
+  .headerstyle h1 .undertitle {
+    font-size: 14px;
+    padding-right: 41%;
+    margin-left: 5%;
+    line-height: 2%;
+  }
+  .pageaccueilstyle {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    padding-left: 10%;
+  }
+  .pagecontactstyle {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    margin: auto;
+    overflow: scroll;
+  }
+  /* Style du main: */
+  .formulairenomtitlestyle {
+    margin-top: 4%;
+  }
+  .formulaireemailtitlestyle {
+    margin-top: 4%;
+  }
+  .formulairemessagetitlestyle {
+    margin-top: 4%;
+  }
+  .formulairesujettitlestyle {
+    margin-top: 4%;
+  }
+  /* Boutons */
+  .buttonstyle {
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    height: 5vh;
+  }
+  .pagelinkpolice {
+    color: black;
+    font-weight: bold;
+    font-size: 80%;
+    text-decoration: none;
+  }
+  /* Style du Pied de page */
+  .footerstyle {
+    height: 35vh;
+  }
 }/*# sourceMappingURL=style.css.map */

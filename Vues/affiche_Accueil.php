@@ -1,7 +1,7 @@
 
 
-<div class="row mainstyle">
-            <div class="col">
+<div class="pageaccueilstyle">
+
                 <p class="prestations01"><p class="styleprestationtitle1">MENUISERIES<br></p>
                 Aluminium<br>
                 PVC<br>
@@ -13,6 +13,6 @@
                 Faux plafonds<br>
                 Doublages <br></p>               
             </div>
-<?php
+
 
 

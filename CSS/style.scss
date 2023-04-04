@@ -1,12 +1,47 @@
 body{
     height: 100vh;
     background: radial-gradient(white,rgb(232, 232, 232));
-    
+    }
 
 
 
-    .stylehomepage{
+            .Apropospolice{
+                margin-top: 6%;
+                font-size: 18px;
+                font-weight: 800px;
+                color: black;
+                text-decoration: none;
+             }
+
         
+      
+        .styleprestationtitle1{
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+        }
+        .styleprestationtitle2{
+            font-weight: 600;
+
+        }
+
+
+
+
+
+
+
+
+
+
+/* Responsive Mobile */
+
+@media screen and (orientation : portrait) { 
+
+
+
+
+/*En tête : */
+
         .headerstyle{
 
             height: 15vh;
@@ -21,20 +56,54 @@ body{
               }
               
             }
-            
-        }
- 
-
-
-        }
-
-        .footerstyle{
-            height: 35vh;
-
         }
 
 
-        
+
+
+
+        .pageaccueilstyle{
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding-top: 1%;
+            background-color: rgb(255, 255, 255);
+            height: 50vh;
+            padding-left: 10%;
+     }
+
+
+        .pagecontactstyle{
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        padding-top: 1%;
+        background-color: rgb(255, 255, 255);
+        height: 50vh;
+        margin: auto; 
+        overflow: scroll;
+     }
+
+         /* Style du main: */
+
+         .formulairenomtitlestyle{
+            margin-top: 4%;
+        }
+        .formulaireemailtitlestyle{
+            margin-top: 4%;
+        }
+
+        .formulairemessagetitlestyle{
+            margin-top: 4%;
+        }
+        .formulairesujettitlestyle{
+            margin-top: 4%;
+        }
+
+
+
+
+
         /* Boutons */
         .buttonstyle{
             margin-top: 2%;
@@ -49,37 +118,15 @@ body{
                 font-size: 80%;
                 text-decoration: none;
             }
-       
 
 
 
 
 
-            .Apropospolice{
-                margin-top: 6%;
-                font-size: 18px;
-                font-weight: 800px;
-                color: black;
-                text-decoration: none;
-             }
+        /* Style du Pied de page */
+
+        .footerstyle{
+            height: 35vh;
 
         }
-
-    
-    .mainstyle{
-        height: 50vh;
-        background-color: #ffffff;
-        font-size: 20px;
-        font-weight: 600px;
-        color: black;
-        padding-left: 2%;
-        
-        
-        .styleprestationtitle1{
-            font-weight: 600;
-            color: rgb(0, 0, 0);
-        }
-        .styleprestationtitle2{
-            font-weight: 600;
-
-        }}
+    }
