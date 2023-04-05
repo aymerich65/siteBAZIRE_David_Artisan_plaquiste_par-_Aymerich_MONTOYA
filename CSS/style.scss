@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    background: radial-gradient(white,rgb(232, 232, 232));
+    background: radial-gradient(white,rgb(224, 224, 224));
     }
 
 
@@ -43,9 +43,11 @@ body{
 /*En tête : */
 
         .headerstyle{
-
             height: 15vh;
+            position: relative;
+            z-index: 1;
             h1{
+                z-index: 3;
               font-size: 40px;  
               .undertitle{
                 font-size:14px; 
@@ -53,12 +55,30 @@ body{
                 margin-left: 5%;
                 line-height: 2%;
 
-              }
-              
+              }             
             }
+
+            img {
+                max-width: 100%;
+                width: 20%;
+                height: auto;
+                position: absolute;
+                right: 0%;
+                z-index: 3;
+                
+              }
+        }       
+/*Dessin du platre*/
+        .headerdeco{
+            width: 90%;
+            height: 38%;
+            left: 0;
+            background-color: rgb(245, 240, 240);
+
+            z-index: 2;
+            top: 11;
+            position: absolute;
         }
-
-
 
 
 
@@ -71,6 +91,13 @@ body{
             height: 50vh;
             padding-left: 10%;
      }
+
+
+
+
+
+
+
 
 
         .pagecontactstyle{

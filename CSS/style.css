@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   height: 100vh;
-  background: radial-gradient(white, rgb(232, 232, 232));
+  background: radial-gradient(white, rgb(224, 224, 224));
 }
 
 .Apropospolice {
@@ -26,8 +26,11 @@ body {
   /*En tête : */
   .headerstyle {
     height: 15vh;
+    position: relative;
+    z-index: 1;
   }
   .headerstyle h1 {
+    z-index: 3;
     font-size: 40px;
   }
   .headerstyle h1 .undertitle {
@@ -35,6 +38,24 @@ body {
     padding-right: 41%;
     margin-left: 5%;
     line-height: 2%;
+  }
+  .headerstyle img {
+    max-width: 100%;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    z-index: 3;
+  }
+  /*Dessin du platre*/
+  .headerdeco {
+    width: 90%;
+    height: 38%;
+    left: 0;
+    background-color: rgb(245, 240, 240);
+    z-index: 2;
+    top: 11;
+    position: absolute;
   }
   .pageaccueilstyle {
     font-size: 20px;
