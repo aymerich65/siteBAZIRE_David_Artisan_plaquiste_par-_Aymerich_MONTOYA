@@ -1,18 +1,28 @@
+<div >
+  <div class="row pageaccueilstyle justify-content-between align-items-center">
+    <div class="col-md-6 colaccueilstyle01">
+      <p class="prestations01" ><p class="styleprestationtitle1">MENUISERIES<br></p>
+        Aluminium<br>
+        PVC<br>
+        Bois<br>
+        Pose de parquets<br></p>
+      <p class="prestations02" ><p class="styleprestationtitle2">ISOLATION<br></p>
+        Cloisons<br>
+        Plafonds<br>
+        Faux plafonds<br>
+        Doublages <br></p> 
+    </div>
+    <div class="col-md-6 colaccueilstyle02">
+      <img class="imgaccueil01" src="images/IMG_000411.jpg" alt="image de travaux">
+      
+      <img class="imgaccueil02" src="images/IMG_001311.jpg" alt="image de travaux">
+ 
 
 
-<div class="pageaccueilstyle">
+    </div>
+  </div>
+</div>
 
-                <p class="prestations01"><p class="styleprestationtitle1">MENUISERIES<br></p>
-                Aluminium<br>
-                PVC<br>
-                Bois<br>
-                Pose de parquets<br></p>
-                <p class="prestations02"><p class="styleprestationtitle2">ISOLATION<br></p>
-                Cloisons<br>
-                Plafonds<br>
-                Faux plafonds<br>
-                Doublages <br></p>               
-            </div>
 
 
 

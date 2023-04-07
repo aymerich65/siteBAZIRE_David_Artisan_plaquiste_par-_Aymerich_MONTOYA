@@ -5,7 +5,7 @@
                 </div>
 <div class="" style="justify-content: center;">
                     <div class="row " style="justify-content: center;">
-                    <button type="button" class=" buttonstyle rounded-0"><a href="" class="pagelinkpolice btn">PRESTATIONS</a></button>
+                    <button type="button" class=" buttonstyle rounded-0"><a href="index.php?page=prestations" class="pagelinkpolice btn">PRESTATIONS</a></button>
                 </div>
                 
 <div class="" style="justify-content: center;">

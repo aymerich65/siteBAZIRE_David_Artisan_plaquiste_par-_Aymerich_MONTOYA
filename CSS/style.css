@@ -1,7 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 body {
   height: 100vh;
   background: radial-gradient(white, rgb(224, 224, 224));
+  font-family: "Inter", sans-serif;
 }
 
 .Apropospolice {
@@ -28,10 +30,12 @@ body {
     height: 15vh;
     position: relative;
     z-index: 1;
+    top: 22;
   }
   .headerstyle h1 {
     z-index: 3;
     font-size: 40px;
+    font-weight: 700;
   }
   .headerstyle h1 .undertitle {
     font-size: 14px;
@@ -50,21 +54,59 @@ body {
   /*Dessin du platre*/
   .headerdeco {
     width: 90%;
-    height: 38%;
+    height: 42%;
     left: 0;
     background-color: rgb(245, 240, 240);
     z-index: 2;
-    top: 11;
+    top: 6;
     position: absolute;
   }
+  /* Accueil */
   .pageaccueilstyle {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     padding-top: 1%;
     background-color: rgb(255, 255, 255);
     height: 50vh;
-    padding-left: 10%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .imgaccueil01 {
+    top: 5%;
+    width: 50vw;
+    height: 20vh;
+    position: absolute;
+    z-index: 2;
+    left: 46%;
+  }
+  .imgaccueil02 {
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    right: 5%;
+    bottom: 2%;
+  }
+  .colaccueilstyle01 {
+    width: 50%;
+  }
+  .colaccueilstyle02 {
+    width: 50%;
   }
   .pagecontactstyle {
     font-size: 20px;
@@ -107,4 +149,49 @@ body {
   .footerstyle {
     height: 35vh;
   }
+}
+/* style des images en galerie */
+.gallerybloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
+}
+
+.h1gallerystyle {
+  text-align: center;
+}
+
+.gallery-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+.gallery-image.active {
+  display: block;
+}
+
+.my-icon {
+  width: 15%;
+  height: auto;
+  background-color: yellow;
+}
+
+.gallerybackground {
+  background-color: white;
+}
+
+.gallerybuttonline {
+  display: flex;
+  position: relative;
+}
+
+/* Page prestations */
+.prestationsstyle {
+  background-color: white;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
 }/*# sourceMappingURL=style.css.map */

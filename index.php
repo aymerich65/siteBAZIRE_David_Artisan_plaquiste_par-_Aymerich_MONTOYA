@@ -13,6 +13,10 @@ if ($id === 'accueil') {
     $controleur->pageAccueil();
 }else if ($id === 'contact'){
     $controleur->pageContact();
+}else if ($id === 'galerie'){
+    $controleur->pageGalerie();
+}else if ($id === 'prestations'){
+    $controleur->pagePrestations();
 }else {
     echo 'Page non trouvée';
 }
