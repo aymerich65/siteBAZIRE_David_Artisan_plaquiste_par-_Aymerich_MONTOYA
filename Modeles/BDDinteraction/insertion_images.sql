@@ -1,0 +1,1 @@
+INSERT INTO galerie_images (id, filename,description) VALUES (1, 'image01', 'voici la descritpion')

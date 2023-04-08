@@ -1,0 +1,2 @@
+
+CREATE DATABASE BAZIRE_David_site_web;
