@@ -7,7 +7,7 @@ require_once 'Controleurs/controleurs.php';
 
 $id= 'accueil';
 $id = isset($_GET['page']) ? $_GET['page'] : 'accueil';
-$controleur = new MyControleurs();
+$controleur = new MyControler();
 
 if ($id === 'accueil') {
     $controleur->pageAccueil();
@@ -17,6 +17,8 @@ if ($id === 'accueil') {
     $controleur->pageGalerie();
 }else if ($id === 'prestations'){
     $controleur->pagePrestations();
+}else if ($id === 'admin'){
+    $controleur->pageAdmin();
 }else {
     echo 'Page non trouvée';
 }
