@@ -82,7 +82,20 @@ require_once 'config.php';
 
             require_once 'Vues/layout.php';
         }
+        public function pagetest() {
+            $header = require_once 'Vues/affiche_Header.php';           
+            $main = require_once 'Vues/pagetest';
+            $footer = require_once 'Vues/affiche_Pied_de_page.php';
 
+            require_once 'Vues/layout.php';
+        }
+        public function pageApropos() {
+            $header = require_once 'Vues/affiche_Header.php';           
+            $main = require_once 'Vues/affiche_Apropos.php';
+            $footer = require_once 'Vues/affiche_Pied_de_page.php';
+
+            require_once 'Vues/layout.php';
+        }
 
 
     }

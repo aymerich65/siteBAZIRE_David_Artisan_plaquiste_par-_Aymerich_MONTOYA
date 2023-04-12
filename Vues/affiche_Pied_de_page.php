@@ -21,7 +21,7 @@
 
 
                                 <div class="row" style="text-align: center;" >
-                                    <a href="" class="Apropospolice">A propos</a>
+                                    <a href="index.php?page=mentionslegales" class="mentionslegalespolice">MENTIONS LEGALES</a>
                                             </div>
 
 

@@ -19,6 +19,11 @@ if ($id === 'accueil') {
     $controleur->pagePrestations();
 }else if ($id === 'admin'){
     $controleur->pageAdmin();
-}else {
+}else if ($id === 'test'){
+    $controleur->pagetest();
+}else if ($id === 'apropos'){
+    $controleur->pageApropos();
+}else 
+{
     echo 'Page non trouvée';
 }

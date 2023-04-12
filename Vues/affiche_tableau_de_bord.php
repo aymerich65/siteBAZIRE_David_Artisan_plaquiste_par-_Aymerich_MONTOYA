@@ -1,26 +1,24 @@
-<h1>Tableau de bord</h1>
-<h2>Liste images stockées</h2>
-
+<div class="containeradminstyle">
+<h1 class="h1tableaudebord">Tableau de bord</h1>
+<h2 class="h2tableau">Liste des images stockées</h2>
 <table class="tableadminpagestyle">
   <tr>
     <th>Numéro d'image (id)</th>
     <th>Nom du fichier</th>
     <th>Description de l'image</th>
   </tr>
-
 <?php
-$imageindex = 0;
-foreach ($mybddTable as $image) {
-    $id = $image['id'];
-    $filename = $image['filename'];
-    $description = $image['description'];
-    echo "<tr><td>" . $id . "</td>" . "<td>" . $filename . "</td>" . "&nbsp;" . "<td>" . $description . "</td></tr>";
-    $imageindex++;
-}
-
+  $imageindex = 0;
+  foreach ($mybddTable as $image) {
+      $id = $image['id'];
+      $filename = $image['filename'];
+      $description = $image['description'];
+      echo "<tr><td>" . $id . "</td>" . "<td>" . $filename . "</td>" . "<td>" . $description . "</td></tr>";
+      $imageindex++;
+  }
 ?>
-
 </table>
+
 
 
 <div class="h2adminpagestyle"><h2 >Insérer une image</h2></div>
@@ -47,7 +45,7 @@ foreach ($mybddTable as $image) {
 
   <input type="submit" value="Envoyer">
 </form>
-
+</div>
 
 
 
