@@ -66,6 +66,7 @@ require_once 'config.php';
 /* utilisation du fichier config pour récupérer les variables d'environnement:*/
 require_once 'vendor/autoload.php';
 require_once 'config.php';
+require_once 'JWT/validate_jwt.php';
 
             $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
              
@@ -82,6 +83,17 @@ require_once 'config.php';
 
             require_once 'Vues/layout.php';
         }
+        public function pageConnexion() {
+            require_once 'Modeles/traitement_connexion.php';
+            $header = require_once 'Vues/affiche_Header.php';           
+            $main = require_once 'Vues/affiche_connexion.php';
+            $footer = require_once 'Vues/affiche_Pied_de_page.php';
+            
+            require_once 'Vues/layout.php';
+            require_once 'JWT/authentification.php';
+            
+        }
+
         public function pagetest() {
             $header = require_once 'Vues/affiche_Header.php';           
             $main = require_once 'Vues/pagetest';

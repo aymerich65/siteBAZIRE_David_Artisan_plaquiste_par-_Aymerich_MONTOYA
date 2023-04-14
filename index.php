@@ -1,7 +1,7 @@
 <?php
-/*if(session_status() === PHP_SESSION_NONE){
+if(session_status() === PHP_SESSION_NONE){
     session_start();
-}*/
+}
 require_once 'Controleurs/controleurs.php';
 
 
@@ -17,6 +17,8 @@ if ($id === 'accueil') {
     $controleur->pageGalerie();
 }else if ($id === 'prestations'){
     $controleur->pagePrestations();
+}else if ($id === 'connexion'){
+    $controleur->pageConnexion();
 }else if ($id === 'admin'){
     $controleur->pageAdmin();
 }else if ($id === 'test'){

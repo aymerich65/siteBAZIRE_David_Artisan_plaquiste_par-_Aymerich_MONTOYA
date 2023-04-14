@@ -1,3 +1,22 @@
+<?php
+use Firebase\JWT\JWT;
+
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+
+var_dump($_SESSION);
+
+var_dump($_SESSION['jwt']);
+
+
+
+?>
+
+
+
+
+
 <div class="containeradminstyle">
 <h1 class="h1tableaudebord">Tableau de bord</h1>
 <h2 class="h2tableau">Liste des images stockées</h2>
@@ -46,6 +65,17 @@
   <input type="submit" value="Envoyer">
 </form>
 </div>
+
+<form action="Modeles/BDDinteraction/insertion_admin.php" method="POST">
+    <label for="id">Identifiant :</label>
+    <input type="text" name="id" id="id" required>
+    <br>
+    <label for="password">Mot de passe :</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+    <input type="submit" value="Ajouter">
+</form>
+
 
 
 
