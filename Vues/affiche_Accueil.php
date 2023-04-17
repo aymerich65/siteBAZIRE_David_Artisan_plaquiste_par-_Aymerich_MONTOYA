@@ -13,9 +13,9 @@
         Doublages <br></p> 
     </div>
     <div class="col-md-6 colaccueilstyle02">
-      <img class="imgaccueil01" src="images/IMG_000411.jpg" alt="image de travaux">
+      <img class="imgaccueil01" src="images/pose_d'un_revetement.jpg" alt="image de travaux">
       
-      <img class="imgaccueil02" src="images/IMG_001311.jpg" alt="image de travaux">
+      <img class="imgaccueil02" src="images/implantion_cloisons.jpg" alt="image de travaux">
  
 
 

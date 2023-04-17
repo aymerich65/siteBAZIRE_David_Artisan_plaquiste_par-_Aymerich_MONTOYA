@@ -12,12 +12,14 @@ $dotenv->load();
     $envuser = $_ENV['DB_USERNAME'];
     $envpassword = $_ENV['DB_PASSWORD'];
     $secret = $_ENV['SECRET'];
+    $token = $_ENV['TOKEN'];
 
 
     define("DB_DSN", $dsn);
     define("DB_USER", $envuser);
     define("DB_PASSWORD", $envpassword);
     define("SECRET", $secret);
+    define("TOKEN", $token);
 
 
 try {

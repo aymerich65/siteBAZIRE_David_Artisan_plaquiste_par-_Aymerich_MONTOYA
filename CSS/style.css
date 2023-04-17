@@ -8,7 +8,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.Apropospolice {
+.mentionslegalespolice {
   margin-top: 6%;
   font-size: 18px;
   font-weight: 800px;
@@ -113,6 +113,7 @@ body {
   .colaccueilstyle02 {
     width: 50%;
   }
+  /* Page contact*/
   .pagecontactstyle {
     font-size: 20px;
     color: rgb(0, 0, 0);
@@ -140,7 +141,7 @@ body {
   .buttonstyle {
     margin-top: 2%;
     background-color: yellow;
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     width: 50%;
     height: 5vh;
   }
@@ -257,4 +258,122 @@ body {
   overflow: hidden;
   padding-left: 1%;
   padding-right: 1%;
+}
+
+/*-------------------------Format tablette ----------------------------------------------------------------------------------------------------- */
+@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1024px) {
+  /* styles à appliquer */
+  /*En tête : */
+  .headerstyle {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 15vh;
+    position: relative;
+    z-index: 1;
+    top: 0;
+  }
+  .headerstyle h1 {
+    top: 11%;
+    z-index: 3;
+    font-size: 105px;
+    font-weight: 700;
+    position: absolute;
+  }
+  .headerstyle h1 .undertitle {
+    font-size: 40px;
+    padding-right: 41%;
+    margin-left: 13%;
+    line-height: 2%;
+    position: absolute;
+  }
+  .headerstyle img {
+    max-width: 100%;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    right: -2%;
+    z-index: 4;
+    top: -1;
+  }
+  /*Dessin du platre*/
+  .headerdeco {
+    width: 90%;
+    height: 62%;
+    left: 0;
+    background-color: rgb(245, 240, 240);
+    z-index: 2;
+    top: 42;
+    position: absolute;
+  }
+  /* Accueil */
+  .pageaccueilstyle {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .imgaccueil01 {
+    top: 5%;
+    width: 50vw;
+    height: 20vh;
+    position: absolute;
+    z-index: 2;
+    left: 46%;
+  }
+  .imgaccueil02 {
+    width: auto;
+    height: 52%;
+    position: absolute;
+    z-index: 3;
+    right: 5%;
+    bottom: 2%;
+  }
+  .colaccueilstyle01 {
+    width: 50%;
+    font-size: 1.9rem;
+  }
+  .colaccueilstyle02 {
+    width: 50%;
+    font-size: 1.9rem;
+  }
+  /* Style du Pied de page */
+  .footerstyle {
+    height: 35vh;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  /* Boutons */
+  .buttonstyle {
+    margin-top: 2%;
+    background-color: yellow;
+    border: 4px solid rgb(0, 0, 0);
+    width: 50%;
+    height: 5vh;
+  }
+  .pagelinkpolice {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,15 +1,48 @@
 <?php
-use Firebase\JWT\JWT;
+header('Access-Control-Allow-Origin: *');
+//header('Content-Type: application/json');
+
+require_once 'Classes/myjwt.php';
+require_once './config.php';
 
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 
-var_dump($_SESSION);
+/*
+if (isset($_SERVER['Authorization']) ){
+  $token = trim($_SERVER['Authorization']);
+}else if (isset($_SERVER['HTTP_AUTHORIZATION']) ){
+  $token = trim($_SERVER['HTTP_AUTHORIZATION']);
+}elseif(function_exists('apache_request_headers')){
+  $requestHeaders = apache_request_headers();
+  if(isset($requestHeaders['Authorization'])){
+    $token = trim($requestHeaders['Authorization']); 
+  }  
+}*/
 
-var_dump($_SESSION['jwt']);
+//controle du tken interne
+if (isset($_SESSION['jwt'])) {
+  $token = $_SESSION['jwt'];}
+  
+  // Vérification de la validité du jeton JWT
+  $newtokentest = new JWT();
+  if (!$newtokentest->check($token, SECRET)) {
+      http_response_code(401);
+      echo json_encode(['message' => 'Jeton JWT invalide'], JSON_UNESCAPED_UNICODE);
+      header('Location: /index.php?page=accueil');
+      exit;
 
+  }
 
+  /*
+  echo json_encode(['message' => 'Jeton JWT valide'], JSON_UNESCAPED_UNICODE);
+} else {
+  http_response_code(401);
+  echo json_encode(['message' => 'Aucun jeton JWT n\'a été trouvé dans la session'], JSON_UNESCAPED_UNICODE);
+  exit();
+}
+*/
 
 ?>
 
