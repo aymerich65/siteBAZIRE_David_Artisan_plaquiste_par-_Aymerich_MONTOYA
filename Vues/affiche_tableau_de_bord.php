@@ -99,6 +99,46 @@ if (isset($_SESSION['jwt'])) {
 </form>
 </div>
 
+
+
+<div class="h2adminpagestyle"><h2 >Supprimer une image</h2></div>
+<form action="Modeles/suppression_image.php" method="post" enctype="multipart/form-data">
+  <label for="id">Numéro d'image(id)</label>
+  <input type="number" id="id" name="id" required class="imputidstyle">
+  <br>
+  <input type="submit" value="Envoyer">
+</form>
+</div>
+
+
+
+<!-- Modification d'image:-->
+<div class="h2adminpagestyle"><h2 >Modifier une image</h2></div>
+<form action="Modeles/modification_image.php" method="post" enctype="multipart/form-data">
+  <label for="id">ID :</label>
+  <input type="number" id="id" name="id" required class="imputidstyle">
+
+  <br>
+
+  <label for="filename">Nom du fichier :</label>
+  <input type="text" id="filename" name="filename" required placeholder="Nom exacte du fichier en base de donnée">
+
+  <br>
+
+  <label for="description">Description :<br>  <textarea id="description" name="description" required class="textareadesriptionstyle"></textarea></label>
+
+
+  <br>
+
+  <label for="image">Sélectionnez une image :</label>
+  <input type="file" id="image" name="image" accept="image/*" required class="selectimagestyle">
+
+  <br>
+
+  <input type="submit" value="Envoyer">
+</form>
+</div>
+
 <form action="Modeles/BDDinteraction/insertion_admin.php" method="POST">
     <label for="id">Identifiant :</label>
     <input type="text" name="id" id="id" required>
@@ -109,9 +149,16 @@ if (isset($_SESSION['jwt'])) {
     <input type="submit" value="Ajouter">
 </form>
 
-
-
-
+<!-- Modification d'image:
+<form action="Modeles/BDDinteraction/insertion_admin.php" method="POST">
+    <label for="id">Identifiant :</label>
+    <input type="text" name="id" id="id" required>
+    <br>
+    <label for="password">Mot de passe :</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+    <input type="submit" value="Ajouter">
+</form>-->
 
 
 

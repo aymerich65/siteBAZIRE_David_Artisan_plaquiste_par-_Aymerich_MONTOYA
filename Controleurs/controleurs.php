@@ -83,6 +83,18 @@ require_once 'JWT/validate_jwt.php';
 
             require_once 'Vues/layout.php';
         }
+
+        public function traitementinsertion() {
+            /* utilisation du fichier config pour récupérer les variables d'environnement:*/
+            require_once 'vendor/autoload.php';
+            require_once 'config.php';
+            require_once 'Modeles/traitement_images.php';
+
+                    }
+
+
+
+
         public function pageConnexion() {
             require_once 'Modeles/traitement_connexion.php';
             $header = require_once 'Vues/affiche_Header.php';           
