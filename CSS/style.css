@@ -124,7 +124,6 @@ body {
     margin: auto;
     overflow: scroll;
   }
-  /* Style du main: */
   .formulairenomtitlestyle {
     margin-top: 4%;
   }
@@ -375,5 +374,160 @@ body {
     font-weight: bold;
     font-size: 2rem;
     text-decoration: none;
+  }
+  /* style des images en galerie */
+  .gallerybloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+  }
+  .h1gallerystyle {
+    text-align: center;
+  }
+  .gallery-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+  }
+  .gallery-image.active {
+    display: block;
+  }
+  .my-icon {
+    width: 8%;
+    height: auto;
+    background-color: yellow;
+  }
+  .gallerybackground {
+    background-color: white;
+  }
+  .gallerybuttonline {
+    display: flex;
+    position: relative;
+  }
+  .gallerydescription {
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .formularcontainer {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10vh 10vh 5vh;
+    gap: 10px;
+    height: 50vh;
+    grid-template-areas: "imputlabelA imputB" "imputlabelC imputD" "formularbutton formularbutton";
+  }
+  .imputlabelA {
+    grid-area: imputlabelA;
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
+  }
+  .imputlabelC {
+    grid-area: imputlabelC;
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
+  }
+  .imputstyle {
+    margin-left: 1%;
+    margin-right: 0;
+    display: inline-block;
+  }
+  .imputdimension {
+    height: 3rem;
+    width: 90%;
+    margin: 1%;
+    padding: 5%;
+    border: 1.5px solid black;
+    position: relative;
+    top: 20%;
+  }
+  .formularbuttoncontainer {
+    grid-area: formularbutton;
+  }
+  .formularbuttonstyle {
+    width: 20%;
+    height: 3.5vh;
+    position: relative;
+    left: 10%;
+  }
+  /* Page contact*/
+  .pagecontactstyle {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    margin: auto;
+  }
+  .nameimputstyle {
+    margin-right: 10%;
+    padding: 2;
+  }
+  .nameline {
+    line-height: 4rem;
+    margin-top: 2%;
+  }
+  .labelnamestyle {
+    margin-top: 4%;
+    margin-right: 0;
+    margin: 1%;
+  }
+  .emailimputstyle {
+    margin-right: 2%;
+    padding: 2;
+    margin-left: 10%;
+    height: 4rem;
+    margin-top: 2%;
+  }
+  .mailline {
+    line-height: 4rem;
+    margin-top: 2%;
+  }
+  .labelamilstyle {
+    margin-top: 4%;
+    margin-right: 4%;
+    margin: 1%;
+  }
+  .sujetimputstyle {
+    margin-right: 2%;
+    padding: 2;
+    margin-left: 20%;
+    height: 4rem;
+    margin-top: 2%;
+  }
+  .sujetline {
+    line-height: 4rem;
+    margin-top: 2%;
+  }
+  .sujetstyle {
+    margin-top: 4%;
+    margin-right: 4%;
+    margin: 1%;
+    position: relative;
+    left: 10%;
+  }
+  .messageimputstyle {
+    margin-right: 2%;
+    padding: 2;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+  .messageline {
+    line-height: 4rem;
+    margin-top: 5%;
+  }
+  .messagestyle {
+    margin-top: 4%;
+    margin-right: 4%;
+    margin: 1%;
   }
 }/*# sourceMappingURL=style.css.map */
