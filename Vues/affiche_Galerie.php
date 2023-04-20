@@ -1,3 +1,6 @@
+
+
+
 <div class="gallerybackground">
   <div class="h1gallerystyle">
     <h1>Réalisations</h1>
@@ -19,7 +22,7 @@
   <div class="gallerydescription"></div>
   <div class="gallerybuttonline">
 
-    <svg onclick="prevImage()" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-square my-icon" viewBox="0 0 16 16" style="position:relative; left: 20%" >
+    <svg onclick="prevImage()" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-square my-icon " viewBox="0 0 16 16" style="position:relative; left: 20%" >
       <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
     </svg>
     <svg onclick="nextImage()" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-square my-icon"  viewBox="0 0 16 16" style="position:absolute; right: 20%">
@@ -28,6 +31,59 @@
 
   </div>
 </div>
+
+
+
+
+
+
+<div class="gallerybackgroundlandscape">
+  <div class="">
+    <h1>Réalisations</h1>
+  </div>
+  <div class=" image-container">
+    <?php
+    // Parcourir chaque image et l'afficher dans un élément img
+    foreach ($mybddTable as $index => $image) {
+      $filename = 'images/' . $image['filename'];
+      echo "<div class=\"galeriebloc\">";
+      echo "<img width=80% height=auto src=".$filename."> <br>";
+      echo  $image['description'];
+      echo "</div>";
+      ?>
+      
+
+    <?php } ?>
+
+    
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
     var currentImage = 0;
@@ -72,3 +128,4 @@ images[0].classList.add('active');
 description.innerHTML = images[0].getAttribute('data-description');
 
 </script>
+

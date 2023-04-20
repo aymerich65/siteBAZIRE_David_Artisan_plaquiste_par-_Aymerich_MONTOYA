@@ -3,17 +3,15 @@
 
 
 body{
-
+   z-index: 0;
     overflow-x: hidden; 
     height: 100vh;
      width: 100vw;
-    background: radial-gradient(white,rgb(224, 224, 224));
+    background: rgb(227, 224, 224);
     font-family: 'Inter', sans-serif;
 
   
     }
-
-
 
             .mentionslegalespolice{
                 margin-top: 6%;
@@ -33,6 +31,320 @@ body{
             font-weight: 600;
 
         }
+ 
+
+
+
+
+
+
+
+
+
+/*En tête visible en mode paysage:*/
+
+
+        @media screen and (orientation : landscape) {
+          body {
+            overflow-y: scroll; /* Ajout de la propriété overflow-y */
+ 
+          }
+            
+          .headerstyle{
+            display: none;
+          }
+        .headerlandscape{
+margin: 0;
+
+width: 100%;
+height: 20vh;
+overflow-x: hidden;
+   // position: relative;
+    //z-index: 1;  
+  }  
+
+
+
+    h1{
+      right:80%;
+       left:0%;
+        z-index: 3;
+        font-size: 3.5rem;
+        font-weight: 700;
+        top:20%;
+        position: relative;
+        
+      .undertitle{
+        font-size:20px; 
+        font-weight:600; 
+        padding-right: 41%;
+        margin-left: 0.2%;
+        line-height: 2%;
+
+      }             
+    } 
+
+    .img2 {
+      width: auto;
+      height: 18%;
+      position: absolute;
+      right: 0;
+      z-index: 3;
+      top:2%;
+      float: right;
+      
+    }
+ 
+    .buttonstyle{
+      z-index: 3;
+      width: 8%;
+      background-color: yellow;
+      height: 25%;
+      display: inline-block;
+      bottom: 25%;
+      position: relative;
+      margin-left:5%;
+      margin-right: 5%;
+      left: 24%;
+    }
+
+
+    
+/*Dessin du platre*/
+.headerdeco{
+    width: 95%;
+    height: 10%;
+    left: 0;
+    background-color: rgb(245, 240, 240);
+    z-index: 2;
+    top: 5%;
+    position: absolute;
+}
+
+ 
+
+      
+/* Page contact*/
+
+.pagecontactstyle{
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+padding-left: 1%;
+padding-right: 1%;
+background-color: rgb(255, 255, 255);
+//height:80vh;
+width: 100%;
+margin-top: 1%;
+margin-bottom: 1%;
+overflow: hidden;
+
+}
+.h1contactstyle{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+
+
+
+.nameimputstyle{
+  margin-right: 10%;
+  padding: 2;
+  border: 1.5px solid black;
+}
+
+.nameline{
+  //line-height: 4rem;
+  padding: 0;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  height: 1%;
+}
+
+.labelnamestyle{
+  left: -1%;
+  margin-top: 4%;
+  margin-right: 0;
+  margin: 1%;
+  position: relative;
+}
+
+
+
+.labelemailstyle{
+  left: 0%;
+  position: relative;
+  margin: 0;
+}
+
+.emailimputstyle{
+  margin: 1%;
+padding: 1%;
+left: 1%;
+position: relative;
+border: 1.5px solid black;
+height: 4%;
+  
+}
+.mailline{
+
+  height: 4%;
+}
+
+
+
+
+
+.sujetstyle{
+  left: 0%;
+  position: relative;
+  margin: 0;
+
+}
+
+.sujetimputstyle{
+  margin: 1%;
+padding: 1%;
+left: 1%;
+position: relative;
+border: 1.5px solid black;
+height: 4%;
+}
+.sujetline{
+  height: 4%;
+
+}
+
+
+
+
+
+
+.messageimputstyle{
+  margin-right: 2%;
+  padding: 2;
+  margin-left: 5%;
+  border: 1.5px solid black;
+
+}
+.messageline{
+  line-height: 4rem;
+  margin-top: 1%;
+
+}
+.messagestyle{
+  margin-top: 4%;
+  margin-right: 4%;
+  margin: 1%;
+}
+
+
+.formularbtn{
+  margin-top: 2%;
+}
+
+
+ /* Style du Pied de page */
+
+ .footerstyle{
+display: none;
+
+}
+
+
+
+.footerlandscape{
+  height: 30vh;
+
+}
+
+.footertelstyle{
+text-align:center ;
+font-weight: 600;
+font-size: 1.5rem;
+}
+.footermailstyle{
+  text-align:center ;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.my-iconfooter {
+  width: 1.5%;
+  height: auto;
+
+}
+
+
+ /* style des images en galerie */
+
+
+.h1gallerystyle{
+  text-align: center;
+}
+
+
+
+.gallerybackground{
+  display: none;
+}
+
+
+.gallerybackgroundlandscape{
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+
+  padding: 3%;
+  margin-bottom: 1%;
+
+  
+}
+.galeriebloc{
+  margin:5%;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -48,6 +360,9 @@ body{
 @media screen and (orientation : portrait) { 
 
 
+  .headerlandscape{
+    display: none;
+  }
 
 
 /*En tête : */
@@ -176,31 +491,126 @@ body{
 
 /* Page contact*/
 
+.h1contactstyle{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
 
         .pagecontactstyle{
-            font-size: 20px;
-            color: rgb(0, 0, 0);
-            font-weight: bold;
-        padding-top: 1%;
+          font-size: 1rem;
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+        padding-left: 1%;
+        padding-right: 1%;
         background-color: rgb(255, 255, 255);
-        height: 50vh;
-        margin: auto; 
-        overflow: scroll;
+        
+        margin-top: 1%;
+        margin-bottom: 1%;
+        overflow: hidden;
      }
 
-         .formulairenomtitlestyle{
-            margin-top: 4%;
-        }
-        .formulaireemailtitlestyle{
-            margin-top: 4%;
-        }
 
-        .formulairemessagetitlestyle{
-            margin-top: 4%;
+     .envoyeremailstyle{
+      margin-bottom: 2%;
         }
-        .formulairesujettitlestyle{
-            margin-top: 4%;
-        }
+      
+      
+      
+      .nameimputstyle{
+        margin-right: 10%;
+        padding: 2;
+        border: 1.5px solid black;
+      }
+      
+      .nameline{
+        //line-height: 4rem;
+        padding: 0;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        height: 4%;
+      }
+      
+      .labelnamestyle{
+        margin-top: 4%;
+        margin-right: 0;
+        margin: 1%;
+      }
+      
+      
+      
+      .labelemailstyle{
+        left: 1%;
+        position: relative;
+        margin: 0;
+      }
+      
+      .emailimputstyle{
+        margin: 1%;
+      padding: 1%;
+      left: 4%;
+      position: relative;
+      border: 1.5px solid black;
+        
+      }
+      .mailline{
+      
+        height: 4%;
+      }
+      
+      
+      
+      
+      
+      .sujetstyle{
+        left: 6%;
+        position: relative;
+        margin: 0;
+      
+      }
+      
+      .sujetimputstyle{
+        margin: 1%;
+      padding: 1%;
+      left: 8%;
+      position: relative;
+      border: 1.5px solid black;
+      }
+      .sujetline{
+        height: 4%;
+      
+      }
+      
+      
+      
+      
+      
+      
+      .messageimputstyle{
+        margin-right: 2%;
+        padding: 2;
+        margin-left:1%;
+        border: 1.5px solid black;
+      
+      }
+      .messageline{
+        line-height: 3rem;
+        margin-top: 5%;
+      
+      }
+      .messagestyle{
+        margin-top: 4%;
+        margin-right: 4%;
+        margin: 1%;
+      }
+      
+      .formularbtn{
+        margin-top: 2%;
+      }
+
+
+
 
 
 
@@ -226,6 +636,10 @@ body{
 
 
         /* Style du Pied de page */
+        .footerlandscape{
+          display:none;
+        
+        }
 
         .footerstyle{
             height: 35vh;
@@ -236,6 +650,12 @@ body{
     }
 
     /* style des images en galerie */
+    .gallerybackgroundlandscape{
+      display:none;
+    }
+    
+
+
     .gallerybloc {
         display: flex;
         justify-content: center;
@@ -483,6 +903,10 @@ margin-top: 5%;
       
 
  /* Style du Pied de page */
+ .footerlandscape{
+  display:none;
+
+}
 
  .footerstyle{
   height: 35vh;
@@ -513,6 +937,11 @@ margin-top: 5%;
 
 
 /* style des images en galerie */
+
+.gallerybackgroundlandscape{
+  display:none;
+}
+
 .gallerybloc {
   display: flex;
   justify-content: center;
@@ -642,22 +1071,39 @@ top: 20%;
   font-size: 2rem;
   color: rgb(0, 0, 0);
   font-weight: bold;
-padding-top: 1%;
+padding-left: 1%;
+padding-right: 1%;
 background-color: rgb(255, 255, 255);
-height: 60vh;
-margin: auto; 
+
+margin-top: 1%;
+margin-bottom: 1%;
+overflow: hidden;
 
 }
+.h1contactstyle{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+
+ .envoyeremailstyle{
+margin-bottom: 2%;
+  }
+
+
 
 .nameimputstyle{
   margin-right: 10%;
   padding: 2;
+  border: 1.5px solid black;
 }
 
 .nameline{
-  line-height: 4rem;
-  margin-top: 2%;
-  
+  //line-height: 4rem;
+  padding: 0;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  height: 4%;
 }
 
 .labelnamestyle{
@@ -668,45 +1114,45 @@ margin: auto;
 
 
 
+.labelemailstyle{
+  left: 6%;
+  position: relative;
+  margin: 0;
+}
 
 .emailimputstyle{
-  margin-right: 2%;
-  padding: 2;
-  margin-left: 10%;
-  height: 4rem;
-  margin-top: 2%;
+  margin: 1%;
+padding: 1%;
+left: 8%;
+position: relative;
+border: 1.5px solid black;
+  
 }
 .mailline{
-  line-height: 4rem;
-  margin-top: 2%;
 
-}
-.labelamilstyle{
-  margin-top: 4%;
-  margin-right: 4%;
-  margin: 1%;
+  height: 4%;
 }
 
 
+
+
+
+.sujetstyle{
+  left: 6%;
+  position: relative;
+  margin: 0;
+
+}
 
 .sujetimputstyle{
-  margin-right: 2%;
-  padding: 2;
-  margin-left: 20%;
-  height: 4rem;
-  margin-top: 2%;
+  margin: 1%;
+padding: 1%;
+left: 8%;
+position: relative;
+border: 1.5px solid black;
 }
 .sujetline{
-  line-height: 4rem;
-  margin-top: 2%;
-
-}
-.sujetstyle{
-  margin-top: 4%;
-  margin-right: 4%;
-  margin: 1%;
-  position: relative;
-  left: 10%;
+  height: 4%;
 
 }
 
@@ -719,8 +1165,8 @@ margin: auto;
   margin-right: 2%;
   padding: 2;
   margin-left: 20%;
+  border: 1.5px solid black;
 
-  margin-top: 5%;
 }
 .messageline{
   line-height: 4rem;
@@ -734,16 +1180,9 @@ margin: auto;
 }
 
 
-
-
-
-
-
-
-
-
-
-
+.formularbtn{
+  margin-top: 2%;
+}
 
 
 
