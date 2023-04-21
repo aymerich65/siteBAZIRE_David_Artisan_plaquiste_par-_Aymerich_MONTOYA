@@ -393,15 +393,21 @@ body {
     height: auto;
     position: absolute;
     z-index: 2;
-    left: 46%;
+    left: 50%;
   }
   .imgaccueil02 {
     width: 50vw;
     height: auto;
     position: absolute;
     z-index: 3;
-    right: 4%;
+    right: 3%;
     bottom: 2%;
+  }
+  .styleprestationtitle1 {
+    font-size: 1.5rem;
+  }
+  .styleprestationtitle2 {
+    font-size: 1.5rem;
   }
   .colaccueilstyle01 {
     width: 50%;
@@ -706,9 +712,18 @@ body {
     right: 11%;
     bottom: 1.5%;
   }
+  .styleprestationtitle1 {
+    font-size: 3rem;
+  }
+  .styleprestationtitle2 {
+    font-size: 3rem;
+  }
   .colaccueilstyle01 {
+    position: relative;
     width: 50%;
-    font-size: 1.9rem;
+    font-size: 2rem;
+    top: -5%;
+    padding-left: 4%;
   }
   .colaccueilstyle02 {
     width: 50%;
