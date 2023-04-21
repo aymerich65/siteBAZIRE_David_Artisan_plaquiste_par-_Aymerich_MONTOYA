@@ -4,7 +4,7 @@
    <form action=<?php echo $action; ?> method="post" class="formstyle">
 <h1 class="h1contactstyle">Contactez moi</h1>
 
-<p class="h2telstyle">Téléphone : <a href="tel:+33674582483">0674582483</a></span></p><span>
+<p class="h2telstyle">Téléphone : <span>0674582483</span></p>
 
 <p class="envoyeremailstyle">Envoyer un e-mail :</p>
 

@@ -26,6 +26,15 @@ body {
   font-weight: 600;
 }
 
+/* Supression galerie,accueil du mode landscape en mode portrait*/
+@media screen and (orientation: portrait) {
+  .gallerybackgroundlandscape {
+    display: none;
+  }
+  .accueillandscape {
+    display: none;
+  }
+}
 /*En tête visible en mode paysage:*/
 @media screen and (orientation: landscape) {
   body {
@@ -44,13 +53,13 @@ body {
     right: 80%;
     left: 0%;
     z-index: 3;
-    font-size: 3.5rem;
+    font-size: 8vh;
     font-weight: 700;
     top: 20%;
     position: relative;
   }
   h1 .undertitle {
-    font-size: 20px;
+    font-size: 2.5vh;
     font-weight: 600;
     padding-right: 41%;
     margin-left: 0.2%;
@@ -65,17 +74,33 @@ body {
     top: 2%;
     float: right;
   }
+  .ongletsbloc {
+    position: relative;
+    left: 8%;
+    top: -10%;
+  }
   .buttonstyle {
     z-index: 3;
     width: 8%;
     background-color: yellow;
+    border: 1.5px solid black;
     height: 25%;
     display: inline-block;
-    bottom: 25%;
+    height: 4vh;
     position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
     left: 24%;
+    padding: auto;
+    top: -86%;
+    text-align: center;
+  }
+  .textongletlandscape {
+    font-size: 90%;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 20%;
   }
   /*Dessin du platre*/
   .headerdeco {
@@ -86,6 +111,64 @@ body {
     z-index: 2;
     top: 5%;
     position: absolute;
+  }
+  /* Accueil */
+  .accueilportrait {
+    display: none;
+  }
+  .accueillandscape {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    height: 50vh;
+    width: 100%;
+    padding: 2;
+    margin: 0;
+  }
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
+  .imgaccueil01 {
+    top: 5%;
+    width: 16%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 56%;
+  }
+  .imgaccueil02 {
+    width: 24%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    right: 2%;
+    bottom: 12%;
+  }
+  .styleprestationtitle1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .blocmenuiseries {
+    position: relative;
+    left: 15%;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  .prestations01 {
+    font-size: 6rem;
+  }
+  .styleprestationtitle2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .blocisolation {
+    position: relative;
+    left: 5%;
+    font-size: 2rem;
+    font-weight: 300;
   }
   /* Page contact*/
   .pagecontactstyle {
@@ -180,6 +263,8 @@ body {
     height: 30vh;
   }
   .footertelstyle {
+    position: relative;
+    top: 24%;
     text-align: center;
     font-weight: 600;
     font-size: 1.5rem;
@@ -188,10 +273,28 @@ body {
     text-align: center;
     font-weight: 600;
     font-size: 1.5rem;
+    position: relative;
+    top: 30%;
   }
   .my-iconfooter {
     width: 1.5%;
     height: auto;
+  }
+  .mentionslegalespolicelandscape {
+    border: 2px solid black;
+    background-color: yellow;
+    width: 12%;
+    height: 16%;
+    margin: auto;
+    position: relative;
+    bottom: -32%;
+    align-items: center;
+  }
+  .mentionslegalesstyle {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 88%;
   }
   /* style des images en galerie */
   .h1gallerystyle {
@@ -201,6 +304,7 @@ body {
     display: none;
   }
   .gallerybackgroundlandscape {
+    display: block;
     background-color: rgb(255, 255, 255);
     width: 100vw;
     padding: 3%;
@@ -285,18 +389,18 @@ body {
   }
   .imgaccueil01 {
     top: 5%;
-    width: 50vw;
-    height: 20vh;
+    width: 40vw;
+    height: auto;
     position: absolute;
     z-index: 2;
     left: 46%;
   }
   .imgaccueil02 {
-    width: 40vw;
+    width: 50vw;
     height: auto;
     position: absolute;
     z-index: 3;
-    right: 5%;
+    right: 4%;
     bottom: 2%;
   }
   .colaccueilstyle01 {
@@ -413,10 +517,6 @@ body {
   }
 }
 /* style des images en galerie */
-.gallerybackgroundlandscape {
-  display: none;
-}
-
 .gallerybloc {
   display: flex;
   justify-content: center;
@@ -591,20 +691,20 @@ body {
     height: 100%;
   }
   .imgaccueil01 {
-    top: 5%;
-    width: 50vw;
-    height: 20vh;
+    top: 1.5%;
+    width: 34.5%;
+    height: auto;
     position: absolute;
     z-index: 2;
-    left: 46%;
+    left: 54%;
   }
   .imgaccueil02 {
-    width: auto;
-    height: 52%;
+    width: 35%;
+    height: auto;
     position: absolute;
     z-index: 3;
-    right: 5%;
-    bottom: 2%;
+    right: 11%;
+    bottom: 1.5%;
   }
   .colaccueilstyle01 {
     width: 50%;
@@ -638,9 +738,10 @@ body {
     text-decoration: none;
   }
   /* style des images en galerie */
-  .gallerybackgroundlandscape {
-    display: none;
-  }
+  /*
+  .gallerybackgroundlandscape{
+    display:none;
+  }*/
   .gallerybloc {
     display: flex;
     justify-content: center;
@@ -805,5 +906,23 @@ body {
   }
   .formularbtn {
     margin-top: 2%;
+  }
+}
+/**************responsive landscape mobile*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  /*header*/
+  .textongletlandscape {
+    font-size: 35%;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 20%;
+  }
+  /*footer*/
+  .mentionslegalesstyle {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 35%;
   }
 }/*# sourceMappingURL=style.css.map */
