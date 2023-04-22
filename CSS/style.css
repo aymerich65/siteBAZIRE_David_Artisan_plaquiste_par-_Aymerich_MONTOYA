@@ -46,71 +46,90 @@ body {
   .headerlandscape {
     margin: 0;
     width: 100%;
-    height: 20vh;
+    height: 20%;
     overflow-x: hidden;
   }
+  .bloctitre {
+    margin-top: 1%;
+    padding: 1%;
+    position: relative;
+    bottom: 5%;
+  }
   h1 {
-    right: 80%;
+    right: 0;
     left: 0%;
     z-index: 3;
-    font-size: 8vh;
+    font-size: 3.2vw;
     font-weight: 700;
-    top: 20%;
     position: relative;
   }
   h1 .undertitle {
-    font-size: 2.5vh;
+    font-size: 1vw;
     font-weight: 600;
     padding-right: 41%;
     margin-left: 0.2%;
-    line-height: 2%;
+    line-height: 0.5;
+    position: relative;
   }
   .img2 {
     width: auto;
-    height: 18%;
+    height: 200%;
     position: absolute;
-    right: 0;
+    left: 90vw;
     z-index: 3;
-    top: 2%;
-    float: right;
+    bottom: -62%;
   }
   .ongletsbloc {
     position: relative;
-    left: 8%;
-    top: -10%;
+    left: 8vw;
+    top: 0%;
+    display: flex;
+    word-wrap: none;
+    padding: 0;
+  }
+  .firstbuttonstyle {
+    z-index: 3;
+    width: 12.5vw;
+    height: 5vh;
+    background-color: yellow;
+    border: 1.5px solid black;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    text-align: center;
   }
   .buttonstyle {
     z-index: 3;
-    width: 8%;
+    width: 12.5vw;
+    height: 5vh;
     background-color: yellow;
     border: 1.5px solid black;
-    height: 25%;
     display: inline-block;
-    height: 4vh;
     position: relative;
-    margin-left: 3%;
-    margin-right: 3%;
-    left: 24%;
-    padding: auto;
-    top: -86%;
+    margin-left: 10%;
+    padding: 0;
     text-align: center;
   }
   .textongletlandscape {
-    font-size: 90%;
+    font-size: 2vh;
     text-decoration: none;
     color: black;
     position: relative;
-    top: 20%;
+    top: 10%;
   }
   /*Dessin du platre*/
   .headerdeco {
-    width: 95%;
+    width: 92vw;
     height: 10%;
     left: 0;
     background-color: rgb(245, 240, 240);
     z-index: 2;
     top: 5%;
     position: absolute;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
   }
   /* Accueil */
   .accueilportrait {
@@ -148,26 +167,26 @@ body {
     bottom: 12%;
   }
   .styleprestationtitle1 {
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 900;
   }
   .blocmenuiseries {
     position: relative;
     left: 15%;
-    font-size: 2rem;
+    font-size: 1.5vw;
     font-weight: 300;
   }
   .prestations01 {
     font-size: 6rem;
   }
   .styleprestationtitle2 {
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 900;
   }
   .blocisolation {
     position: relative;
     left: 5%;
-    font-size: 2rem;
+    font-size: 1.5vw;
     font-weight: 300;
   }
   /* Page contact*/
@@ -267,12 +286,12 @@ body {
     top: 24%;
     text-align: center;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
   .footermailstyle {
     text-align: center;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     position: relative;
     top: 30%;
   }
@@ -283,8 +302,8 @@ body {
   .mentionslegalespolicelandscape {
     border: 2px solid black;
     background-color: yellow;
-    width: 12%;
-    height: 16%;
+    width: 20%;
+    height: 12%;
     margin: auto;
     position: relative;
     bottom: -32%;
@@ -294,7 +313,7 @@ body {
     color: black;
     text-decoration: none;
     font-weight: 700;
-    font-size: 88%;
+    font-size: 2vh;
   }
   /* style des images en galerie */
   .h1gallerystyle {
@@ -318,7 +337,7 @@ body {
     flex-wrap: wrap;
   }
 }
-/* Responsive Mobile */
+/* Responsive Mobile -----------------------------------------------------------------------------*/
 @media screen and (orientation: portrait) {
   .headerlandscape {
     display: none;
@@ -342,6 +361,8 @@ body {
     padding-right: 41%;
     margin-left: 5%;
     line-height: 2%;
+    position: relative;
+    left: -2%;
   }
   .headerstyle img {
     max-width: 100%;
@@ -923,21 +944,48 @@ body {
     margin-top: 2%;
   }
 }
-/**************responsive landscape mobile*/
-@media screen and (max-width: 768px) and (orientation: landscape) {
-  /*header*/
-  .textongletlandscape {
-    font-size: 35%;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    top: 20%;
-  }
-  /*footer*/
-  .mentionslegalesstyle {
-    color: black;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 35%;
-  }
-}/*# sourceMappingURL=style.css.map */
+/**************responsive landscape mobile*/ /**************responsive landscape mobile*/
+/*
+@media screen and (max-width: 768px) and (orientation : landscape) {*/
+/*header*/ /*
+.textongletlandscape{
+  font-size: 35%;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top:20%;
+
+}*/
+/*footer*/ /*
+.mentionslegalesstyle{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+   font-size: 35%;
+}
+
+
+}*/
+/*
+@media screen and (max-width: 768px) and (orientation : landscape) {
+  /*header*/ /*
+.textongletlandscape{
+  font-size: 35%;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top:20%;
+
+}*/
+/*footer*/
+/*
+.mentionslegalesstyle{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+   font-size: 35%;
+}
+
+
+}
+*//*# sourceMappingURL=style.css.map */

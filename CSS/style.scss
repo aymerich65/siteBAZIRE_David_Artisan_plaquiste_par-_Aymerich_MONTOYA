@@ -77,85 +77,137 @@ body{
 margin: 0;
 
 width: 100%;
-height: 20vh;
+height: 20%;
 overflow-x: hidden;
    // position: relative;
     //z-index: 1;  
   }  
-
+.bloctitre{
+  margin-top: 1%;
+  padding: 1%;
+  //background-color: blue;
+  
+  position: relative;
+  bottom: 5%;
+  
+}
 
 
     h1{
-      right:80%;
+      
+      right:0;
        left:0%;
         z-index: 3;
-        font-size: 8vh;
+        font-size: 3.2vw;
         font-weight: 700;
-        top:20%;
+
         position: relative;
+        //line-height: ;
+  
+    
         
       .undertitle{
-        font-size:2.5vh; 
+        font-size:1vw; 
         font-weight:600; 
         padding-right: 41%;
         margin-left: 0.2%;
-        line-height: 2%;
+        //line-height: 5%;
+        line-height: 0.5;
+        position: relative;
+        
+        
 
       }             
     } 
 
     .img2 {
       width: auto;
-      height: 18%;
+      height: 200%;
       position: absolute;
-      right: 0;
+      left:90vw;
       z-index: 3;
-      top:2%;
-      float: right;
+      bottom: -62%;
+      
       
     }
     .ongletsbloc{
       position: relative;
-      left: 8%; 
-      top:-10%;
+      left: 8vw; 
+      top:0%;
+      display: flex;
+      word-wrap: none;
+      //background-color: blue;
+      padding: 0;
     }
+
+
+    .firstbuttonstyle{
+      
+      z-index: 3;
+      width: 12.5vw;
+      height: 5vh;
+      background-color: yellow;
+      border: 1.5px solid black;
+      display: inline-block;
+      position: relative;
+      //margin-left:%;
+ 
+      //left:8%;
+      padding:0;
+      text-align: center;
+      //top:20%;
+      
+    }
+
+
+
+
+
     .buttonstyle{
       
       z-index: 3;
-      width: 8%;
+      width: 12.5vw;
+      height: 5vh;
       background-color: yellow;
       border: 1.5px solid black;
-      height: 25%;
       display: inline-block;
-      height: 4vh;
       position: relative;
-      margin-left:3%;
-      margin-right: 3%;
-      left: 24%;
-      padding: auto;
-      top:-86%;
+      //margin-left:%;
+      margin-left: 10%;
+      //left:8%;
+      padding:0;
       text-align: center;
+      //top:20%;
       
     }
     .textongletlandscape{
-      font-size: 90%;
+      font-size: 2vh;
       text-decoration: none;
       color: black;
       position: relative;
-      top:20%;
+      top:10%;
+      
+      //margin-top: auto;
+     // margin-bottom: auto;
+   
       
     }
 
     
 /*Dessin du platre*/
 .headerdeco{
-    width: 95%;
+
+    width: 92vw;
     height: 10%;
     left: 0;
     background-color: rgb(245, 240, 240);
     z-index: 2;
     top: 5%;
     position: absolute;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 
  
@@ -211,13 +263,13 @@ overflow-x: hidden;
       }
 
       .styleprestationtitle1{
-        font-size: 3rem;
+        font-size: 3vw;
         font-weight: 900;
       }
       .blocmenuiseries{
         position: relative;
         left: 15%;
-        font-size: 2rem;
+        font-size: 1.5vw;
         font-weight: 300;
       }
       .prestations01{
@@ -226,13 +278,13 @@ overflow-x: hidden;
 
 
    .styleprestationtitle2{
-        font-size: 3rem;
+        font-size: 3vw;
         font-weight: 900;
       }
       .blocisolation{
         position: relative;
         left: 5%;
-        font-size: 2rem;
+        font-size: 1.5vw;
         font-weight: 300;
 
       }
@@ -410,12 +462,12 @@ display: none;
   top:24%;
 text-align:center ;
 font-weight: 600;
-font-size: 1.5rem;
+font-size: 1.5vw;
 }
 .footermailstyle{
   text-align:center ;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   position: relative;
   top:30%;
 }
@@ -429,19 +481,20 @@ font-size: 1.5rem;
 .mentionslegalespolicelandscape{
   border: 2px solid black;
   background-color: yellow;
-  width: 12%;
-  height:16%;
+  width: 20%;
+  height:12%;
   margin: auto;
   position: relative;
   bottom: -32%;
   align-items: center;
+  
  }
 
 .mentionslegalesstyle{
   color: black;
   text-decoration: none;
   font-weight: 700;
-   font-size: 88%;
+   font-size: 2vh;
 }
 
 
@@ -535,7 +588,7 @@ font-size: 1.5rem;
 
 
 
-/* Responsive Mobile */
+/* Responsive Mobile -----------------------------------------------------------------------------*/
 
 @media screen and (orientation : portrait) { 
 
@@ -566,6 +619,8 @@ font-size: 1.5rem;
                 padding-right: 41%;
                 margin-left: 5%;
                 line-height: 2%;
+                position: relative;
+                left: -2%;
 
               }             
             }
@@ -647,6 +702,8 @@ font-size: 1.5rem;
     ;
 
 }
+
+
 .styleprestationtitle1{
   font-size: 1.5rem;
 }
@@ -1402,10 +1459,10 @@ border: 1.5px solid black;
 
 
 
-/**************responsive landscape mobile*/
-
-@media screen and (max-width: 768px) and (orientation : landscape) {
-  /*header*/
+/**************responsive landscape mobile*//**************responsive landscape mobile*/
+/*
+@media screen and (max-width: 768px) and (orientation : landscape) {*/
+  /*header*//*
   .textongletlandscape{
     font-size: 35%;
     text-decoration: none;
@@ -1413,8 +1470,30 @@ border: 1.5px solid black;
     position: relative;
     top:20%;
     
-  }
+  }*/
+/*footer*//*
+.mentionslegalesstyle{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+   font-size: 35%;
+}
+
+
+}*/
+/*
+@media screen and (max-width: 768px) and (orientation : landscape) {
+  /*header*//*
+  .textongletlandscape{
+    font-size: 35%;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top:20%;
+    
+  }*/
 /*footer*/
+/*
 .mentionslegalesstyle{
   color: black;
   text-decoration: none;
@@ -1424,3 +1503,4 @@ border: 1.5px solid black;
 
 
 }
+*/
