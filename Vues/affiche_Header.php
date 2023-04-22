@@ -4,12 +4,19 @@
        
 
 <div class="headerdeco">
-<h1 style="text-align:center">BAZIRE David<br><p class="undertitle">Artisan plaquiste</p></h1> <img  src="../images/couteau_a_enduire2-PhotoRoom.png-PhotoRoom (1).png">
-
+<div class="titrecontainer">
+<h1 class="montitreaccueil">BAZIRE David</h1> 
+<p class="undertitle">Artisan plaquiste</p>
+</div>
 </div>  
+<img  class="imglogo" src="../images/couteau_a_enduire2-PhotoRoom.png-PhotoRoom (1).png">
 
-</div>  
-         
+
+</div>
+  
+
+
+
 
 <div class="row headerlandscape">
         <div class="headerdeco"><div class="bloctitre"><h1 >BAZIRE David<br><p class="undertitle">Artisan plaquiste</p></h1></div>

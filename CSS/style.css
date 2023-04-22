@@ -338,54 +338,67 @@ body {
   }
 }
 /* Responsive Mobile -----------------------------------------------------------------------------*/
-@media screen and (orientation: portrait) {
+/*@media screen and (max-width:599px) and (orientation : portrait) { 
+
+
+}*/
+@media screen and (max-width: 599px) and (orientation: portrait) {
   .headerlandscape {
     display: none;
   }
   /*En tête : */
   .headerstyle {
-    max-width: 100%;
+    max-width: 100vh;
+    height: 12%;
     overflow-x: hidden;
-    height: 15vh;
     position: relative;
     z-index: 1;
-    top: 22;
+    padding: 0;
   }
-  .headerstyle h1 {
-    z-index: 3;
-    font-size: 40px;
-    font-weight: 700;
-  }
-  .headerstyle h1 .undertitle {
-    font-size: 14px;
-    padding-right: 41%;
-    margin-left: 5%;
-    line-height: 2%;
+  .titrecontainer {
     position: relative;
-    left: -2%;
+    left: 25%;
+    padding: 0;
+    margin: 0;
+    top: 26%;
   }
-  .headerstyle img {
-    max-width: 100%;
+  .montitreaccueil {
+    font-size: 10vw;
+    top: 110%;
+    z-index: 3;
+    font-weight: 700;
+    position: relative;
+    line-height: 30%;
+    margin-top: 1%;
+  }
+  .undertitle {
+    font-size: 2vh;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 2%;
+    padding-top: 0.5;
+  }
+  .imglogo {
     width: 20%;
     height: auto;
-    position: absolute;
-    right: 0%;
+    position: relative;
+    left: 80%;
+    top: 5%;
     z-index: 3;
-    bottom: 40.5;
   }
   /*Dessin du platre*/
   .headerdeco {
-    width: 86.5%;
-    height: 42%;
+    width: 88%;
+    height: 56%;
     left: 0;
     background-color: rgb(245, 240, 240);
     z-index: 2;
-    top: 6;
+    top: 20%;
     position: absolute;
   }
   /* Accueil */
   .pageaccueilstyle {
-    font-size: 18px;
+    font-size: 2.3vh;
     color: rgb(0, 0, 0);
     font-weight: bold;
     padding-top: 1%;
@@ -410,14 +423,14 @@ body {
   }
   .imgaccueil01 {
     top: 5%;
-    width: 40vw;
+    width: 35%;
     height: auto;
     position: absolute;
     z-index: 2;
     left: 50%;
   }
   .imgaccueil02 {
-    width: 50vw;
+    width: 45%;
     height: auto;
     position: absolute;
     z-index: 3;
@@ -425,10 +438,10 @@ body {
     bottom: 2%;
   }
   .styleprestationtitle1 {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
   }
   .styleprestationtitle2 {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
   }
   .colaccueilstyle01 {
     width: 50%;
@@ -542,155 +555,146 @@ body {
     max-width: 100%;
     overflow: hidden;
   }
-}
-/* style des images en galerie */
-.gallerybloc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  overflow: hidden;
-}
-
-.h1gallerystyle {
-  text-align: center;
-}
-
-.gallery-image {
-  max-width: 100%;
-  max-height: 100%;
-  display: none;
-}
-
-.gallery-image.active {
-  display: block;
-}
-
-.my-icon {
-  width: 15%;
-  height: auto;
-  background-color: yellow;
-}
-
-.gallerybackground {
-  background-color: white;
-}
-
-.gallerybuttonline {
-  display: flex;
-  position: relative;
-}
-
-/* Page prestations */
-.prestationsstyle {
-  background-color: white;
-  width: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-/*Page admin*/
-.h1tableaudebord {
-  text-align: center;
-}
-
-.h2tableau {
-  font-size: 16px;
-  text-align: center;
-}
-
-.tableadminpagestyle {
-  border: 1px solid black;
-  background-color: white;
-  font-size: 8px;
-  width: 95%;
-  font-weight: bold;
-  table-layout: fixed;
-  margin-top: 0%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  max-width: 95%;
-  max-height: 40%;
-  overflow-y: scroll;
-}
-
-.tableadminpagestyle th, .tableadminpagestyle td {
-  width: 50%;
-  word-wrap: break-word;
-  padding-right: 10px;
-  padding-bottom: 1%;
-}
-
-.h2adminpagestyle {
-  margin-top: 5%;
-}
-
-.imputidstyle {
-  margin-bottom: 5%;
-}
-
-.textareadesriptionstyle {
-  margin-bottom: 5%;
-}
-
-.selectimagestyle {
-  margin-bottom: 5%;
-}
-
-.containeradminstyle {
-  max-width: 100%;
-  overflow: hidden;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-/*-------------------------Format tablette ----------------------------------------------------------------------------------------------------- */
-@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1024px) {
-  /* styles à appliquer */
-  /*En tête : */
-  .headerstyle {
+  /* style des images en galerie */
+  .gallerybloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+  }
+  .h1gallerystyle {
+    text-align: center;
+  }
+  .gallery-image {
     max-width: 100%;
     max-height: 100%;
+    display: none;
+  }
+  .gallery-image.active {
+    display: block;
+  }
+  .my-icon {
+    width: 15%;
+    height: auto;
+    background-color: yellow;
+  }
+  .gallerybackground {
+    background-color: white;
+  }
+  .gallerybuttonline {
+    display: flex;
+    position: relative;
+  }
+  /* Page prestations */
+  .prestationsstyle {
+    background-color: white;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  /*Page admin*/
+  .h1tableaudebord {
+    text-align: center;
+  }
+  .h2tableau {
+    font-size: 16px;
+    text-align: center;
+  }
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 8px;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+  }
+  .tableadminpagestyle th, .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
+  }
+  .h2adminpagestyle {
+    margin-top: 5%;
+  }
+  .imputidstyle {
+    margin-bottom: 5%;
+  }
+  .textareadesriptionstyle {
+    margin-bottom: 5%;
+  }
+  .selectimagestyle {
+    margin-bottom: 5%;
+  }
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+/*-------------------------Format tablette ----------------------------------------------------------------------------------------------------- */
+@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1366px) {
+  /* styles à appliquer */
+  /*En tête : */
+  .headerlandscape {
+    display: none;
+  }
+  .headerstyle {
+    max-width: 100vh;
+    height: 14%;
     overflow-x: hidden;
-    overflow-y: hidden;
-    height: 15vh;
     position: relative;
     z-index: 1;
-    top: 0;
+    padding: 0;
   }
-  .headerstyle h1 {
-    top: 0%;
+  .titrecontainer {
+    position: relative;
+    left: 25%;
+    padding: 0;
+    margin: 0;
+    top: 26%;
+  }
+  .montitreaccueil {
+    font-size: 5vh;
+    top: 110%;
     z-index: 3;
-    font-size: 6.3vh;
     font-weight: 700;
-    position: absolute;
-    left: 28%;
+    position: relative;
+    line-height: 30%;
+    margin-top: 1%;
   }
-  .headerstyle h1 .undertitle {
-    font-size: 2.5vh;
-    padding-right: 41%;
-    margin-left: 13%;
-    position: absolute;
-    left: -11%;
+  .undertitle {
+    font-size: 2vh;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 2%;
   }
-  .headerstyle img {
-    max-width: 100%;
-    width: 16%;
-    height: auto;
+  .imglogo {
+    width: 20%;
+    height: 100%;
     position: absolute;
-    right: -10%;
-    z-index: 4;
-    bottom: -48%;
+    right: 1%;
+    z-index: 3;
+    margin-top: 1%;
+    margin-bottom: auto;
   }
   /*Dessin du platre*/
   .headerdeco {
-    width: 90%;
-    height: 62%;
+    width: 86%;
+    height: 60%;
     left: 0;
     background-color: rgb(245, 240, 240);
     z-index: 2;
-    top: 42;
+    top: 20%;
     position: absolute;
   }
   /* Accueil */
@@ -991,7 +995,7 @@ body {
 }
 */
 /*format landscape tablette*/
-@media screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
   body {
     overflow-y: scroll; /* Ajout de la propriété overflow-y */
   }

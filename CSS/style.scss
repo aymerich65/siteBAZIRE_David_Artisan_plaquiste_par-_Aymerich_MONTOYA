@@ -589,8 +589,11 @@ font-size: 1.5vw;
 
 
 /* Responsive Mobile -----------------------------------------------------------------------------*/
+/*@media screen and (max-width:599px) and (orientation : portrait) { 
+ 
 
-@media screen and (orientation : portrait) { 
+}*/
+@media screen and (max-width:599px) and (orientation : portrait) { 
 
 
   .headerlandscape{
@@ -599,54 +602,79 @@ font-size: 1.5vw;
 
 
 /*En tête : */
+.headerstyle{
+  //background-color: blue;
+  max-width: 100vh;
+  height: 12%;
+  overflow-x: hidden;          
+    position: relative;
+    z-index: 1;
+    padding: 0;
+} 
+    .titrecontainer{
+      //background-color: blue;
+      position: relative;
+      left:25%;
+      padding: 0;
+      margin: 0;
+      top:26%;
 
-        .headerstyle{
-          max-width: 100%;
-          overflow-x: hidden;
-            height: 15vh;
-            position: relative;
-            z-index: 1;
-            top: 22;  
-            h1{
-             
-                z-index: 3;
-                font-size: 40px;
-                font-weight: 700;
-                
-                
-              .undertitle{
-                font-size:14px; 
-                padding-right: 41%;
-                margin-left: 5%;
-                line-height: 2%;
-                position: relative;
-                left: -2%;
+    }
+    .montitreaccueil{
 
-              }             
-            }
-
-            img {
-                max-width: 100%;
-                width: 20%;
-                height: auto;
-                position: absolute;
-                right: 0%;
-                z-index: 3;
-                bottom: 40.5    ;
-                
-              }
-        }       
-/*Dessin du platre*/
-        .headerdeco{
-            width: 86.5%;
-            height: 42%;
-            left: 0;
-            background-color: rgb(245, 240, 240);
-
-            z-index: 2;
-            top: 6;
-            position: absolute;
+      font-size: 10vw;   
+      top: 110%;      
+      z-index: 3;
+        
+        font-weight: 700;
+        position: relative;
+        
+        //left: -10%;
+        line-height: 30%;
+        margin-top: 1%;
         }
+        
+      .undertitle{
+        font-size:2vh; 
+        font-weight: 700;
+        //padding-right: 41%;
+        //margin-left: 5%;
+        
+        //position: absolute;
+        line-height: 100%; 
+        margin-top: 2%;
+        padding-top: 0.5;
+
+        }  
+
+                 
+    
+
+        .imglogo {
+        //max-width: 100%;
+        width: 20%;
+        height: auto;
+        position:relative;
+        left: 80%;  
+        top:5%;
+        z-index: 3;
+        //bottom: -15%;
+     
+        
+      }
+   
+/*Dessin du platre*/
+.headerdeco{
+    width: 88%;
+    height: 56%;
+    left: 0;
+    background-color: rgb(245, 240, 240);
+
+    z-index: 2;
+    top: 20%;
+    position: absolute;
+}
+
 
 
 
@@ -655,7 +683,7 @@ font-size: 1.5vw;
 
         /* Accueil */
 .pageaccueilstyle{
-    font-size: 18px;
+    font-size: 2.3vh;
     color: rgb(0, 0, 0);
     font-weight: bold;
     padding-top: 1%;
@@ -684,7 +712,7 @@ font-size: 1.5vw;
 
 .imgaccueil01{
     top: 5%;
-    width: 40vw;
+    width: 35%;
     height: auto;
     position: absolute;
     z-index: 2;
@@ -693,7 +721,7 @@ font-size: 1.5vw;
 }
 
 .imgaccueil02{
-  width: 50vw;
+  width: 45%;
   height: auto;
     position: absolute;
     z-index: 3;
@@ -705,10 +733,10 @@ font-size: 1.5vw;
 
 
 .styleprestationtitle1{
-  font-size: 1.5rem;
+  font-size: 2.5vh;
 }
 .styleprestationtitle2{
-  font-size: 1.5rem;
+  font-size: 2.5vh;
 }
 
 
@@ -889,8 +917,7 @@ font-size: 1.5vw;
             overflow: hidden;
 
         }
-    }
-
+    
     /* style des images en galerie */
  
     
@@ -1013,7 +1040,7 @@ margin-top: 5%;
   padding-left: 1%;
   padding-right: 1%;
 }
-
+}    
 
 /*-------------------------Format tablette ----------------------------------------------------------------------------------------------------- */
 
@@ -1021,7 +1048,7 @@ margin-top: 5%;
 
 
 
-@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1366px) {
   /* styles à appliquer */
 
 
@@ -1030,58 +1057,87 @@ margin-top: 5%;
 
 /*En tête : */
 
-.headerstyle{
-  max-width: 100%;
-  max-height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
 
-    height: 15vh;
-    position: relative;
-    z-index: 1;
-    top: 0;  
-    h1{
-      top: 0%;  
-        z-index: 3;
-        font-size: 6.3vh;
-        font-weight: 700;
-        position: absolute;
-        left: 28%;
-        
-      .undertitle{
-        font-size:2.5vh; 
-        padding-right: 41%;
-        margin-left: 13%;
-        //line-height: 2%;
-        position: absolute;
-        left:-11%;
-      }             
-    }
-
-    img {
-        max-width: 100%;
-        width: 16%;
-        height: auto;
-        position: absolute;
-        right: -10%;
-        z-index: 4;
-        bottom: -48%;
- 
-
-        
-      }
-}       
-/*Dessin du platre*/
-.headerdeco{
-    width: 90%;
-    height: 62%;
-    left: 0;
-    background-color: rgb(245, 240, 240);
-
-    z-index: 2;
-    top: 42;
-    position: absolute;
+.headerlandscape{
+  display: none;
 }
+
+
+
+
+      .headerstyle{
+        //background-color: blue;
+        max-width: 100vh;
+        height: 14%;
+        overflow-x: hidden;          
+          position: relative;
+          z-index: 1;
+          padding: 0;
+      } 
+          .titrecontainer{
+            //background-color: blue;
+            position: relative;
+            left:25%;
+            padding: 0;
+            margin: 0;
+            top:26%;
+     
+          }
+          .montitreaccueil{
+
+            font-size: 5vh;   
+            top: 110%;      
+            z-index: 3;
+              
+              font-weight: 700;
+              position: relative;
+              
+              //left: -10%;
+              line-height: 30%;
+              margin-top: 1%;
+              }
+              
+            .undertitle{
+              font-size:2vh; 
+              font-weight: 700;
+              //padding-right: 41%;
+              //margin-left: 5%;
+              
+              //position: absolute;
+              line-height: 100%; 
+              margin-top: 2%;
+     
+              }  
+
+                       
+          
+
+              .imglogo {
+              //max-width: 100%;
+              width: 20%;
+              height: 100%;
+              position: absolute;
+              right: 1%;
+              z-index: 3;
+              //bottom: -15%;
+              margin-top: 1%;
+              margin-bottom: auto;
+              
+            }
+         
+/*Dessin du platre*/
+      .headerdeco{
+          width: 86%;
+          height: 60%;
+          left: 0;
+          background-color: rgb(245, 240, 240);
+
+          z-index: 2;
+          top: 20%;
+          position: absolute;
+      }
+
+
 
 
 
@@ -1511,7 +1567,7 @@ border: 1.5px solid black;
 
 /*format landscape tablette*/
 @media  screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
-  @media screen and (orientation : landscape) {
+
     body {
       overflow-y: scroll; /* Ajout de la propriété overflow-y */
 
@@ -1742,4 +1798,4 @@ padding-top: 1%;
 
 
 
-}}
+}
