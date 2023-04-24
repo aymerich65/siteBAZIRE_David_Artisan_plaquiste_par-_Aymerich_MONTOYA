@@ -1,6 +1,10 @@
 
-<div class="row headerstyle">
 
+
+<div class=" headerstyle">
+ <img  class="imgheader" src="../images/logo_bande.png">       
+</div>
+<!--
        
 
 <div class="headerdeco">
@@ -8,11 +12,11 @@
 <h1 class="montitreaccueil">BAZIRE David</h1> 
 <p class="undertitle">Artisan plaquiste</p>
 </div>
-</div>  
-<img  class="imglogo" src="../images/couteau_a_enduire2-PhotoRoom.png-PhotoRoom (1).png">
+</div>  -->
 
 
-</div>
+
+
   
 
 

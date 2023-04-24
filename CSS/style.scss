@@ -6,7 +6,7 @@ body{
    z-index: 0;
     overflow-x: hidden; 
     height: 100vh;
-     width: 100vw;
+     width: 100%;
     background: rgb(227, 224, 224);
     font-family: 'Inter', sans-serif;
 
@@ -546,56 +546,11 @@ font-size: 1.5vw;
 
 
 
+/*        format mobile  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsive Mobile -----------------------------------------------------------------------------*/
-/*@media screen and (max-width:599px) and (orientation : portrait) { 
- 
-
-}*/
-@media screen and (max-width:599px) and (orientation : portrait) { 
-
-
+@media screen and (max-width:767px) and (orientation : portrait) { 
+  
   .headerlandscape{
     display: none;
   }
@@ -603,78 +558,17 @@ font-size: 1.5vw;
 
 /*En tête : */
 .headerstyle{
-  //background-color: blue;
-  max-width: 100vh;
+  max-width: 100%;
   height: 12%;
-  overflow-x: hidden;          
-    position: relative;
-    z-index: 1;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 } 
-    .titrecontainer{
-      //background-color: blue;
-      position: relative;
-      left:25%;
-      padding: 0;
-      margin: 0;
-      top:26%;
-
-    }
-    .montitreaccueil{
-
-      font-size: 10vw;   
-      top: 110%;      
-      z-index: 3;
-        
-        font-weight: 700;
-        position: relative;
-        
-        //left: -10%;
-        line-height: 30%;
-        margin-top: 1%;
-        }
-        
-      .undertitle{
-        font-size:2vh; 
-        font-weight: 700;
-        //padding-right: 41%;
-        //margin-left: 5%;
-        
-        //position: absolute;
-        line-height: 100%; 
-        margin-top: 2%;
-        padding-top: 0.5;
-
-        }  
-
-                 
-    
-
-        .imglogo {
-        //max-width: 100%;
-        width: 20%;
-        height: auto;
-        position:relative;
-        left: 80%;  
-        top:5%;
-        z-index: 3;
-        //bottom: -15%;
-     
-        
-      }
-   
-/*Dessin du platre*/
-.headerdeco{
-    width: 88%;
-    height: 56%;
-    left: 0;
-    background-color: rgb(245, 240, 240);
-
-    z-index: 2;
-    top: 20%;
-    position: absolute;
-}
-
+  .imgheader{
+    max-width: 100%; 
+    height: auto;
+  }
 
 
 
@@ -682,82 +576,106 @@ font-size: 1.5vw;
 
 
         /* Accueil */
-.pageaccueilstyle{
-    font-size: 2.3vh;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    padding-top: 1%;
-    background-color: rgb(255, 255, 255);
-    height: 50vh;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    width:100%;
-}
+        .pageaccueilstyle{
+          font-size: 2.3vh;
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          padding-top: 1%;
+          background-color: rgb(255, 255, 255);
+          height: 50vh;
+          padding: 0;
+          margin: 0;
+          position: relative;
+          width:100%;
+      }
+      
+      .accueil-image{
+          height: 10%;
+          width: 10%;
+      }
+      
+      .container-fluid {
+          padding: 0;
+          margin: 0;
+          
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+      
+      .imgaccueil01{
+          top: 5%;
+          width: 35%;
+          height: auto;
+          position: absolute;
+          z-index: 2;
+          left: 50%;
+          
+      }
+      
+      .imgaccueil02{
+        width: 45%;
+        height: auto;
+          position: absolute;
+          z-index: 3;
+          right: 3%;
+          bottom: 2%;
+          ;
+      
+      }
+      
+      
+      .styleprestationtitle1{
+        font-size: 2.5vh;
+      }
+      .styleprestationtitle2{
+        font-size: 2.5vh;
+      }
+         
+      .colaccueilstyle01{
+          width: 50%;
+      }
+      
+      .colaccueilstyle02{
+          width: 50%;
+      }
+      
+  
 
-.accueil-image{
-    height: 10%;
-    width: 10%;
-}
+        /* Style du Pied de page */
+        .footerlandscape{
+          display:none;
+        
+        }
 
-.container-fluid {
-    padding: 0;
-    margin: 0;
-    
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+        .footerstyle{
+            height: 35vh;
+            max-width: 100%;
+            overflow: hidden;
 
-.imgaccueil01{
-    top: 5%;
-    width: 35%;
-    height: auto;
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    
-}
+        }
+        
+        /* Boutons */
+        .buttonstyle{
+          margin-top: 2%;
+          background-color: yellow;
+          border : 2px solid rgb(0, 0, 0);
+          width:50%;  
+          height: 5vh; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        
+        
+        }
 
-.imgaccueil02{
-  width: 45%;
-  height: auto;
-    position: absolute;
-    z-index: 3;
-    right: 3%;
-    bottom: 2%;
-    ;
-
-}
-
-
-.styleprestationtitle1{
-  font-size: 2.5vh;
-}
-.styleprestationtitle2{
-  font-size: 2.5vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-.colaccueilstyle01{
-    width: 50%;
-}
-
-.colaccueilstyle02{
-    width: 50%;
-}
-
-
+          .pagelinkpolice{
+              color: black;            
+              font-weight: bold;
+              font-size: 80%;
+              text-decoration: none;
+          }
 
 /* Page contact*/
 
@@ -885,39 +803,6 @@ font-size: 1.5vw;
 
 
 
-
-        /* Boutons */
-        .buttonstyle{
-            margin-top: 2%;
-            background-color: yellow;
-            border : 2px solid rgb(0, 0, 0);
-            width:50%;  
-            height: 5vh; }
-
-            .pagelinkpolice{
-                color: black;            
-                font-weight: bold;
-                font-size: 80%;
-                text-decoration: none;
-            }
-
-
-
-
-
-        /* Style du Pied de page */
-        .footerlandscape{
-          display:none;
-        
-        }
-
-        .footerstyle{
-            height: 35vh;
-            max-width: 100%;
-            overflow: hidden;
-
-        }
-    
     /* style des images en galerie */
  
     
@@ -1040,7 +925,93 @@ margin-top: 5%;
   padding-left: 1%;
   padding-right: 1%;
 }
-}    
+
+
+
+
+
+        /* Style du Pied de page */
+        .footerlandscape{
+          display:none;
+        
+        }
+
+        .footerstyle{
+            height: 35vh;
+            max-width: 100%;
+            overflow: hidden;
+
+        }
+
+        .buttonstyle{
+          margin-top: 2%;
+          background-color: yellow;
+          border : 0.8% solid rgb(0, 0, 0);
+          width:50%;  
+          height: 5vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .pagelinkpolice{
+          color: black;
+          font-weight: bold;
+          font-size: 80%;
+          text-decoration: none;
+          /* Centrer le texte verticalement */
+          line-height: 1.5em;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------Format tablette ----------------------------------------------------------------------------------------------------- */
 
@@ -1048,7 +1019,7 @@ margin-top: 5%;
 
 
 
-@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1366px) {
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1366px) {
   /* styles à appliquer */
 
 
@@ -1062,82 +1033,22 @@ margin-top: 5%;
   display: none;
 }
 
+/*En tête : */
+.headerstyle{
+  max-width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 
-
-
-      .headerstyle{
-        //background-color: blue;
-        max-width: 100vh;
-        height: 14%;
-        overflow-x: hidden;          
-          position: relative;
-          z-index: 1;
-          padding: 0;
-      } 
-          .titrecontainer{
-            //background-color: blue;
-            position: relative;
-            left:25%;
-            padding: 0;
-            margin: 0;
-            top:26%;
-     
-          }
-          .montitreaccueil{
-
-            font-size: 5vh;   
-            top: 110%;      
-            z-index: 3;
-              
-              font-weight: 700;
-              position: relative;
-              
-              //left: -10%;
-              line-height: 30%;
-              margin-top: 1%;
-              }
-              
-            .undertitle{
-              font-size:2vh; 
-              font-weight: 700;
-              //padding-right: 41%;
-              //margin-left: 5%;
-              
-              //position: absolute;
-              line-height: 100%; 
-              margin-top: 2%;
-     
-              }  
-
-                       
-          
-
-              .imglogo {
-              //max-width: 100%;
-              width: 20%;
-              height: 100%;
-              position: absolute;
-              right: 1%;
-              z-index: 3;
-              //bottom: -15%;
-              margin-top: 1%;
-              margin-bottom: auto;
-              
-            }
-         
-/*Dessin du platre*/
-      .headerdeco{
-          width: 86%;
-          height: 60%;
-          left: 0;
-          background-color: rgb(245, 240, 240);
-
-          z-index: 2;
-          top: 20%;
-          position: absolute;
-      }
-
-
+} 
+.imgheader{
+  position: relative;
+  top:5%;
+    width: 100%; 
+  height: auto;
+}
 
 
 
@@ -1517,54 +1428,6 @@ border: 1.5px solid black;
 
 
 
-/**************responsive landscape mobile*//**************responsive landscape mobile*/
-/*
-@media screen and (max-width: 768px) and (orientation : landscape) {*/
-  /*header*//*
-  .textongletlandscape{
-    font-size: 35%;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    top:20%;
-    
-  }*/
-/*footer*//*
-.mentionslegalesstyle{
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
-   font-size: 35%;
-}
-
-
-}*/
-/*
-@media screen and (max-width: 768px) and (orientation : landscape) {
-  /*header*//*
-  .textongletlandscape{
-    font-size: 35%;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    top:20%;
-    
-  }*/
-/*footer*/
-/*
-.mentionslegalesstyle{
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
-   font-size: 35%;
-}
-
-
-}
-*/
-
-
-
 /*format landscape tablette*/
 @media  screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
 
@@ -1573,55 +1436,8 @@ border: 1.5px solid black;
 
     }
       
-    .headerstyle{
-      display: none;
-    }
-  .headerlandscape{
-margin: 0;
+            
 
-width: 100%;
-height: 20%;
-overflow-x: hidden;
-// position: relative;
-//z-index: 1;  
-}  
-.bloctitre{
-margin-top: 1%;
-padding: 1%;
-//background-color: blue;
-
-position: relative;
-bottom: 5%;
-
-}
-
-
-h1{
-
-right:0;
- left:0%;
-  z-index: 3;
-  font-size: 3.2vw;
-  font-weight: 700;
-
-  position: relative;
-  //line-height: ;
-
-
-  
-.undertitle{
-  font-size:1vw; 
-  font-weight:600; 
-  padding-right: 41%;
-  margin-left: 0.2%;
-  //line-height: 5%;
-  line-height: 0.5;
-  position: relative;
-  
-  
-
-}             
-} 
 
 .img2 {
 width: auto;
@@ -1796,6 +1612,6 @@ padding-top: 1%;
 
 
 
+} 
 
 
-}
