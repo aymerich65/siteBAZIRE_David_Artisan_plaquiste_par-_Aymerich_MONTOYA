@@ -1,5 +1,5 @@
 
-
+<div class="mentionslegalesbloc">
 <h2>Mentions légales</h2>
 <p>Le site BAZIRE David Artisan plaquiste est édité par Aymerich MONTOYA. L'entreprise BAZIRE David est une entreprise individuelle immatriculée au Registre du Commerce et des Sociétés de Rouen sous le numéro 921 431 995 00015.</p>
 <br>
@@ -18,3 +18,4 @@ Toute reproduction, représentation, modification, publication, transmission, d�
 <p>Les informations personnelles collectées sur le site BAZIRE David Artisan plaquiste sont destinées à l'entreprise BAZIRE David Artisan plaquiste et sont utilisées uniquement pour répondre à vos demandes et pour vous fournir les produits et services que vous avez commandés. Nous ne partageons ces informations qu'avec les tiers nécessaires au traitement de votre commande, tels que les transporteurs ou les fournisseurs de paiement en ligne.
 
 Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification et de suppression des données personnelles vous concernant. Vous pouvez exercer ce droit en envoyant un e-mail à l'adresse suivante : baziredavid88@gmail.com</p>
+</div>

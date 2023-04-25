@@ -9,6 +9,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.mentionslegalesbloc {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
 .mentionslegalespolice {
   margin-top: 6%;
   font-size: 18px;
@@ -40,20 +45,32 @@ body {
   body {
     overflow-y: scroll; /* Ajout de la propriété overflow-y */
   }
+  header {
+    width: 100%;
+    height: 20%;
+  }
   .headerstyle {
     display: none;
   }
-  .headerlandscape {
-    margin: 0;
+  .logolarge {
+    max-width: 100%;
+    height: 100%;
     width: 100%;
-    height: 20%;
-    overflow-x: hidden;
-  }
-  .bloctitre {
-    margin-top: 1%;
-    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    bottom: 5%;
+    z-index: 1;
+  }
+  .ongletsbloc {
+    position: relative;
+    left: 8vw;
+    top: -90%;
+    display: flex;
+    word-wrap: none;
+    padding: 0;
+    z-index: 2;
+    left: 30%;
   }
   h1 {
     right: 0;
@@ -79,43 +96,33 @@ body {
     z-index: 3;
     bottom: -62%;
   }
-  .ongletsbloc {
-    position: relative;
-    left: 8vw;
-    top: 0%;
-    display: flex;
-    word-wrap: none;
-    padding: 0;
-  }
   .firstbuttonstyle {
-    z-index: 3;
-    width: 12.5vw;
-    height: 5vh;
+    position: relative;
+    margin-top: 2%;
     background-color: yellow;
     border: 1.5px solid black;
-    display: inline-block;
-    position: relative;
-    padding: 0;
-    text-align: center;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .buttonstyle {
-    z-index: 3;
-    width: 12.5vw;
-    height: 5vh;
+    position: relative;
+    margin-top: 2%;
     background-color: yellow;
     border: 1.5px solid black;
-    display: inline-block;
-    position: relative;
-    margin-left: 10%;
-    padding: 0;
-    text-align: center;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
   }
   .textongletlandscape {
     font-size: 2vh;
     text-decoration: none;
     color: black;
-    position: relative;
-    top: 10%;
   }
   /*Dessin du platre*/
   .headerdeco {
@@ -344,7 +351,10 @@ body {
 }
 /*        format mobile  */
 @media screen and (max-width: 767px) and (orientation: portrait) {
-  .headerlandscape {
+  .logolarge {
+    display: none;
+  }
+  .ongletsbloc {
     display: none;
   }
   /*En tête : */
@@ -638,7 +648,10 @@ body {
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1366px) {
   /* styles à appliquer */
   /*En tête : */
-  .headerlandscape {
+  .logolarge {
+    display: none;
+  }
+  .ongletsbloc {
     display: none;
   }
   /*En tête : */
@@ -908,127 +921,63 @@ body {
     margin-top: 2%;
   }
 }
-/*format landscape tablette*/
-@media screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1100px) {
   body {
     overflow-y: scroll; /* Ajout de la propriété overflow-y */
   }
-  .img2 {
-    width: auto;
-    height: 200%;
-    position: absolute;
-    left: 90vw;
-    z-index: 3;
-    bottom: -62%;
+  header {
+    width: 100%;
+    height: 20%;
+  }
+  .headerstyle {
+    display: none;
+  }
+  .logolarge {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
   }
   .ongletsbloc {
     position: relative;
     left: 8vw;
-    top: 0%;
+    top: -86%;
     display: flex;
     word-wrap: none;
     padding: 0;
+    z-index: 2;
+    left: 30%;
   }
   .firstbuttonstyle {
-    z-index: 3;
-    width: 12.5vw;
-    height: 5vh;
+    position: relative;
+    margin-top: 2%;
     background-color: yellow;
     border: 1.5px solid black;
-    display: inline-block;
-    position: relative;
-    padding: 0;
-    text-align: center;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .buttonstyle {
-    z-index: 3;
-    width: 12.5vw;
-    height: 5vh;
+    position: relative;
+    margin-top: 2%;
     background-color: yellow;
     border: 1.5px solid black;
-    display: inline-block;
-    position: relative;
-    margin-left: 10%;
-    padding: 0;
-    text-align: center;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
   }
   .textongletlandscape {
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    position: relative;
-    top: 20%;
-  }
-  /*Dessin du platre*/
-  .headerdeco {
-    width: 93%;
-    height: 10%;
-    left: 0;
-    background-color: rgb(245, 240, 240);
-    z-index: 2;
-    top: 5%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    padding-bottom: 1%;
-    padding-top: 1%;
-  }
-  /* Accueil */
-  .accueilportrait {
-    display: none;
-  }
-  .accueillandscape {
-    display: flex;
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    height: 50vh;
-    width: 100%;
-    padding: 2;
-    margin: 0;
-  }
-  .accueil-image {
-    height: 10%;
-    width: 10%;
-  }
-  .imgaccueil01 {
-    top: 5%;
-    width: 16%;
-    height: auto;
-    position: absolute;
-    z-index: 2;
-    left: 56%;
-  }
-  .imgaccueil02 {
-    width: 24%;
-    height: auto;
-    position: absolute;
-    z-index: 3;
-    right: 2%;
-    bottom: 12%;
-  }
-  .styleprestationtitle1 {
-    font-size: 3vw;
-    font-weight: 900;
-  }
-  .blocmenuiseries {
-    position: relative;
-    left: 15%;
-    font-size: 1.5vw;
-    font-weight: 300;
-  }
-  .prestations01 {
-    font-size: 6rem;
-  }
-  .styleprestationtitle2 {
-    font-size: 3vw;
-    font-weight: 900;
-  }
-  .blocisolation {
-    position: relative;
-    left: 5%;
-    font-size: 1.5vw;
-    font-weight: 300;
+    color: black;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -23,8 +23,8 @@ if ($id === 'accueil') {
     $controleur->pageAdmin();
 }else if ($id === 'test'){
     $controleur->pagetest();
-}else if ($id === 'apropos'){
-    $controleur->pageApropos();
+}else if ($id === 'mentions'){
+    $controleur->pageMentions();
 }else 
 {
     echo 'Page non trouvée';

@@ -117,9 +117,9 @@ require_once 'JWT/validate_jwt.php';
         }
 
 
-        public function pageApropos() {
+        public function pageMentions() {
             $header = require_once 'Vues/affiche_Header.php';           
-            $main = require_once 'Vues/affiche_Apropos.php';
+            $main = require_once 'Vues/affiche_mentionslegales.php';
             $footer = require_once 'Vues/affiche_Pied_de_page.php';
 
             require_once 'Vues/layout.php';
