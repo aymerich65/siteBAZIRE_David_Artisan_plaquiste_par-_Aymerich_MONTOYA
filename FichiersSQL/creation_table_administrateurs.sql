@@ -1,0 +1,5 @@
+CREATE TABLE administrateurs
+(
+    id VARCHAR(60) NOT NULL PRIMARY KEY UNIQUE,
+    password VARCHAR(60) NOT NULL 
+);
