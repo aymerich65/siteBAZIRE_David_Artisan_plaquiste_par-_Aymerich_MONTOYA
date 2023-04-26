@@ -184,7 +184,7 @@ if (moveUploadedFile($_FILES['image'], $targetFile, $filename, $targetDir)) {
     /*Création du nom de fichier avec l'extention*/
    $filename = extractFilename($targetFile);
    echo $filename; 
-
+try{
    $myTable = $pdo->prepare("UPDATE galerie_images SET filename = :filename, description = :description WHERE id = :id");
    $myTable->bindValue(':filename', $filename, PDO::PARAM_STR);
    $myTable->bindValue(':description', $description, PDO::PARAM_STR);
@@ -197,6 +197,13 @@ if (moveUploadedFile($_FILES['image'], $targetFile, $filename, $targetDir)) {
     echo '<a href="../../index.php?page=admin"><button class="">Retour page administrateur</button></a>';
     echo '</div>';
     exit;
+}catch(Exception $e){
+    echo 'Une erreur est survenue lors du téléchargement du fichier.';
+    echo '<div class="button-container mytestcolor">';
+    echo '<a href="../../index.php?page=admin"><button class="e">Retour page administrateur</button></a>';
+    echo '</div>';
+    exit;
+    }
 
 
 } else {

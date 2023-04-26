@@ -76,12 +76,12 @@ if (isset($_SESSION['jwt'])) {
 <div class="h2adminpagestyle"><h2 >Insérer une image</h2></div>
 <form action="Modeles/traitement_images.php" method="post" enctype="multipart/form-data">
   <label for="id">ID :</label>
-  <input type="number" id="id" name="id" required class="imputidstyle">
+  <input type="number" id="id" name="id" required class="imputidstyle" pattern="\d+" min="0">
 
   <br>
 
   <label for="filename">Nom du fichier :</label>
-  <input type="text" id="filename" name="filename" required>
+  <input type="text" id="filename" name="filename"  required>
 
   <br>
 
@@ -104,7 +104,10 @@ if (isset($_SESSION['jwt'])) {
 <div class="h2adminpagestyle"><h2 >Supprimer une image</h2></div>
 <form action="Modeles/suppression_image.php" method="post" enctype="multipart/form-data">
   <label for="id">Numéro d'image(id)</label>
-  <input type="number" id="id" name="id" required class="imputidstyle">
+  <input type="number" class="imputidstyle" id="id" name="id"  pattern="\d+" min="0" required>
+  <br>
+  <label for="filename">Nom du fichier :</label>
+  <input type="text" id="filename" name="filename" required placeholder="Nom exacte du fichier en base de donnée">
   <br>
   <input type="submit" value="Envoyer">
 </form>
@@ -116,7 +119,7 @@ if (isset($_SESSION['jwt'])) {
 <div class="h2adminpagestyle"><h2 >Modifier une image</h2></div>
 <form action="Modeles/modification_image.php" method="post" enctype="multipart/form-data">
   <label for="id">ID :</label>
-  <input type="number" id="id" name="id" required class="imputidstyle">
+  <input type="number" id="id" name="id" required class="imputidstyle" pattern="\d+" min="0">
 
   <br>
 

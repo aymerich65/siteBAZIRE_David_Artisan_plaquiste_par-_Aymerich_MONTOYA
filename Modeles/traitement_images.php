@@ -65,7 +65,7 @@ return move_uploaded_file($uploadedFile['tmp_name'], $targetFile);
 
 
 
-/*Controle du fichier*/
+/*Contrôle du fichier*/
 
 
 
@@ -97,9 +97,8 @@ exit;
 }
 
 
+/*Contrôle de l'existence du dossier*/
 
-
-/* sécurisation de mes variables:*/
 $targetDir = '../images'; 
 if (!$targetDir || !is_dir($targetDir)) {
     echo 'Le dossier de destination n\'existe pas ou n\'a pas les permissions nécessaires.';
@@ -134,7 +133,7 @@ if (moveUploadedFile($_FILES['image'], $targetFile, $filename, $targetDir)) {
     /*Création du nom de fichier avec l'extention*/
    $filename = extractFilename($targetFile);
    echo $filename; 
-
+try{
 $myTable = $pdo->prepare("INSERT INTO galerie_images (id, filename, description) VALUES (:id, :filename, :description)");
 $myTable->bindValue(':id', $id, PDO::PARAM_INT);
 $myTable->bindValue(':filename', $filename, PDO::PARAM_STR);
@@ -144,7 +143,13 @@ $myTable->execute();
     echo '<div class="button-container mytestcolor">';
     echo '<a href="../../index.php?page=admin"><button class="">Retour page administrateur</button></a>';
     echo '</div>';
-    exit;
+    exit;}catch(Exception $e){
+        echo 'Une erreur est survenue lors du téléchargement du fichier: ' . $e->getMessage();
+        echo '<div class="button-container mytestcolor">';
+        echo '<a href="../../index.php?page=admin"><button class="">Retour page administrateur</button></a>';
+        echo '</div>';
+        exit;
+    }
 
 
 } else {

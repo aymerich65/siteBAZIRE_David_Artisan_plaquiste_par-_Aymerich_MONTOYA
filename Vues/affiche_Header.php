@@ -2,7 +2,7 @@
 
 
 <div class=" headerstyle">
- <img  class="imgheader" src="../images/logo_bande.png">       
+ <img  class="imgheader" src="../elementsgraphiques/logo_bande.png">       
 </div>
 <!--
        
@@ -39,7 +39,7 @@
  
 -->
 <header>
-<img  class="logolarge" src="../images/logo_bande3.png">
+<img  class="logolarge" src="../elementsgraphiques/logo_bande3.png">
 <div class="ongletsbloc">
            <div class=" firstbuttonstyle"><a href="index.php?page=accueil" class="textongletlandscape ">ACCUEIL</a></div>
         <div  class=" buttonstyle"><a href="index.php?page=prestations" class="textongletlandscape" >PRESTATIONS</a></div>
