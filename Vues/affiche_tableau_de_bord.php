@@ -163,16 +163,7 @@ if (isset($_SESSION['jwt'])) {
     <input type="submit" value="Ajouter">
 </form>
 
-<!-- Modification d'image:
-<form action="Modeles/BDDinteraction/insertion_admin.php" method="POST">
-    <label for="id">Identifiant :</label>
-    <input type="text" name="id" id="id" required>
-    <br>
-    <label for="password">Mot de passe :</label>
-    <input type="password" name="password" id="password" required>
-    <br>
-    <input type="submit" value="Ajouter">
-</form>-->
 
-
-
+<form action="Modeles/logout.php" method="post">
+    <input type="submit" value="Déconnexion">
+</form>

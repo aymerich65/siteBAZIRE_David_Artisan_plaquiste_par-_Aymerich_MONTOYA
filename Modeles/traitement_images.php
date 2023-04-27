@@ -78,7 +78,7 @@ if ($extension === null) {
 echo 'Type de fichier invalide';
 
     echo '<div class="button-container mytestcolor">';
-    echo '<a href="../../index.php?page=admin"><button class="button-reservation-style">Retour page administrateur</button></a>';
+    echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
     echo '</div>';
     exit;
 }
@@ -89,7 +89,7 @@ if ($taille_fichier > 5000000) {
 echo 'Fichier trop volumineux';
 
     echo '<div class="button-container mytestcolor">';
-    echo '<a href="../../index.php?page=admin"><button class="button-reservation-style">Retour page administrateur</button></a>';
+    echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
     echo '</div>';
 
 
@@ -103,7 +103,7 @@ $targetDir = '../images';
 if (!$targetDir || !is_dir($targetDir)) {
     echo 'Le dossier de destination n\'existe pas ou n\'a pas les permissions nécessaires.';
     echo '<div class="button-container mytestcolor">';
-    echo '<a href="../../index.php?page=admin"><button class="button-reservation-style">Retour page administrateur</button></a>';
+    echo '<a href="../../index.php?page=admin"><button class="button>Retour page administrateur</button></a>';
     echo '</div>';
     exit;
 }
@@ -141,12 +141,12 @@ $myTable->bindValue(':description', $description, PDO::PARAM_STR);
 $myTable->execute();
 
     echo '<div class="button-container mytestcolor">';
-    echo '<a href="../../index.php?page=admin"><button class="">Retour page administrateur</button></a>';
+    echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
     echo '</div>';
     exit;}catch(Exception $e){
         echo 'Une erreur est survenue lors du téléchargement du fichier: ' . $e->getMessage();
         echo '<div class="button-container mytestcolor">';
-        echo '<a href="../../index.php?page=admin"><button class="">Retour page administrateur</button></a>';
+        echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
         echo '</div>';
         exit;
     }
@@ -155,7 +155,7 @@ $myTable->execute();
 } else {
 echo 'Une erreur est survenue lors du téléchargement du fichier.';
     echo '<div class="button-container mytestcolor">';
-    echo '<a href="../../index.php?page=admin"><button class="e">Retour page administrateur</button></a>';
+    echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
     echo '</div>';
     exit;
 }
@@ -163,7 +163,7 @@ echo 'Une erreur est survenue lors du téléchargement du fichier.';
 } else {
 echo 'Une erreur est survenue lors de l\'envoi du fichier.';
     echo '<div class="button-container mytestcolor">';
-    echo '<a href="../../index.php?page=admin"><button class="">Retour page administrateur</button></a>';
+    echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
     echo '</div>';
     exit;
 }
@@ -171,14 +171,14 @@ echo 'Une erreur est survenue lors de l\'envoi du fichier.';
 if (file_exists($targetFile)) {
 echo 'Le fichier a été déplacé avec succès dans le dossier "galerie".';
     echo '<div class="button-container mytestcolor">';
-    echo '<a href="../../index.php?page=admin"><button class="e">Retour page administrateur</button></a>';
+    echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
     echo '</div>';
     exit;
 
 } else {
 echo 'Le fichier n\'a pas été déplacé dans le dossier "galerie". Veuillez vérifier les permissions du dossier.';
     echo '<div class="button-container mytestcolor">';
-    echo '<a href="../../index.php?page=admin"><button class="">Retour page administrateur</button></a>';
+    echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
     echo '</div>';
     exit;
 }
