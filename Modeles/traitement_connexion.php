@@ -41,7 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     //On créer le contenu(payload)
                     $payload = [
                         'user_id' => 01,
-                        'roles' => ['ROLES_ADMIN', 'ROLES_ADMIN2']
+                        'roles' => ['ROLES_ADMIN', 'ROLES_ADMIN2'],
+                        'exp' => time() + 60 // current time + 60 seconds (1 minute)
                     ];
 
                     // On instancie le jeton    

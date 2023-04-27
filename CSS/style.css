@@ -200,10 +200,12 @@ body {
   .prestationsstyle {
     padding-left: 1%;
     padding-right: 1%;
+    background-color: white;
+    width: 100%;
   }
   /* Page contact*/
   .pagecontactstyle {
-    font-size: 16px;
+    font-size: 2.5vh;
     color: rgb(0, 0, 0);
     font-weight: bold;
     padding-left: 1%;
@@ -396,15 +398,15 @@ body {
   }
   .imgaccueil01 {
     top: 5%;
-    width: 35%;
-    height: auto;
+    width: 42%;
+    height: 28vh;
     position: absolute;
     z-index: 2;
     left: 50%;
   }
   .imgaccueil02 {
-    width: 45%;
-    height: auto;
+    width: 50%;
+    height: 18vh;
     position: absolute;
     z-index: 3;
     right: 3%;
@@ -677,7 +679,7 @@ body {
     padding-top: 1%;
     background-color: rgb(255, 255, 255);
     height: 50vh;
-    padding: 0;
+    padding: 4%;
     margin: 0;
     position: relative;
     width: 100%;
@@ -696,15 +698,15 @@ body {
   }
   .imgaccueil01 {
     top: 1.5%;
-    width: 34.5%;
-    height: auto;
+    width: 32%;
+    height: 28vh;
     position: absolute;
     z-index: 2;
     left: 54%;
   }
   .imgaccueil02 {
-    width: 35%;
-    height: auto;
+    width: 38%;
+    height: 18vh;
     position: absolute;
     z-index: 3;
     right: 11%;
@@ -789,6 +791,13 @@ body {
     text-align: center;
     line-height: 4rem;
     font-size: 2rem;
+  }
+  /* Page prestations */
+  .prestationsstyle {
+    background-color: white;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   h1 {
     font-size: 3.5rem;
@@ -919,65 +928,5 @@ body {
   }
   .formularbtn {
     margin-top: 2%;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1100px) {
-  body {
-    overflow-y: scroll; /* Ajout de la propriété overflow-y */
-  }
-  header {
-    width: 100%;
-    height: 20%;
-  }
-  .headerstyle {
-    display: none;
-  }
-  .logolarge {
-    max-width: 100%;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-  }
-  .ongletsbloc {
-    position: relative;
-    left: 8vw;
-    top: -86%;
-    display: flex;
-    word-wrap: none;
-    padding: 0;
-    z-index: 2;
-    left: 30%;
-  }
-  .firstbuttonstyle {
-    position: relative;
-    margin-top: 2%;
-    background-color: yellow;
-    border: 1.5px solid black;
-    width: 10%;
-    height: 6vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .buttonstyle {
-    position: relative;
-    margin-top: 2%;
-    background-color: yellow;
-    border: 1.5px solid black;
-    width: 10%;
-    height: 6vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6%;
-  }
-  .textongletlandscape {
-    font-size: 2vh;
-    text-decoration: none;
-    color: black;
   }
 }/*# sourceMappingURL=style.css.map */

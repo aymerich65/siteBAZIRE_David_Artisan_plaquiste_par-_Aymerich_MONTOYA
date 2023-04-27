@@ -82,4 +82,16 @@ $payload=json_decode(base64_decode($array[1]),true);
 return $payload;
 }
 
+
+
+public function isExpired(string $token): bool
+{
+    $payload = $this->getPayload($token);
+    $now = new DateTime();
+    return $payload['exp']< $now->getTimestamp();
+}
+
+
+
+
 }

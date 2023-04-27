@@ -34,6 +34,17 @@ if (isset($_SESSION['jwt'])) {
       exit;
 
   }
+  if ($newtokentest->isExpired($token)) {
+    http_response_code(401);
+    echo json_encode(['message' => 'Jeton JWT invalide'], JSON_UNESCAPED_UNICODE);
+    header('Location: /index.php?page=accueil');
+    exit;
+
+}
+
+
+
+
 
   /*
   echo json_encode(['message' => 'Jeton JWT valide'], JSON_UNESCAPED_UNICODE);
