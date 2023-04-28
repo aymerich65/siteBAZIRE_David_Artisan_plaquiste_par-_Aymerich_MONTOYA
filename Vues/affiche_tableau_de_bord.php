@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-//header('Content-Type: application/json');
+
 
 require_once 'Classes/myjwt.php';
 require_once './config.php';
@@ -9,19 +9,7 @@ if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 
-/*
-if (isset($_SERVER['Authorization']) ){
-  $token = trim($_SERVER['Authorization']);
-}else if (isset($_SERVER['HTTP_AUTHORIZATION']) ){
-  $token = trim($_SERVER['HTTP_AUTHORIZATION']);
-}elseif(function_exists('apache_request_headers')){
-  $requestHeaders = apache_request_headers();
-  if(isset($requestHeaders['Authorization'])){
-    $token = trim($requestHeaders['Authorization']); 
-  }  
-}*/
 
-//controle du tken interne
 if (isset($_SESSION['jwt'])) {
   $token = $_SESSION['jwt'];}
   
@@ -42,18 +30,6 @@ if (isset($_SESSION['jwt'])) {
 
 }
 
-
-
-
-
-  /*
-  echo json_encode(['message' => 'Jeton JWT valide'], JSON_UNESCAPED_UNICODE);
-} else {
-  http_response_code(401);
-  echo json_encode(['message' => 'Aucun jeton JWT n\'a été trouvé dans la session'], JSON_UNESCAPED_UNICODE);
-  exit();
-}
-*/
 
 ?>
 
@@ -91,7 +67,7 @@ if (isset($_SESSION['jwt'])) {
 
   <br>
 
-  <label for="filename">Nom du fichier :</label>
+  <label for="filename" class="nomfichierstyle">Nom du fichier :</label>
   <input type="text" id="filename" name="filename"  required>
 
   <br>
@@ -108,7 +84,7 @@ if (isset($_SESSION['jwt'])) {
 
   <input type="submit" value="Envoyer">
 </form>
-</div>
+
 
 
 
@@ -117,12 +93,12 @@ if (isset($_SESSION['jwt'])) {
   <label for="id">Numéro d'image(id)</label>
   <input type="number" class="imputidstyle" id="id" name="id"  pattern="\d+" min="0" required>
   <br>
-  <label for="filename">Nom du fichier :</label>
+  <label for="filename" class="nomfichierstyle">Nom du fichier :</label>
   <input type="text" id="filename" name="filename" required placeholder="Nom exacte du fichier en base de donnée">
   <br>
   <input type="submit" value="Envoyer">
 </form>
-</div>
+
 
 
 
@@ -134,7 +110,7 @@ if (isset($_SESSION['jwt'])) {
 
   <br>
 
-  <label for="filename">Nom du fichier :</label>
+  <label for="filename" class="nomfichierstyle">Nom du fichier :</label>
   <input type="text" id="filename" name="filename" required placeholder="Nom exacte du fichier en base de donnée">
 
   <br>
@@ -151,19 +127,9 @@ if (isset($_SESSION['jwt'])) {
 
   <input type="submit" value="Envoyer">
 </form>
-</div>
-
-<form action="Modeles/BDDinteraction/insertion_admin.php" method="POST">
-    <label for="id">Identifiant :</label>
-    <input type="text" name="id" id="id" required>
-    <br>
-    <label for="password">Mot de passe :</label>
-    <input type="password" name="password" id="password" required>
-    <br>
-    <input type="submit" value="Ajouter">
-</form>
 
 
 <form action="Modeles/logout.php" method="post">
     <input type="submit" value="Déconnexion">
 </form>
+</div>

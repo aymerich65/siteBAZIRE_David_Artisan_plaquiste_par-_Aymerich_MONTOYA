@@ -203,6 +203,13 @@ body {
     background-color: white;
     width: 100%;
   }
+  .connexionstyle {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+  }
   /* Page contact*/
   .pagecontactstyle {
     font-size: 2.5vh;
@@ -351,6 +358,35 @@ body {
     flex-wrap: wrap;
   }
 }
+.containeradminstyle {
+  padding: 1%;
+}
+
+.h1tableaudebord {
+  margin: auto;
+  text-align: center;
+}
+
+.h2tableau {
+  margin-top: 2.5%;
+}
+
+.h2adminpagestyle {
+  margin-top: 2.5%;
+}
+
+.h2adminpagestyle {
+  margin-top: 2.5%;
+}
+
+.h2adminpagestyle {
+  margin-top: 2.5%;
+}
+
+.nomfichierstyle {
+  margin-top: 1%;
+}
+
 /*        format mobile  */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .logolarge {

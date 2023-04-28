@@ -3,7 +3,7 @@
 
 
 ?>
-
+<div class="connexionstyle">
 <h1>Connexion</h1>
 
 
@@ -19,3 +19,4 @@
         <button type="submit" value="Connexion" class="formularbuttonstyle">Valider</div>
     </div>
 </form>
+</div>
