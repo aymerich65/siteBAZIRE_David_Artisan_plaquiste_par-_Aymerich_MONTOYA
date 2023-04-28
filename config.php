@@ -13,6 +13,7 @@ $dotenv->load();
     $envpassword = $_ENV['DB_PASSWORD'];
     $secret = $_ENV['SECRET'];
     $token = $_ENV['TOKEN'];
+    $sendgridapikey = $_ENV['SENDGRID_API_KEY'];
 
 
     define("DB_DSN", $dsn);
@@ -20,6 +21,7 @@ $dotenv->load();
     define("DB_PASSWORD", $envpassword);
     define("SECRET", $secret);
     define("TOKEN", $token);
+    define("SENDGRID_API_KEY", $sendgridapikey);
 
 
 try {

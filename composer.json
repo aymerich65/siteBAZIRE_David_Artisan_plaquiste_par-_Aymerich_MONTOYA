@@ -2,6 +2,7 @@
     "require": {
         "phpmailer/phpmailer": "^6.8",
         "vlucas/phpdotenv": "^5.5",
-        "firebase/php-jwt": "^6.4"
+        "firebase/php-jwt": "^6.4",
+        "sendgrid/sendgrid": "^8.0"
     }
 }

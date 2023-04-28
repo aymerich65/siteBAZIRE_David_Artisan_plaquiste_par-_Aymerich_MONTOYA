@@ -1,27 +1,33 @@
 <?php
 
-require 'vendor/autoload.php';
+// Inclure la bibliothèque SendGrid via Composer
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../config.php';
 
-$mail = new PHPMailer\PHPMailer\PHPMailer();
+// Créer un nouvel objet SendGrid\Mail\Mail
+$email = new \SendGrid\Mail\Mail();
 
-/* récupération des variables du formaulaire:*/
+// Récupérer les données du formulaire
 $nom = isset($_POST['nom']) ? htmlspecialchars(trim($_POST['nom'])) : '';
-$email = isset($_POST['email']) ? htmlspecialchars(trim($_POST['email'])) : '';
+$email_address = isset($_POST['email']) ? htmlspecialchars(trim($_POST['email'])) : '';
 $sujet = isset($_POST['sujet']) ? htmlspecialchars(trim($_POST['sujet'])) : '';
 $message = isset($_POST['message']) ? htmlspecialchars(trim($_POST['message'])) : '';
 
-//var_dump($nom, $email, $sujet, $message);
+// Configuration de l'e-mail
+$email->setFrom($email_address, $nom);
+$email->addTo('aymaman6576@gmail.com', 'Administrateur');
+$email->setSubject($sujet);
+$email->addContent('text/plain', "Nom de l'expéditeur : " . $nom . "\nAdresse e-mail de l'expéditeur : " . $email_address . "\n\n" . $message);
 
-/*Configurer l'envoi de l'e-mail*/
+// Configuration de l'API SendGrid
+$apiKey = SENDGRID_API_KEY;
+$sendGrid = new \SendGrid($apiKey);
 
-$mail->setFrom($email, $nom);
-$mail->addAddress('aymaman6576@gmail.com', 'Administrateur');
-$mail->Subject = $sujet;
-$mail->Body = $message;
-
-/*Envoyer l'e-mail*/
-if(!$mail->send()) {
-    echo 'Erreur : ' . $mail->ErrorInfo;
-} else {
-    echo 'E-mail envoyé !';
+// Envoyer l'e-mail via l'API SendGrid
+try {
+    $response = $sendGrid->send($email);
+    echo "E-mail envoyé avec succès !";
+} catch (Exception $e) {
+    echo 'Erreur : ' . $e->getMessage();
 }
+
