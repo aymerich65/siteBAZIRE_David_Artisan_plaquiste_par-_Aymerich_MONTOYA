@@ -10,7 +10,7 @@
 
 <p>L'isolation est un élément important de tout projet de construction ou de rénovation, car elle permet de réduire les coûts de chauffage et de climatisation tout en améliorant le confort thermique. Je suis spécialisé dans l'isolation des cloisons, des plafonds, des faux plafonds et des doublages. Je peux vous aider à choisir les matériaux d'isolation les plus adaptés à vos besoins et à votre budget, tout en vous garantissant des performances thermiques optimales.</p>
 
-<h2>Plancher et parquets</h2>
+<h2>Planchers et parquets</h2>
 
 <p>La pose de plancher et de parquet est un travail de précision qui nécessite une grande expertise et un souci du détail. Avec plus de 20 ans d'expérience dans ce domaine, je peux vous offrir des conseils personnalisés pour choisir le type de plancher ou de parquet le mieux adapté à vos besoins. Que vous cherchiez à installer un plancher en bois massif, en stratifié ou en vinyle, je suis en mesure de vous fournir un travail de qualité supérieure qui répondra à toutes vos attentes.</p>
 
