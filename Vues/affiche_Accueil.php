@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <div class="accueilportrait">
   <div class="row pageaccueilstyle justify-content-between align-items-center">
     <div class="col-md-6 colaccueilstyle01">
@@ -22,7 +25,9 @@
     </div>
   </div>
 </div>
-
+<?php
+$contenu = ob_get_clean();
+require_once 'Vues/layout.php';
 
 
 

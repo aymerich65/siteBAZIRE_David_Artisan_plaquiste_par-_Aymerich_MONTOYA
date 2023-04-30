@@ -1,4 +1,6 @@
-
+<?php
+ob_start();
+?>
 
 <div class="pagecontactstyle">
    <form action=<?php echo $action; ?> method="post" class="formstyle">
@@ -31,3 +33,6 @@
 
 </form>
 </div>
+<?php
+$contenu = ob_get_clean();
+require_once 'Vues/layout.php';

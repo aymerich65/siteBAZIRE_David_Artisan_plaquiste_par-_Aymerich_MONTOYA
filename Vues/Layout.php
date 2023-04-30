@@ -10,25 +10,24 @@
     <link rel="stylesheet" href="../CSS/style.css">
 
 
-<style>
-    body{
-        background-color : pink;
-    }
-    </style>
+
     </head>
 <body>
-    <?php require_once 'Vues/layout.php';?>
-    <div >
-<header>
-<?php $header?>
+<body class="container-fluid">
+
+<header >
+    <?php require_once './affiche_Header.php'; ?>
 </header>
-<main>
-<?php $main?>
+
+<main >
+    <?php
+    echo $contenu;
+    ?>
 </main>
-<footer>
-<?php $footer?>
+
+<footer >
+<?php require_once './affiche_Pied_de_page.php'; ?>
 </footer>
-</div>
   <script src="../JS/bootstrap.bundle.min.js"></script>  
 </body>
 </html>

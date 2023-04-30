@@ -1,3 +1,7 @@
+<?php
+ob_start();
+?>
+
 <div class="prestationsstyle">
     <h1>Mes prestations</h1>
 <p>Je suis un spécialiste en isolation placo pour des projets de construction neuve ou de rénovation. En outre, je suis également un professionnel qualifié dans la pose de menuiseries en intérieur et en extérieur, que ce soit en PVC, en aluminium ou en bois. Enfin, je suis également expérimenté dans la pose de plancher et de parquet. Avec plus de 20 ans d'expérience dans le secteur du bâtiment, je suis en mesure de fournir des solutions efficaces pour tous vos projets de construction et de rénovation.</p>
@@ -16,3 +20,6 @@
 
 <p>En conclusion, si vous cherchez un spécialiste de l'isolation placo, de la pose de menuiseries en intérieur et en extérieur, et de la pose de plancher et de parquet, vous pouvez compter sur mes 20 années d'expérience dans le secteur du bâtiment. Contactez-moi dès maintenant pour en savoir plus sur mes services et pour discuter de votre projet.</p>
 </div>
+<?php
+$contenu = ob_get_clean();
+require_once 'Vues/layout.php';

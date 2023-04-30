@@ -1,4 +1,6 @@
-
+<?php
+ob_start();
+?>
 
 
 <div class="gallerybackground">
@@ -59,7 +61,9 @@
   </div>
 
 </div>
-
+<?php
+$contenu = ob_get_clean();
+require_once 'Vues/layout.php';
 
 
 
