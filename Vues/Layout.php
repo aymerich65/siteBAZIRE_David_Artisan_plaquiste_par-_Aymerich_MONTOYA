@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <link rel="stylesheet" href="../CSS/bootstrap.css">
-    <link rel="stylesheet" href="../CSS/style.css">
+
 
 <style>
     body{
         background-color : pink;
     }
-    </style></head>
+    </style>
+    </head>
 <body>
     <container class="container-fluid">
 <header>
