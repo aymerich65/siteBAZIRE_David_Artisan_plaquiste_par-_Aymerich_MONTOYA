@@ -1,6 +1,16 @@
 <?php
+$url = getenv('JAWSDB_URL');
+$dbparts = parse_url($url);
 
+$hostname = $dbparts['host'];
+$envuser = $dbparts['user'];
+$envpassword = $dbparts['pass'];
+$database = ltrim($dbparts['path'], '/');
+$dsn = "mysql:host=$hostname;dbname=$database;charset=utf8mb4";
 
+define("DB_DSN", $dsn);
+define("DB_USER", $envuser);
+define("DB_PASSWORD", $envpassword);
 
 $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
              
