@@ -22,7 +22,7 @@ $myrequest->execute();
 $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);  
 $imageFolder = '';
 var_dump($mybddTable);*/
-$url = getenv('test');
+$url = getenv('JAWSDB_URL');
 
 if ($url) {
     echo $url;
