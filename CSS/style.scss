@@ -71,10 +71,11 @@
           }
           
             
-          header{
+          .myheader{
             width: 100vw;
             height: 20%;
-            overflow-x:hidden;
+            overflow-x : hidden;
+            position: relative;
           }
           .headerstyle{
             display: none;
@@ -92,15 +93,17 @@
           }
 
   .ongletsbloc{
-    position: relative;
+    position: absolute;
     left: 8vw; 
-    top:-90%;
+    top:5%;
     display: flex;
     word-wrap: none;
     //background-color: blue;
     padding: 0;
     z-index: 2;
     left: 30%;
+    //border: 2px solid black;
+    width: 100%;
  
 
   

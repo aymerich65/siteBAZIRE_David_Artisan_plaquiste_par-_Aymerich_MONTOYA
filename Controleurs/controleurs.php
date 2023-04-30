@@ -2,7 +2,7 @@
 
 class MyControler
 {
-    public function pageAccueil()
+    public function pageAccueil(): void
     {   
         $main = require_once 'Vues/affiche_Accueil.php';  
     }

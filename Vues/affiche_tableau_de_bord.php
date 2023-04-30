@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 header('Access-Control-Allow-Origin: *');
 
 
@@ -133,3 +135,7 @@ if (isset($_SESSION['jwt'])) {
     <input type="submit" value="Déconnexion">
 </form>
 </div>
+
+<?php
+$contenu = ob_get_clean();
+require_once './Layout.php';

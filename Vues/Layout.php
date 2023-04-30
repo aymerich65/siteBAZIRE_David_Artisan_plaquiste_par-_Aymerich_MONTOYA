@@ -7,16 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/bootstrap.css">
-    <link rel="stylesheet" href="../CSS/style.css">
-
-
-
+    <link rel="stylesheet" href="CSS/style.css">
     </head>
 <body>
 <body class="container-fluid">
 
-<header >
-    <?php require_once './affiche_Header.php'; ?>
+<header class="">
+    <?php require_once 'affiche_Header.php'; ?>
 </header>
 
 <main >
@@ -26,7 +23,7 @@
 </main>
 
 <footer >
-<?php require_once './affiche_Pied_de_page.php'; ?>
+<?php require_once 'affiche_Pied_de_page.php'; ?>
 </footer>
   <script src="../JS/bootstrap.bundle.min.js"></script>  
 </body>

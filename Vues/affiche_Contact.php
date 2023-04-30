@@ -35,4 +35,4 @@ ob_start();
 </div>
 <?php
 $contenu = ob_get_clean();
-require_once 'Vues/layout.php';
+require_once 'Layout.php';

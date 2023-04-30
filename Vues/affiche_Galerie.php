@@ -61,27 +61,6 @@ ob_start();
   </div>
 
 </div>
-<?php
-$contenu = ob_get_clean();
-require_once 'Vues/layout.php';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -133,3 +112,6 @@ description.innerHTML = images[0].getAttribute('data-description');
 
 </script>
 
+<?php
+$contenu = ob_get_clean();
+require_once 'Layout.php';

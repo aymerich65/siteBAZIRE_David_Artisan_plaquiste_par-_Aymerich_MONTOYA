@@ -43,10 +43,11 @@
     font-family: "Inter", sans-serif;
     background: rgb(227, 224, 224);
   }
-  header {
+  .myheader {
     width: 100vw;
     height: 20%;
     overflow-x: hidden;
+    position: relative;
   }
   .headerstyle {
     display: none;
@@ -62,14 +63,15 @@
     z-index: 1;
   }
   .ongletsbloc {
-    position: relative;
+    position: absolute;
     left: 8vw;
-    top: -90%;
+    top: 5%;
     display: flex;
     word-wrap: none;
     padding: 0;
     z-index: 2;
     left: 30%;
+    width: 100%;
   }
   .firstbuttonstyle {
     position: relative;

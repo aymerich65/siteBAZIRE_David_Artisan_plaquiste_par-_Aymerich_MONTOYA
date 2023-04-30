@@ -23,4 +23,4 @@ Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 modifi
 </div>
 <?php
 $contenu = ob_get_clean();
-require_once 'Vues/layout.php';
+require_once 'Layout.php';
