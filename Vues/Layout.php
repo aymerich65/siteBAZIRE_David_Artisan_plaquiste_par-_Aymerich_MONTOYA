@@ -16,7 +16,7 @@
     </style>
     </head>
 <body>
-    <container class="container-fluid">
+    <div class="container-fluid">
 <header>
 <?php $header ?>
 </header>
@@ -26,7 +26,7 @@
 <footer>
 <?php $footer?>
 </footer>
-    </container>
+</div>
 
 </body>
 </html>
