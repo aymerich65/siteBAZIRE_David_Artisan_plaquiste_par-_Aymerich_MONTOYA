@@ -16,7 +16,7 @@ if($url){
     $envpassword = $dbparts['pass'];
     $database = ltrim($dbparts['path'], '/');
     $dsn = "mysql:host=$hostname;dbname=$database;charset=utf8mb4";
-
+var_dump($envuser);
     define("DB_DSN", $dsn);
     define("DB_USER", $envuser);
     define("DB_PASSWORD", $envpassword);
