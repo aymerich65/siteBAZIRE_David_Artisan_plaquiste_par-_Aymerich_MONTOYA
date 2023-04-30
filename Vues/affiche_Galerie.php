@@ -1,10 +1,13 @@
 <?php
 ob_start();
-require_once '../vendor/autoload.php';
-require_once '../config.php';
-require_once '../Modeles/requetesql_vers_galerie_images.php';
 
 
+$pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
+             
+             $myrequest = $pdo->prepare('SELECT * FROM galerie_images');
+             $myrequest->execute();
+             $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);  
+             $imageFolder = '';
 
 ?>
 
