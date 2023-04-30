@@ -62,7 +62,7 @@
           body {
             overflow-y: scroll; /* Ajout de la propriété overflow-y */
             overflow-x:hidden;
-            width: 100vw;
+            width: 100%;
             z-index: 0;
             height: 100vh;
             background: rgb(227, 224, 224);
@@ -149,27 +149,6 @@
       
     }
 
-    
-/*Dessin du platre*/
-.headerdeco{
-
-    width: 93%;
-    height: 10%;
-    left: 0;
-    background-color: rgb(245, 240, 240);
-    z-index: 2;
-    top: 5%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    padding-bottom: 1%;
-    padding-top: 1%;
-}
-
- 
-
-
-
 
         /* Accueil */
 
@@ -182,7 +161,7 @@
           background-color: rgb(255, 255, 255);
           color: rgb(0, 0, 0);
           font-weight: bold;
-          height: 50vh;
+          min-height: 50vh;
           width:100%; 
           padding: 2;
           margin: 0;

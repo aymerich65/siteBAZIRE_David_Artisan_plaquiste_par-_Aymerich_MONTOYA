@@ -6,9 +6,22 @@ use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
+$url = getenv('JAWSDB_URL');
 
+if($url){
+    $dbparts = parse_url($url);
 
-    $dsn = $_ENV['DB_DSN'];
+    $hostname = $dbparts['host'];
+    $envuser = $dbparts['user'];
+    $envpassword = $dbparts['pass'];
+    $database = ltrim($dbparts['path'], '/');
+    $dsn = "mysql:host=$hostname;dbname=$database;charset=utf8mb4";
+
+    define("DB_DSN", $dsn);
+    define("DB_USER", $envuser);
+    define("DB_PASSWORD", $envpassword);
+}else{
+       $dsn = $_ENV['DB_DSN'];
     $envuser = $_ENV['DB_USERNAME'];
     $envpassword = $_ENV['DB_PASSWORD'];
     $secret = $_ENV['SECRET'];
@@ -21,7 +34,15 @@ $dotenv->load();
     define("DB_PASSWORD", $envpassword);
     define("SECRET", $secret);
     define("TOKEN", $token);
-    define("SENDGRID_API_KEY", $sendgridapikey);
+    define("SENDGRID_API_KEY", $sendgridapikey); 
+}
+
+
+
+
+
+
+
 
 
 try {

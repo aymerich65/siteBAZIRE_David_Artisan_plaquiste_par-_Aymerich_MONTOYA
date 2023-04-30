@@ -8,9 +8,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
-            "name": "connexionbdd",
+            "name": "conenxionbdd",
             "username": "root",
-            "database": "bbb",
+            "database": "bazire_david_site_web",
             "password": ""
         }
     ]
