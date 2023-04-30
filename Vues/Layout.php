@@ -16,7 +16,7 @@
     </style>
     </head>
 <body>
-    <div class=".mybody">
+    <div class="mybody">
 <header>
 <?php $header ?>
 </header>
