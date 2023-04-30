@@ -10,13 +10,13 @@
 
 
 <style>
-    body{
+    .mybody{
         background-color : pink;
     }
     </style>
     </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid .mybody">
 <header>
 <?php $header ?>
 </header>
