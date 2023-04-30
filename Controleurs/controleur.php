@@ -4,23 +4,15 @@ class MyControler
 {
     public function pageAccueil(): void
     {   
-        $main = require_once 'Vues/affiche_Accueil.php';  
+        require_once 'Vues/affiche_Accueil.php';  
     }
 
     public function pageContact()
     {
-        $action = 'Modeles/traitementmails.php';
 
+         require_once 'Vues/affiche_Contact.php';
+     
 
-        $header = require_once 'Vues/affiche_Header.php';
-        $main = require_once 'Vues/affiche_Contact.php';
-        $footer = require_once 'Vues/affiche_Pied_de_page.php';
-        require_once 'Vues/layout.php';
-
-
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            require_once 'Modeles/traitementmails.php';
-        }
     }
 
 
@@ -33,22 +25,17 @@ class MyControler
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'Modeles/requetesql_vers_galerie_images.php';
-
-
-
-        $header = require_once 'Vues/affiche_Header.php';
-        $main = require_once 'Vues/affiche_Galerie.php';
-        $footer = require_once 'Vues/affiche_Pied_de_page.php';
-        require_once 'Vues/layout.php';
+        require_once 'Vues/affiche_Galerie.php';
+     
     }
 
 
 
     public function pagePrestations()
     {
-        $header = require_once 'Vues/affiche_Header.php';
-        $main = require_once 'Vues/affiche_Prestations.php';
-        $footer = require_once 'Vues/affiche_Pied_de_page.php';
+
+         require_once 'Vues/affiche_Prestations.php';
+
 
         require_once 'Vues/layout.php';
     }
@@ -72,11 +59,11 @@ class MyControler
 
 
 
-        $header = require_once 'Vues/affiche_Header.php';
-        $main = require_once 'Vues/affiche_tableau_de_bord.php';
-        $footer = require_once 'Vues/affiche_Pied_de_page.php';
 
-        require_once 'Vues/layout.php';
+       require_once 'Vues/affiche_tableau_de_bord.php';
+  
+
+    
     }
 
     public function traitementinsertion()
@@ -93,11 +80,11 @@ class MyControler
     public function pageConnexion()
     {
         require_once 'Modeles/traitement_connexion.php';
-        $header = require_once 'Vues/affiche_Header.php';
-        $main = require_once 'Vues/affiche_connexion.php';
-        $footer = require_once 'Vues/affiche_Pied_de_page.php';
 
-        require_once 'Vues/layout.php';
+         require_once 'Vues/affiche_connexion.php';
+     
+
+ 
         require_once 'JWT/authentification.php';
     }
 
@@ -113,10 +100,10 @@ class MyControler
 
     public function pageMentions()
     {
-        $header = require_once 'Vues/affiche_Header.php';
-        $main = require_once 'Vues/affiche_mentionslegales.php';
-        $footer = require_once 'Vues/affiche_Pied_de_page.php';
+    
+        require_once 'Vues/affiche_mentionslegales.php';
+   
 
-        require_once 'Vues/layout.php';
+ 
     }
 }

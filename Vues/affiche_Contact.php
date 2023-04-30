@@ -3,7 +3,7 @@ ob_start();
 ?>
 
 <div class="pagecontactstyle">
-   <form action=<?php echo $action; ?> method="post" class="formstyle">
+   <form action="Modeles/traitementmails.php" method="post" class="formstyle">
 <h1 class="h1contactstyle">Contactez moi</h1>
 
 <p class="h2telstyle">Téléphone : <span>0674582483</span></p>

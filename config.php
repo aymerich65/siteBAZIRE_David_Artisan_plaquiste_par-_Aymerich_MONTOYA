@@ -6,7 +6,7 @@ use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-$url = getenv('JAWSDB_URL');
+//$url = getenv('JAWSDB_URL');
 
 if($url){
     $dbparts = parse_url($url);
