@@ -1,6 +1,6 @@
 <?php
 
-$url = getenv('test');
+$url = getenv('JAWSDB_URL');
 
 if ($url) {
     echo $url;
