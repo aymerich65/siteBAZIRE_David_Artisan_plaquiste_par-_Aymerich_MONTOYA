@@ -22,8 +22,8 @@ class MyControler
     {
 
         /* utilisation du fichier config pour récupérer les variables d'environnement:*/
-        //require_once 'vendor/autoload.php';
-        //require_once 'config.php';
+        require_once 'vendor/autoload.php';
+        require_once 'config.php';
         //require_once 'Modeles/requetesql_vers_galerie_images.php';
         require_once 'Vues/affiche_Galerie.php';
      
