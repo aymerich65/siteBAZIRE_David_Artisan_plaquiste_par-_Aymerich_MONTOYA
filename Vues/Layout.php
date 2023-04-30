@@ -8,12 +8,12 @@
     <title>Document</title>
    <link rel="stylesheet" href="../CSS/bootstrap.css">
     <link rel="stylesheet" href="../CSS/style.css">
-</head>
+
 <style>
     body{
         background-color : pink;
     }
-    </style>
+    </style></head>
 <body>
     <container class="container-fluid">
 <header>
