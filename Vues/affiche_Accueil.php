@@ -4,16 +4,22 @@ ob_start();
 <div class="accueilportrait">
   <div class="row pageaccueilstyle justify-content-between align-items-center">
     <div class="col-md-6 colaccueilstyle01">
-      <p class="prestations01" ><p class="styleprestationtitle1">ISOLATION<br></p>
+      <p class="prestations01" >
+        <p class="styleprestationtitle1">ISOLATION</p>
+      <div class="blocparagrapheisolation">
+      <p>
        Cloisons<br>
         Plafonds<br>
         Faux plafonds<br>
         Doublages <br></p>
+      </div>
       <p class="prestations02" ><p class="styleprestationtitle2">MENUISERIES<br></p>
+      <div class="blocparagraphemenuiserie">
           Aluminium<br>
         PVC<br>
         Bois<br>
         Pose de parquets<br></p>
+    </div>
     </div>
     <div class="col-md-6 colaccueilstyle02">
       <img class="imgaccueil01 img-fluid" src="images/pose_d'un_revetement.jpg" alt="image de travaux">

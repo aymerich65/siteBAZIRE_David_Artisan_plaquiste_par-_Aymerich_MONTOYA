@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     </head>
 <body>
-<body class="container-fluid">
+<body class="">
 
 <header class="">
     <?php require_once 'affiche_Header.php'; ?>

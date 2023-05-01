@@ -68,6 +68,7 @@
             background: rgb(227, 224, 224);
             font-family: 'Inter', sans-serif;
             background: rgb(227, 224, 224);
+            margin: 0;
           }
           
             
@@ -84,7 +85,7 @@
           .logolarge{
             max-width: 100%;
             height: 100%;
-            width: 100%;
+            width: 98%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -642,22 +643,58 @@ display: none;
       }
       
       
-      .styleprestationtitle1{
-        font-size: 2.5vh;
-        font-weight: 600;
-      }
-      .styleprestationtitle2{
-        font-size: 2.5vh;
-        font-weight: 600;
-      }
-         
-      .colaccueilstyle01{
-          width: 50%;
-      }
       
-      .colaccueilstyle02{
+    
+         
+     
+  
+    
+ .colaccueilstyle01{
           width: 50%;
+          height: 100%;
+          display: flex;
+          position: relative;
+          //background-color: rgb(149, 255, 0);
       }
+
+    .styleprestationtitle1{
+        font-size: 3.2vh;
+        font-weight: 700;
+        position: absolute;
+        top: 7%;
+      }
+
+
+      .blocparagrapheisolation{
+        position: absolute;
+        top: 15.5%;
+        //background-color: red;
+
+      }   
+
+
+
+      .styleprestationtitle2{
+        font-size: 3.2vh;
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+      }
+
+.blocparagraphemenuiserie{
+  position: absolute;
+  top: 58.5%;
+  //background-color: rgb(200, 0, 130);
+
+      }
+
+
+
+
+
+
+
+
       
   
 
@@ -1138,24 +1175,52 @@ display: none;
       
       }
 
-      .styleprestationtitle1{
-        font-size: 3rem;
+    
+ .colaccueilstyle01{
+          width: 50%;
+          height: 100%;
+          display: flex;
+          position: relative;
+          //background-color: rgb(149, 255, 0);
       }
+
+    .styleprestationtitle1{
+        font-size: 3rem;
+        font-weight: 700;
+        position: absolute;
+        top: 6.5%;
+      }
+
+
+      .blocparagrapheisolation{
+        position: absolute;
+        top: 15.5%;
+        font-size: 2rem;
+        //background-color: red;
+
+      }   
+
+
+
       .styleprestationtitle2{
         font-size: 3rem;
+        font-weight: 600;
+        position: absolute;
+        top: 49.5%;
       }
-      .colaccueilstyle01{
-        position: relative;
-          width: 50%;
-          font-size: 2rem;
-          top: -5%;
-          padding-left: 4%;
+
+.blocparagraphemenuiserie{
+  position: absolute;
+  top: 58.5%;
+  font-size: 2rem;
+  
+  //background-color: rgb(200, 0, 130);
+
       }
-      
-      .colaccueilstyle02{
-          width: 50%;
-          font-size: 1.9rem;
-      }
+
+
+
+
 
       
 
