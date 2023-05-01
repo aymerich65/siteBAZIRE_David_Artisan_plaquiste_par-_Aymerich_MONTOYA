@@ -20,15 +20,25 @@ class MyControler
     {
         require_once 'vendor/autoload.php';
         require_once 'config.php';
-
-        $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
-        $myrequest = $pdo->prepare('SELECT * FROM galerie_images');
-        $myrequest->execute();
-        $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);
-        $imageFolder = '';
-
+  
+    
+        try {
+            
+            $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
+            $myrequest = $pdo->prepare('SELECT * FROM galerie_images');
+            $myrequest->execute();
+            $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);
+            $imageFolder = '';
+           
+        } catch (PDOException $e) {
+            // Affiche un message d'erreur en cas de problème avec la requête PDO
+            echo "Désolé, une erreur s'est produite. Veuillez réessayer plus tard.";
+            return;
+        }
+    
         require_once 'Vues/affiche_Galerie.php';
     }
+    
 
 
 
@@ -47,19 +57,26 @@ class MyControler
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'JWT/validate_jwt.php';
-
-        $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
-
-        $myrequest = $pdo->prepare('SELECT * FROM galerie_images');
-        $myrequest->execute();
-        $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);
-        $imageFolder = '';
-
-
-
-
+    
+        try {
+            $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
+    
+            $myrequest = $pdo->prepare('SELECT * FROM galerie_images');
+            $myrequest->execute();
+            $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);
+            $imageFolder = '';
+        } catch (PDOException $e) {
+            // Affiche un message d'erreur en cas de problème avec la requête PDO
+            echo "Désolé, une erreur s'est produite. Veuillez réessayer plus tard.";
+            return;
+        }
+    
         require_once 'Vues/affiche_tableau_de_bord.php';
     }
+    
+
+
+
 
     public function traitementinsertion()
     {
