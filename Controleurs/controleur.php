@@ -3,16 +3,14 @@
 class MyControler
 {
     public function pageAccueil(): void
-    {   
-        require_once 'Vues/affiche_Accueil.php';  
+    {
+        require_once 'Vues/affiche_Accueil.php';
     }
 
     public function pageContact()
     {
 
-         require_once 'Vues/affiche_Contact.php';
-     
-
+        require_once 'Vues/affiche_Contact.php';
     }
 
 
@@ -20,13 +18,16 @@ class MyControler
 
     public function pageGalerie()
     {
-
-        /* utilisation du fichier config pour récupérer les variables d'environnement:*/
         require_once 'vendor/autoload.php';
-        //require_once 'config.php';
-        //require_once 'Modeles/requetesql_vers_galerie_images.php';
+        require_once 'config.php';
+
+        $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
+        $myrequest = $pdo->prepare('SELECT * FROM galerie_images');
+        $myrequest->execute();
+        $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);
+        $imageFolder = '';
+
         require_once 'Vues/affiche_Galerie.php';
-     
     }
 
 
@@ -34,8 +35,7 @@ class MyControler
     public function pagePrestations()
     {
 
-         require_once 'Vues/affiche_Prestations.php';
-
+        require_once 'Vues/affiche_Prestations.php';
     }
 
 
@@ -58,10 +58,7 @@ class MyControler
 
 
 
-       require_once 'Vues/affiche_tableau_de_bord.php';
-  
-
-    
+        require_once 'Vues/affiche_tableau_de_bord.php';
     }
 
     public function traitementinsertion()
@@ -79,10 +76,10 @@ class MyControler
     {
         require_once 'Modeles/traitement_connexion.php';
 
-         require_once 'Vues/affiche_connexion.php';
-     
+        require_once 'Vues/affiche_connexion.php';
 
- 
+
+
         require_once 'JWT/authentification.php';
     }
 
@@ -98,10 +95,7 @@ class MyControler
 
     public function pageMentions()
     {
-    
-        require_once 'Vues/affiche_mentionslegales.php';
-   
 
- 
+        require_once 'Vues/affiche_mentionslegales.php';
     }
 }
