@@ -508,7 +508,7 @@
     margin: 1%;
   }
   .labelemailstyle {
-    left: 1%;
+    left: 0%;
     position: relative;
     margin: 0;
   }
@@ -521,21 +521,25 @@
   }
   .mailline {
     height: 4%;
+    margin: 0;
+    padding: 0;
   }
   .sujetstyle {
-    left: 6%;
+    left: 0%;
     position: relative;
     margin: 0;
   }
   .sujetimputstyle {
     margin: 1%;
     padding: 1%;
-    left: 8%;
+    left: 4%;
     position: relative;
     border: 1.5px solid black;
   }
   .sujetline {
     height: 4%;
+    margin: 0;
+    padding: 0;
   }
   .messageimputstyle {
     margin-right: 2%;
@@ -554,6 +558,7 @@
   }
   .formularbtn {
     margin-top: 2%;
+    margin-bottom: 1%;
   }
   /* style des images en galerie */
   .gallerybloc {
@@ -639,6 +644,9 @@
     overflow: hidden;
     padding-left: 1%;
     padding-right: 1%;
+  }
+  .deconnexionpageadminstyle {
+    margin-top: 6%;
   }
   /* Style du Pied de page */
   .footerlandscape {
@@ -922,34 +930,40 @@
     margin: 1%;
   }
   .labelemailstyle {
-    left: 6%;
+    left: 0%;
     position: relative;
     margin: 0;
   }
   .emailimputstyle {
     margin: 1%;
     padding: 1%;
-    left: 8%;
+    left: 4%;
     position: relative;
     border: 1.5px solid black;
+    width: 70%;
   }
   .mailline {
     height: 4%;
+    margin: 0;
+    padding: 0;
   }
   .sujetstyle {
-    left: 6%;
+    left: 0%;
     position: relative;
     margin: 0;
   }
   .sujetimputstyle {
     margin: 1%;
     padding: 1%;
-    left: 8%;
+    left: 4%;
     position: relative;
     border: 1.5px solid black;
+    width: 70%;
   }
   .sujetline {
     height: 4%;
+    margin: 0;
+    padding: 0;
   }
   .messageimputstyle {
     margin-right: 2%;
@@ -968,5 +982,6 @@
   }
   .formularbtn {
     margin-top: 2%;
+    margin-bottom: 1%;
   }
 }/*# sourceMappingURL=style.css.map */

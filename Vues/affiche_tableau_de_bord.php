@@ -131,11 +131,12 @@ if (isset($_SESSION['jwt'])) {
 </form>
 
 
-<form action="Modeles/logout.php" method="post">
+<form action="Modeles/logout.php" method="post" class="deconnexionpageadminstyle">
+  <h2>Déconnexion du tableau de bord</h2>
     <input type="submit" value="Déconnexion">
 </form>
 </div>
 
 <?php
 $contenu = ob_get_clean();
-require_once './Layout.php';
+require_once 'Layout.php';

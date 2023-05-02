@@ -784,7 +784,7 @@ display: none;
       
       
       .labelemailstyle{
-        left: 1%;
+        left: 0%;
         position: relative;
         margin: 0;
       }
@@ -800,6 +800,8 @@ display: none;
       .mailline{
       
         height: 4%;
+        margin: 0;
+        padding: 0;
       }
       
       
@@ -807,22 +809,25 @@ display: none;
       
       
       .sujetstyle{
-        left: 6%;
+        left: 0%;
         position: relative;
         margin: 0;
+        
       
       }
       
       .sujetimputstyle{
         margin: 1%;
       padding: 1%;
-      left: 8%;
+      left: 4%;
       position: relative;
       border: 1.5px solid black;
       }
       .sujetline{
         height: 4%;
-      
+        margin: 0;
+        padding: 0;
+      //background-color: blue;
       }
       
       
@@ -850,6 +855,7 @@ display: none;
       
       .formularbtn{
         margin-top: 2%;
+        margin-bottom: 1%;
       }
 
 
@@ -981,6 +987,11 @@ margin-top: 5%;
   overflow: hidden;
   padding-left: 1%;
   padding-right: 1%;
+}
+
+
+.deconnexionpageadminstyle{
+  margin-top: 6%;
 }
 
 
@@ -1459,7 +1470,7 @@ margin-bottom: 2%;
 
 
 .labelemailstyle{
-  left: 6%;
+  left: 0%;
   position: relative;
   margin: 0;
 }
@@ -1467,14 +1478,16 @@ margin-bottom: 2%;
 .emailimputstyle{
   margin: 1%;
 padding: 1%;
-left: 8%;
+left: 4%;
 position: relative;
 border: 1.5px solid black;
+width: 70%;
   
 }
 .mailline{
-
   height: 4%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -1482,7 +1495,7 @@ border: 1.5px solid black;
 
 
 .sujetstyle{
-  left: 6%;
+  left: 0%;
   position: relative;
   margin: 0;
 
@@ -1491,14 +1504,17 @@ border: 1.5px solid black;
 .sujetimputstyle{
   margin: 1%;
 padding: 1%;
-left: 8%;
+left: 4%;
 position: relative;
 border: 1.5px solid black;
+width: 70%;
 }
 .sujetline{
   height: 4%;
-
+  margin: 0;
+  padding: 0;
 }
+
 
 
 
@@ -1526,6 +1542,7 @@ border: 1.5px solid black;
 
 .formularbtn{
   margin-top: 2%;
+  margin-bottom: 1%;
 }
 
 
