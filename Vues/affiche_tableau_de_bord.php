@@ -2,7 +2,7 @@
 ob_start();
 
 header('Access-Control-Allow-Origin: *');
-/*
+
 
 
 if (session_status() == PHP_SESSION_NONE) {
@@ -28,7 +28,7 @@ if (isset($_SESSION['jwt'])) {
     header('Location: /index.php?page=accueil');
     exit;
 
-}*/
+}
 
 
 ?>

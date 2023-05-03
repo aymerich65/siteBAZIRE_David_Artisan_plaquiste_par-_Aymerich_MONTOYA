@@ -104,7 +104,7 @@ class MyControler
         require_once 'Vues/affiche_connexion.php';
         require_once 'JWT/authentification.php';
 
-/*
+
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $id = htmlspecialchars($_POST['id']);
@@ -161,16 +161,16 @@ class MyControler
                             $_SESSION['admin'] = 'approuved';
                             //var_dump($_SESSION['jwt']); // Vérification du jeton dans la session
         
-                            echo '<script>alert("Bienvenue administrateur!")</script>';*/
+                            echo '<script>alert("Bienvenue administrateur!")</script>';
         
-                            echo "<script>window.location.href='/index.php?page=admin'</script>";/*
+                            echo "<script>window.location.href='/index.php?page=admin'</script>";
         
                             exit;
                         }
                     }
                 }
             }
-        } */
+        } 
           }
 
 
