@@ -18,7 +18,8 @@ if ($mode_prod === true) {
     $envpassword = $dbparts['pass'];
     $database = ltrim($dbparts['path'], '/');
     $dsn = "mysql:host=$hostname;dbname=$database;charset=utf8mb4";
-    $token = $_ENV['TOKEN'];
+
+    $secret = $_ENV['SECRET'];
     $sendgridapikey = $_ENV['SENDGRID_API_KEY'];
 
     define("DB_DSN", $dsn);
