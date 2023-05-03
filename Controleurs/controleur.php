@@ -159,7 +159,7 @@ class MyControler
                             //echo $token;
 
                             // On ajoute le jeton JWT dans le header de la réponse
-                            header('Authorization: Bearer ' . $token);
+                            //header('Authorization: Bearer ' . $token);
 
                             
                             //print_r($_SESSION['jwt']); // Vérification du jeton dans la session
