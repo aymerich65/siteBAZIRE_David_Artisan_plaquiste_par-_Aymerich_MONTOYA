@@ -101,9 +101,7 @@ class MyControler
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'Classes/myjwt.php';
-
         require_once 'Vues/affiche_connexion.php';
-        require_once 'JWT/authentification.php';
         require_once 'Modeles/traitement_connexion.php';
 
 

@@ -4,12 +4,6 @@ ob_start();
 header('Access-Control-Allow-Origin: *');
 
 
-
-if (session_status() == PHP_SESSION_NONE) {
-  session_start();
-}
-
-
 if (isset($_SESSION['jwt'])) {
   $token = $_SESSION['jwt'];}
   
