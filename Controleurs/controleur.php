@@ -158,6 +158,8 @@ var_dump($_SESSION);
                             $_SESSION['admin'] = 'approuved';
                             //echo $_SESSION['jwt'];
                             echo $token;
+                            echo $payload;
+                            echo SECRET;
 
                             // On ajoute le jeton JWT dans le header de la réponse
                             //header('Authorization: Bearer ' . $token);
