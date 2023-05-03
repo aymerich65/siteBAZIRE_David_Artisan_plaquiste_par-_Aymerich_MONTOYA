@@ -1,5 +1,11 @@
 <?php
 
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+  }
+
+
+
 class MyControler
 {
     public function pageAccueil(): void
@@ -20,25 +26,24 @@ class MyControler
     {
         require_once 'vendor/autoload.php';
         require_once 'config.php';
-  
-    
+
+
         try {
-            
+
             $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
             $myrequest = $pdo->prepare('SELECT * FROM galerie_images');
             $myrequest->execute();
             $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);
             $imageFolder = '';
-           
         } catch (PDOException $e) {
             // Affiche un message d'erreur en cas de problème avec la requête PDO
             echo "Désolé, une erreur s'est produite. Veuillez réessayer plus tard.";
             return;
         }
-    
+
         require_once 'Vues/affiche_Galerie.php';
     }
-    
+
 
 
 
@@ -57,10 +62,10 @@ class MyControler
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'JWT/validate_jwt.php';
-    
+
         try {
             $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
-    
+
             $myrequest = $pdo->prepare('SELECT * FROM galerie_images');
             $myrequest->execute();
             $mybddTable = $myrequest->fetchAll(PDO::FETCH_ASSOC);
@@ -70,10 +75,10 @@ class MyControler
             echo "Désolé, une erreur s'est produite. Veuillez réessayer plus tard.";
             return;
         }
-    
+
         require_once 'Vues/affiche_tableau_de_bord.php';
     }
-    
+
 
 
 
@@ -91,14 +96,86 @@ class MyControler
 
     public function pageConnexion()
     {
-        require_once 'Modeles/traitement_connexion.php';
-
+        require_once 'vendor/autoload.php';
+        require_once 'config.php';
+        require_once 'Classes/myjwt.php';
+        //require_once 'Modeles/traitement_connexion.php';
         require_once 'Vues/affiche_connexion.php';
-
-
-
         require_once 'JWT/authentification.php';
-    }
+
+
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $id = htmlspecialchars($_POST['id']);
+            $password = htmlspecialchars($_POST['password']);
+        
+        
+            
+        if (isset($id) && isset($password)) {
+                $statement = $pdo->prepare("SELECT * FROM administrateurs WHERE id = :id");
+                $statement->bindValue(':id', $id);
+                if ($statement->execute()) {
+                    $user = $statement->fetch(PDO::FETCH_ASSOC);
+                    if ($user === false) {
+                        echo 'Identifiant invalide';
+                        echo '<div class="button-container mytestcolor">';
+                        echo '<a href="../../index.php?page=accueil"><button >Retour à l\'accueil</button></a>';
+                        echo '</div>';
+                        exit;
+                    } else {
+                        if (!password_verify($password, $user['password'])) {
+                            echo 'Mot de passe invalide';
+                            echo '<div class="button-container mytestcolor">';
+                            echo '<a href="../../index.php?page=accueil"><button ">Retour à l\'accueil</button></a>';
+                            echo '</div>';
+                            exit;
+        
+                        } else {
+        
+        
+                            //Premiere partie
+                            //On créer le header
+                            $header = [
+                                'typ' => 'JWT',
+                                'alg' => 'HS256'
+                            ];
+        
+                            //Deuxième partie
+                            //On créer le contenu(payload)
+                            $payload = [
+                                'user_id' => 01,
+                                'roles' => ['ROLES_ADMIN', 'ROLES_ADMIN2'],
+                            ];
+        
+                            // On instancie le jeton    
+                            $jwt = new JWT();
+                            $token = $jwt->generate($header, $payload, SECRET);
+                            // On ajoute le jeton JWT dans le header de la réponse
+                            header('Authorization: Bearer ' . $token);
+                            // On stocke le jeton JWT dans la session pour une utilisation ultérieure
+                            $_SESSION['jwt'] = $token;
+        
+                            //echo $token;
+        
+                            $_SESSION['admin'] = 'approuved';
+                            //var_dump($_SESSION['jwt']); // Vérification du jeton dans la session
+        
+                            echo '<script>alert("Bienvenue administrateur!")</script>';
+        
+                            echo "<script>window.location.href='/index.php?page=admin'</script>";
+        
+                            exit;
+                        }
+                    }
+                }
+            }
+        }
+          }
+
+
+
+
+
 
     public function pagetest()
     {
@@ -108,6 +185,10 @@ class MyControler
 
         require_once 'Vues/layout.php';
     }
+
+
+
+    
 
 
     public function pageMentions()

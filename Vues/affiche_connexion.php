@@ -8,7 +8,7 @@ ob_start();
 
 
 
-    <form action="Modeles/traitement_connexion.php" method="post" class="formularcontainer">
+    <form action="" method="post" class="formularcontainer">
 
         <label class="imputlabelA">Identifiant:</label>
         <div class="imputB"><input type="text" name="id" required class="imputdimension"></div>
