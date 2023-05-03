@@ -68,7 +68,8 @@ if (isset($id) && isset($password)) {
 
                     echo '<script>alert("Bienvenue administrateur!")</script>';
 
-                    header('Location: /index.php?page=admin');
+                    echo "<script>window.location.href='/index.php?page=admin'</script>";
+
                     exit;
                 }
             }
