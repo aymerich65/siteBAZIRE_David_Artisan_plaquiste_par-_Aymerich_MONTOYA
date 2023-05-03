@@ -62,6 +62,7 @@ class MyControler
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'JWT/validate_jwt.php';
+        require_once 'Classes/myjwt.php';
 
         try {
             $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);

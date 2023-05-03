@@ -2,10 +2,8 @@
 ob_start();
 
 header('Access-Control-Allow-Origin: *');
+/*
 
-
-require_once 'Classes/myjwt.php';
-require_once './config.php';
 
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
@@ -30,7 +28,7 @@ if (isset($_SESSION['jwt'])) {
     header('Location: /index.php?page=accueil');
     exit;
 
-}
+}*/
 
 
 ?>
