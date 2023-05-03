@@ -104,8 +104,8 @@ class MyControler
         //require_once 'Modeles/traitement_connexion.php';
         require_once 'Vues/affiche_connexion.php';
         require_once 'JWT/authentification.php';
-
-
+var_dump($_SESSION);
+/*
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $id = htmlspecialchars($_POST['id']);
             $password = htmlspecialchars($_POST['password']);
@@ -173,7 +173,7 @@ class MyControler
                     }
                 }
             }
-        } 
+        } */
           }
 
 
