@@ -159,13 +159,13 @@ class MyControler
                             //echo $token;
         
                             $_SESSION['admin'] = 'approuved';
-                            //var_dump($_SESSION['jwt']); // Vérification du jeton dans la session
+                            var_dump($_SESSION['jwt']); // Vérification du jeton dans la session
         
-                            echo '<script>alert("Bienvenue administrateur!")</script>';
+                           // echo '<script>alert("Bienvenue administrateur!")</script>';
         
-                            echo "<script>window.location.href='/index.php?page=admin'</script>";
+                           // echo "<script>window.location.href='/index.php?page=admin'</script>";
         
-                            exit;
+                            //exit;
                         }
                     }
                 }
