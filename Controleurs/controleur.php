@@ -1,8 +1,5 @@
 <?php
 
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-  }
 
 
 
@@ -97,6 +94,10 @@ class MyControler
 
     public function pageConnexion()
     {
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+          }
+          
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'Classes/myjwt.php';
@@ -150,15 +151,17 @@ class MyControler
                             // On instancie le jeton    
                             $jwt = new JWT();
                             $token = $jwt->generate($header, $payload, SECRET);
-                            // On ajoute le jeton JWT dans le header de la réponse
-                            header('Authorization: Bearer ' . $token);
+
                             // On stocke le jeton JWT dans la session pour une utilisation ultérieure
                             $_SESSION['jwt'] = $token;
-        
-                            //echo $token;
-        
                             $_SESSION['admin'] = 'approuved';
                             echo $_SESSION['jwt'];
+                            //echo $token;
+
+                            // On ajoute le jeton JWT dans le header de la réponse
+                            header('Authorization: Bearer ' . $token);
+
+                            
                             //print_r($_SESSION['jwt']); // Vérification du jeton dans la session
         
                            // echo '<script>alert("Bienvenue administrateur!")</script>';
