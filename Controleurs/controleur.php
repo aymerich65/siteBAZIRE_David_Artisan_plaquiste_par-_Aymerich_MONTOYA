@@ -105,7 +105,7 @@ class MyControler
         require_once 'Vues/affiche_connexion.php';
         require_once 'JWT/authentification.php';
 //var_dump($_SESSION);
-//var_dump(SECRET);
+var_dump(SECRET);
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $id = htmlspecialchars($_POST['id']);
@@ -142,14 +142,18 @@ class MyControler
                                 'typ' => 'JWT',
                                 'alg' => 'HS256'
                             ];
-        
+                            print_r($header) ;
+
+
                             //Deuxième partie
                             //On créer le contenu(payload)
                             $payload = [
                                 'user_id' => 01,
                                 'roles' => ['ROLES_ADMIN', 'ROLES_ADMIN2'],
                             ];
-        
+                            print_r($payload) ;
+
+
                             // On instancie le jeton    
                             $jwt = new JWT();
                             $token = $jwt->generate($header, $payload, SECRET);
