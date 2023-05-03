@@ -158,8 +158,8 @@ class MyControler
                             //echo $token;
         
                             $_SESSION['admin'] = 'approuved';
-                            var_dump($_SESSION);
-                            var_dump($_SESSION['jwt']); // Vérification du jeton dans la session
+                            print_r($_SESSION);
+                            print_r($_SESSION['jwt']); // Vérification du jeton dans la session
         
                            // echo '<script>alert("Bienvenue administrateur!")</script>';
         
