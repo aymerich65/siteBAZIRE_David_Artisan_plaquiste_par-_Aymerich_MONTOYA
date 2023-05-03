@@ -104,7 +104,6 @@ class MyControler
         require_once 'Vues/affiche_connexion.php';
         require_once 'JWT/authentification.php';
 
-        echo $_POST['id'];
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $id = htmlspecialchars($_POST['id']);
@@ -159,6 +158,7 @@ class MyControler
                             //echo $token;
         
                             $_SESSION['admin'] = 'approuved';
+                            var_dump($_SESSION);
                             var_dump($_SESSION['jwt']); // Vérification du jeton dans la session
         
                            // echo '<script>alert("Bienvenue administrateur!")</script>';
