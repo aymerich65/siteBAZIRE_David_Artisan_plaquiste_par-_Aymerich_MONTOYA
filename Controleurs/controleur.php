@@ -105,6 +105,7 @@ class MyControler
         require_once 'Vues/affiche_connexion.php';
         require_once 'JWT/authentification.php';
 var_dump($_SESSION);
+var_dump(SECRET);
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $id = htmlspecialchars($_POST['id']);
@@ -157,7 +158,7 @@ var_dump($_SESSION);
                             $_SESSION['jwt'] = $token;
                             $_SESSION['admin'] = 'approuved';
                             //echo $_SESSION['jwt'];
-                            var_dump(SECRET);
+                            
                             
 
                             // On ajoute le jeton JWT dans le header de la réponse
