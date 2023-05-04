@@ -587,7 +587,7 @@
   }
 }
 /*-------------------------Format tablette ----------------------------------------------------------------------------------------------------- */
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1366px) {
+@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1366px) {
   body {
     z-index: 0;
     overflow-x: hidden;
