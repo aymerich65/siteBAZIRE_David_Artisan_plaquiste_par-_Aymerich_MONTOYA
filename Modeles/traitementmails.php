@@ -1,5 +1,8 @@
 <?php
 
+// Inclure la bibliothèque SendGrid via Composer
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../config.php';
 
 // Créer un nouvel objet SendGrid\Mail\Mail
 $email = new \SendGrid\Mail\Mail();
