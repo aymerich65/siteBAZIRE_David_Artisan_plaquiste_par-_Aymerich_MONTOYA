@@ -5,15 +5,25 @@
 
 class MyControler
 {
-    public function pageAccueil(): void
+    public function pageAccueil()
     {
+        require_once 'vendor/autoload.php';
+        require_once 'config.php';
         require_once 'Vues/affiche_Accueil.php';
+        require_once 'Modeles/traitementmails.php';
+
+
     }
 
     public function pageContact()
     {
 
         require_once 'Vues/affiche_Contact.php';
+
+
+
+
+
     }
 
 
