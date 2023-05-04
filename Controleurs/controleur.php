@@ -10,16 +10,15 @@ class MyControler
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'Vues/affiche_Accueil.php';
-        require_once 'Modeles/traitementmails.php';
-
-
     }
 
     public function pageContact()
     {
 
         require_once 'Vues/affiche_Contact.php';
-
+        require_once 'vendor/autoload.php';
+        require_once 'config.php';
+        require_once 'Modeles/traitementmails.php';
 
 
 
