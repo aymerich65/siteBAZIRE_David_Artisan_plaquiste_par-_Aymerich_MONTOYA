@@ -4,7 +4,9 @@
 <div class=" headerstyle">
  <img  class="imgheader" src="../elementsgraphiques/logo_bande.png">       
 </div>
-
+<div class=" headertablette">
+ <img  class="imgheader" src="../elementsgraphiques/logo_bandetablette.png">       
+</div>
 
 
 <div class="myheader">

@@ -53,6 +53,9 @@
   .headerstyle {
     display: none;
   }
+  .headertablette {
+    display: none;
+  }
   .logolarge {
     max-width: 100%;
     height: 100%;
@@ -317,6 +320,9 @@
     display: none;
   }
   .ongletsbloc {
+    display: none;
+  }
+  .headertablette {
     display: none;
   }
   /*En tête : */
@@ -599,15 +605,21 @@
   }
   /*En tête : */
   .headerstyle {
+    display: none;
+  }
+  .headertablette {
     max-width: 100%;
     height: 12%;
     display: flex;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
   }
   .imgheader {
     position: relative;
     top: 5%;
+    width: 100%;
+    height: auto;
   }
   /* Accueil */
   .pageaccueilstyle {
