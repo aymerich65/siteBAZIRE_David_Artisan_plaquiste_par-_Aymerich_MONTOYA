@@ -12,19 +12,14 @@ if (isset($id) && isset($password)) {
         if ($statement->execute()) {
             $user = $statement->fetch(PDO::FETCH_ASSOC);
             if ($user === false) {
-                echo 'Identifiant invalide';
-                echo '<div class="button-container mytestcolor">';
-                echo '<a href="../../index.php?page=accueil"><button >Retour à l\'accueil</button></a>';
-                echo '</div>';
-                exit;
+                echo '<script>alert("Identifiant incorrects");</script>';
+                echo '<script>window.location.href = "index.php?page=accueil";</script>';
+                exit;                      
             } else {
                 if (!password_verify($password, $user['password'])) {
-                    echo 'Mot de passe invalide';
-                    echo '<div class="button-container mytestcolor">';
-                    echo '<a href="../../index.php?page=accueil"><button ">Retour à l\'accueil</button></a>';
-                    echo '</div>';
+                    echo '<script>alert("Mot de passe incorrects");</script>';
+                    echo '<script>window.location.href = "index.php?page=accueil";</script>';
                     exit;
-
                 } else {
 
 
