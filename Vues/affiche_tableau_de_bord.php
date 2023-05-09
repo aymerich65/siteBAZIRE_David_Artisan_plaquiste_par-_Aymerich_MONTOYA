@@ -122,9 +122,54 @@ if (isset($_SESSION['jwt'])) {
   <input type="submit" value="Envoyer">
 </form>
 
+<div class="h2adminpagestyle">
+  <h2 >Insérer un administrateur</h2>
+</div>
+<form action="Modeles/insertion_admin.php" method="post">
+  <label for="id">ID:</label>
+  <input type="text" id="id" name="id" required>
+  
+  <label for="password">Mot de passe:</label>
+  <input type="password" id="password" name="password" required>
+  
+  <button type="submit" name="ajouter">Ajouter</button>
+</form>
 
+<div class="h2adminpagestyle">
+  <h2>Modifier un administrateur</h2>
+</div>
+<form action="Modeles/modifier_admin.php" method="post">
+    <label for="current_id">ID de l'administrateur courant à modifier:</label>
+    <input type="text" id="current_id" name="current_id" required>
+  
+    <label for="new_id">Nouvel ID:</label>
+    <input type="text" id="new_id" name="new_id" required>
+  
+    <label for="new_password">Nouveau mot de passe:</label>
+    <input type="password" id="new_password" name="new_password" required>
+  
+    <button type="submit" name="modifier">Modifier</button>
+</form>
+
+
+<div class="h2adminpagestyle">
+  <h2 >Supprimer un administrateur</h2>
+</div>
+<form action="Modeles/supression_admin.php" method="post">
+  <label for="id_supp">ID de l'administrateur à supprimer:</label>
+  <input type="text" id="id_supp" name="id_supp" required>
+  
+  <button type="submit" name="supprimer">Supprimer</button>
+</form>
+
+
+
+
+
+
+<h2 class="h2adminpagestyle">Déconnexion du tableau de bord</h2>
 <form action="Modeles/logout.php" method="post" class="deconnexionpageadminstyle">
-  <h2>Déconnexion du tableau de bord</h2>
+  
     <input type="submit" value="Déconnexion">
 </form>
 </div>
