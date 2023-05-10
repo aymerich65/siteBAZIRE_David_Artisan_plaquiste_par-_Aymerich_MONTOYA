@@ -20,30 +20,29 @@ if ($mode_prod === true) {
     $dsn = "mysql:host=$hostname;dbname=$database;charset=utf8mb4";
 
     $secret = $_ENV['SECRET'];
-    $sendgridapikey = $_ENV['SENDGRID_API_KEY'];
+
 
     define("DB_DSN", $dsn);
     define("DB_USER", $envuser);
     define("DB_PASSWORD", $envpassword);
     define("SECRET", $secret);
     define("TOKEN", $token);
-    define("SENDGRID_API_KEY", $sendgridapikey);
 } else {
 
 
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-$dsn = $_ENV['DB_DSN'];
+    $dotenv = Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+    $dsn = $_ENV['DB_DSN'];
 
 
 
-    
+
 
     $envuser = $_ENV['DB_USERNAME'];
     $envpassword = $_ENV['DB_PASSWORD'];
     $secret = $_ENV['SECRET'];
     $token = $_ENV['TOKEN'];
-    $sendgridapikey = $_ENV['SENDGRID_API_KEY'];
+
 
 
     define("DB_DSN", $dsn);
@@ -51,7 +50,6 @@ $dsn = $_ENV['DB_DSN'];
     define("DB_PASSWORD", $envpassword);
     define("SECRET", $secret);
     define("TOKEN", $token);
-    define("SENDGRID_API_KEY", $sendgridapikey);
 }
 
 
