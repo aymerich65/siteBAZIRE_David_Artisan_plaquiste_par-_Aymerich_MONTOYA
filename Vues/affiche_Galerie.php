@@ -52,7 +52,7 @@ ob_start();
     foreach ($mybddTable as $index => $image) {
       $filename = 'images/' . $image['filename'];
       echo "<div class=\"galeriebloc\">";
-      echo "<img width=80% height=auto src=".$filename."> <br>";
+      echo "<img  class=\"img-fluid\" style=\"height : auto\" src=".$filename."> <br>";
       echo  $image['description'];
       echo "</div>";
       ?>
