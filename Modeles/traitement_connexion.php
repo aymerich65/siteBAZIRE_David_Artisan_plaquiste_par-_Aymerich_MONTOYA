@@ -45,10 +45,6 @@ if (isset($id) && isset($password)) {
                     // On stocke le jeton JWT dans la session pour une utilisation ultérieure
                     $_SESSION['jwt'] = $token;
 
-                    //echo $token;
-
-                    $_SESSION['admin'] = 'approuved';
-                    //var_dump($_SESSION['jwt']); // Vérification du jeton dans la session
 
                     echo '<script>alert("Bienvenue administrateur!")</script>';
 
