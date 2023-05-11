@@ -127,7 +127,7 @@ if (isset($_SESSION['jwt'])) {
 </div>
 <form action="Modeles/insertion_admin.php" method="post">
   <label for="id">ID:</label>
-  <input type="text" id="id" name="id" required>
+  <input type="text" id="id" name="id" pattern="\d+" min="0" required>
   
   <label for="password">Mot de passe:</label>
   <input type="password" id="password" name="password" required>
@@ -140,10 +140,10 @@ if (isset($_SESSION['jwt'])) {
 </div>
 <form action="Modeles/modifier_admin.php" method="post">
     <label for="current_id">ID de l'administrateur courant à modifier:</label>
-    <input type="text" id="current_id" name="current_id" required>
+    <input type="text" id="current_id" name="current_id" pattern="\d+" min="0" required>
   
     <label for="new_id">Nouvel ID:</label>
-    <input type="text" id="new_id" name="new_id" required>
+    <input type="text" id="new_id" name="new_id" pattern="\d+" min="0" required>
   
     <label for="new_password">Nouveau mot de passe:</label>
     <input type="password" id="new_password" name="new_password" required>
@@ -157,7 +157,7 @@ if (isset($_SESSION['jwt'])) {
 </div>
 <form action="Modeles/supression_admin.php" method="post">
   <label for="id_supp">ID de l'administrateur à supprimer:</label>
-  <input type="text" id="id_supp" name="id_supp" required>
+  <input type="text" id="id_supp" name="id_supp" pattern="\d+" min="0" required>
   
   <button type="submit" name="supprimer">Supprimer</button>
 </form>
