@@ -129,7 +129,7 @@ if (isset($_SESSION['jwt'])) {
   <label for="id">ID:</label>
   <input type="text" id="id" name="id" pattern="\d+" min="0" required>
   
-  <label for="password">Mot de passe:</label>
+  <label for="password" class="mpimputmobile">Mot de passe:</label>
   <input type="password" id="password" name="password" required>
   
   <button type="submit" name="ajouter">Ajouter</button>
