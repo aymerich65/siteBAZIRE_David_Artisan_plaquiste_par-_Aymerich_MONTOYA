@@ -7,7 +7,7 @@ class MyControler
 {
     public function pageAccueil(): void
     {
-        
+
         require_once 'Vues/affiche_Accueil.php';
     }
 
@@ -84,7 +84,7 @@ class MyControler
 
     public function traitementinsertion()
     {
-        /* utilisation du fichier config pour récupérer les variables d'environnement:*/
+
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'Modeles/traitement_images.php';
@@ -95,18 +95,12 @@ class MyControler
 
     public function pageConnexion()
     {
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-          }
-          
         require_once 'vendor/autoload.php';
         require_once 'config.php';
         require_once 'Classes/myjwt.php';
         require_once 'Vues/affiche_connexion.php';
         require_once 'Modeles/traitement_connexion.php';
-
-
-          }
+    }
 
 
 
@@ -132,6 +126,4 @@ class MyControler
 
         require_once 'Vues/affiche_mentionslegales.php';
     }
-
-
 }

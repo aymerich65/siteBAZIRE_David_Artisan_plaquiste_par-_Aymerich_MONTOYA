@@ -22,27 +22,21 @@ if (isset($id) && isset($password)) {
                     exit;
                 } else {
 
-
-                    //Premiere partie
-                    //On créer le header
                     $header = [
                         'typ' => 'JWT',
                         'alg' => 'HS256'
                     ];
 
-                    //Deuxième partie
-                    //On créer le contenu(payload)
                     $payload = [
                         'user_id' => 01,
                         'roles' => ['ROLES_ADMIN', 'ROLES_ADMIN2'],
                     ];
 
-                    // On instancie le jeton    
                     $jwt = new JWT();
                     $token = $jwt->generate($header, $payload, SECRET);
-                    // On ajoute le jeton JWT dans le header de la réponse
+
                     header('Authorization: Bearer ' . $token);
-                    // On stocke le jeton JWT dans la session pour une utilisation ultérieure
+
                     $_SESSION['jwt'] = $token;
 
 

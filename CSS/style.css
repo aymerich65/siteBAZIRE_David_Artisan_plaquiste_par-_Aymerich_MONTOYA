@@ -340,6 +340,12 @@
     height: auto;
   }
   /* Accueil */
+  .gallerybackgroundlandscape {
+    display: none;
+  }
+  .accueillandscape {
+    display: none;
+  }
   .pageaccueilstyle {
     font-size: 2.3vh;
     color: rgb(0, 0, 0);
@@ -379,6 +385,10 @@
     z-index: 3;
     right: 3%;
     bottom: 2%;
+  }
+  /* tableau de bord */
+  .mpimputmobile {
+    margin-top: 3%;
   }
   .colaccueilstyle01 {
     width: 50%;

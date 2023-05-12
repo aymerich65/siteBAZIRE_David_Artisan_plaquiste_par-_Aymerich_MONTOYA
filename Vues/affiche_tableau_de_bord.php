@@ -141,8 +141,8 @@ if (isset($_SESSION['jwt'])) {
 <form action="Modeles/modifier_admin.php" method="post">
     <label for="current_id">ID de l'administrateur courant à modifier:</label>
     <input type="text" id="current_id" name="current_id" pattern="\d+" min="0" required>
-  
-    <label for="new_id">Nouvel ID:</label>
+  <br>  
+    <label for="new_id" class="mpimputmobile">Nouvel ID:</label>
     <input type="text" id="new_id" name="new_id" pattern="\d+" min="0" required>
   
     <label for="new_password">Nouveau mot de passe:</label>
