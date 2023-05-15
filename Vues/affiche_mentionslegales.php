@@ -8,9 +8,9 @@ ob_start();
 <p>Le directeur de la publication est BAZIRE David.</p>
 <br>
 <p>Le site est hébergé par Heroku Heroku, Inc. 650 7th Street San Francisco, CA 94103
-États-Unis</p>
+États-Unis.</p>
 <br>
-<p>Pour toute question ou demande d'information concernant le site, vous pouvez nous contacter par e-mail</p>
+<p>Pour toute question ou demande d'information concernant le site, vous pouvez nous contacter par e-mail.</p>
 <br>
 <h2>Propriété intellectuelle :</h2>
 <p>Le contenu du site BAZIRE David Artisan plaquiste, incluant, de manière non limitative, les textes, images, logos, graphismes, sons et vidéos, est la propriété exclusive de BAZIRE David Artisan plaquiste et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
