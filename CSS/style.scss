@@ -32,26 +32,6 @@
 
 
 
-        /* Supression galerie,accueil du mode landscape en mode portrait*/
-        @media screen and (orientation : portrait) {
-
-.gallerybackgroundlandscape{
-  display:none;
-        }
-
-        .accueillandscape{
-          display: none;
-        }
-
-
-}
-
-
-
-
-
-
-
 
 
 
@@ -525,7 +505,9 @@ display: none;
         /* Accueil */
 
 
-
+        .accueillandscape{
+          display: none;
+        }
         .gallerybackgroundlandscape{
           display:none;
                 }
@@ -738,7 +720,9 @@ display: none;
     /* style des images en galerie */
  
     
-
+    .gallerybackgroundlandscape{
+      display:none;
+            }
 
     .gallerybloc {
         display: flex;
@@ -1016,6 +1000,11 @@ display: none;
 
 
         /* Accueil */
+
+        .accueillandscape{
+          display: none;
+        }
+
         .pageaccueilstyle{
           font-size: 18px;
           color: rgb(0, 0, 0);
@@ -1087,8 +1076,7 @@ display: none;
         position: absolute;
         top: 15.5%;
         font-size: 2rem;
-        //background-color: red;
-
+      
       }   
 
 
@@ -1157,10 +1145,10 @@ display: none;
 
 
 /* style des images en galerie */
-/*
+
 .gallerybackgroundlandscape{
   display:none;
-}*/
+        }
 
 .gallerybloc {
   display: flex;
@@ -1423,6 +1411,10 @@ display: none;
 
 
         /* Accueil */
+
+        .accueillandscape{
+          display: none;
+        }
         .pageaccueilstyle{
           font-size: 18px;
           color: rgb(0, 0, 0);
