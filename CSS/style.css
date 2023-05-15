@@ -721,7 +721,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0%;
   }
   .pagelinkpolice {
     color: black;
@@ -986,6 +985,9 @@
     border: 4px solid rgb(0, 0, 0);
     width: 50%;
     height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .pagelinkpolice {
     color: black;

@@ -1135,7 +1135,6 @@ display: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0%;
         }
 
           .pagelinkpolice{
@@ -1547,7 +1546,11 @@ display: none;
           background-color: yellow;
           border : 4px solid rgb(0, 0, 0);
           width:50%;  
-          height: 5vh; }
+          height: 5vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
           .pagelinkpolice{
               color: black;            
