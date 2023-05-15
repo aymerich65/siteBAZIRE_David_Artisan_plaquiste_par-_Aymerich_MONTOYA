@@ -5,7 +5,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Dotenv\Dotenv;
 
-$mode_prod = true;
+$mode_prod = false;
 
 
 if ($mode_prod === true) {
