@@ -142,13 +142,13 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
             $myTable->bindValue(':filename', $filename, PDO::PARAM_STR);
             $myTable->bindValue(':description', $description, PDO::PARAM_STR);
             $myTable->execute();
-
+            echo 'Téléchargement des informations de l\'image en base de données réussi';
             echo '<div class="button-container mytestcolor">';
             echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
             echo '</div>';
             exit;
         } catch (Exception $e) {
-            echo 'Une erreur est survenue lors du téléchargement du fichier en base de donnée: ' . $e->getMessage();
+            echo 'Une erreur est survenue lors du téléchargement des informations de l\'image en base de données.';
             echo '<div class="button-container mytestcolor">';
             echo '<a href="../../index.php?page=admin"><button>Retour page administrateur</button></a>';
             echo '</div>';

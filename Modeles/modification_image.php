@@ -192,13 +192,13 @@ try{
    $myTable->execute();
    
    
-
+   echo 'Téléchargement des informations de l\'image en base de données réussi';
     echo '<div class="button-container mytestcolor">';
     echo '<a href="../../index.php?page=admin"><button class="">Retour page administrateur</button></a>';
     echo '</div>';
     exit;
 }catch(Exception $e){
-    echo 'Une erreur est survenue lors du téléchargement du fichier.';
+    echo 'Une erreur est survenue lors du téléchargement des informations de l\'image en base de données.';
     echo '<div class="button-container mytestcolor">';
     echo '<a href="../../index.php?page=admin"><button class="e">Retour page administrateur</button></a>';
     echo '</div>';
