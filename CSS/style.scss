@@ -455,6 +455,7 @@ text-align: center;
 
 /* format mobile orientation portrait */
 
+/* Notes au correcteur de studi : j'ai modifié la largeur par rapport à celle visible sur la capture d'illustration du responsive dans le compte rendu du projet (premier dépôt) que je vous ai envoyer, la photo d'exemple du code n'est donc plus à jour je m'en excuse je corrigerai cela dans ma seconde version du compte rendu*/
 
 @media screen and (max-width:600px) and (orientation : portrait) { 
   
@@ -1061,37 +1062,40 @@ display: none;
           height: 100%;
           display: flex;
           position: relative;
-          //background-color: rgb(149, 255, 0);
+         
       }
 
     .styleprestationtitle1{
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 700;
         position: absolute;
-        top: 6.5%;
+        top: 1%;
       }
 
 
       .blocparagrapheisolation{
         position: absolute;
         top: 15.5%;
-        font-size: 2rem;
+        font-size: 1.8rem;
       
       }   
 
 
 
       .styleprestationtitle2{
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 600;
         position: absolute;
         top: 49.5%;
+        margin-top: 10%;
       }
 
 .blocparagraphemenuiserie{
   position: absolute;
   top: 58.5%;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-top: 16%;
+  
   
   //background-color: rgb(200, 0, 130);
 
