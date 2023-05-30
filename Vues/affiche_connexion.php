@@ -1,7 +1,7 @@
 <?php
 
 ob_start();
-
+$titrePage = "BAZIRE David artisan plaquiste - Connexion";
 ?>
 <div class="connexionstyle">
     <h1>Connexion</h1>

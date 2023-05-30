@@ -1,5 +1,6 @@
 <?php
 ob_start();
+$titrePage = "BAZIRE David artisan plaquiste - Accueil";
 ?>
 <div class="accueilportrait">
   <div class="row pageaccueilstyle justify-content-between align-items-center">

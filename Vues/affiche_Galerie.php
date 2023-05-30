@@ -1,8 +1,7 @@
 <?php
 
-
-
 ob_start();
+$titrePage = "BAZIRE David artisan plaquiste - Galerie";
 ?>
 
 

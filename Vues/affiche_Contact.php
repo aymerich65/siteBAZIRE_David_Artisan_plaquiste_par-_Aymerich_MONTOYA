@@ -1,5 +1,6 @@
 <?php
 ob_start();
+$titrePage = "BAZIRE David artisan plaquiste - Contact";
 ?>
 
 <div class="pagecontactstyle">

@@ -597,7 +597,7 @@
   }
 }
 /*Format tablette orientation portrait */
-@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1024px) {
   body {
     z-index: 0;
     overflow-x: hidden;
@@ -665,7 +665,7 @@
     height: 28vh;
     position: absolute;
     z-index: 2;
-    left: 54%;
+    left: 55%;
   }
   .imgaccueil02 {
     width: 38%;
@@ -682,7 +682,7 @@
     position: relative;
   }
   .styleprestationtitle1 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 700;
     position: absolute;
     top: 1%;
@@ -690,10 +690,10 @@
   .blocparagrapheisolation {
     position: absolute;
     top: 15.5%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .styleprestationtitle2 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 600;
     position: absolute;
     top: 49.5%;
@@ -702,7 +702,7 @@
   .blocparagraphemenuiserie {
     position: absolute;
     top: 58.5%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-top: 16%;
   }
   /* Style du Pied de page */
@@ -866,7 +866,7 @@
   }
 }
 /*format desktop orientation portrait*/
-@media only screen and (orientation: portrait) and (min-width: 769px) {
+@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1920px) {
   body {
     z-index: 0;
     overflow-x: hidden;
@@ -883,6 +883,12 @@
     display: none;
   }
   /*En tête : */
+  .myheader {
+    display: none;
+  }
+  .headerstyle {
+    display: none;
+  }
   .headerstyle {
     display: none;
   }
@@ -951,26 +957,28 @@
     position: relative;
   }
   .styleprestationtitle1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     position: absolute;
-    top: 6.5%;
+    top: 1%;
   }
   .blocparagrapheisolation {
     position: absolute;
     top: 15.5%;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .styleprestationtitle2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
     position: absolute;
     top: 49.5%;
+    margin-top: 10%;
   }
   .blocparagraphemenuiserie {
     position: absolute;
     top: 58.5%;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-top: 16%;
   }
   /* Style du Pied de page */
   .footerlandscape {

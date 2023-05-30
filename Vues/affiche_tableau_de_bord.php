@@ -1,6 +1,6 @@
 <?php
 ob_start();
-
+$titrePage = "BAZIRE David artisan plaquiste - Tableau de bord";
 header('Access-Control-Allow-Origin: *');
 
 
