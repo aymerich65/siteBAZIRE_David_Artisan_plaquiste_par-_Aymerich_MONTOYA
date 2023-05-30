@@ -392,7 +392,7 @@
     position: relative;
   }
   .styleprestationtitle1 {
-    font-size: 3.2vh;
+    font-size: 3vh;
     font-weight: 700;
     position: absolute;
     top: 7%;
@@ -400,9 +400,10 @@
   .blocparagrapheisolation {
     position: absolute;
     top: 15.5%;
+    font-size: 1.9vh;
   }
   .styleprestationtitle2 {
-    font-size: 3.2vh;
+    font-size: 3vh;
     font-weight: 600;
     position: absolute;
     top: 50%;
@@ -410,6 +411,7 @@
   .blocparagraphemenuiserie {
     position: absolute;
     top: 58.5%;
+    font-size: 1.9vh;
   }
   /* Style du Pied de page */
   .footerlandscape {
