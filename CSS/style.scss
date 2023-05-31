@@ -26,7 +26,13 @@
 
         }
 
-
+        .bi-envelope{
+          height: auto;
+          width: 1.5%;
+          margin-left: 0.3%;
+        }
+        
+        
 
 
 
@@ -287,8 +293,10 @@ text-align: center;
   text-align: center;
   margin: 0;
 }
-
-
+.bi-envelope{
+  height: auto;
+  width: 1.5%;
+}
 
 
 
@@ -303,32 +311,40 @@ text-align: center;
  .footerstyle{
 display: none;
 
+
 }
 
 
 
 .footerlandscape{
   height: 30vh;
-
+position: relative;
 }
 
 .footertelstyle{
-  position: relative;
-  top:24%;
+  position: absolute;
+  bottom: 60%;
+  //margin: auto;
 text-align:center ;
 font-weight: 600;
 font-size: 1.5vw;
+padding-bottom: -5%;
+margin-left: 38.5%;
+margin-right: 40%;
 }
 .footermailstyle{
-  text-align:center ;
+  margin-left: 42.9%;
+  margin-right: 40%;
   font-weight: 600;
   font-size: 1.5vw;
-  position: relative;
-  top:30%;
+  position: absolute;
+  bottom: 36%;
+  text-align: center;
+ 
 }
 
 .my-iconfooter {
-  width: 1.5%;
+  width: 8%;
   height: auto;
 
 }
@@ -337,11 +353,17 @@ font-size: 1.5vw;
   border: 2px solid black;
   background-color: yellow;
   width: 20%;
-  height:12%;
-  margin: auto;
-  position: relative;
-  bottom: -32%;
+  height:16%;
+  //margin: auto;
+  margin-left: 40%;
+  margin-right: 40%;
+
+  position: absolute;
+  //bottom: -32%;
+  bottom: 20%;
+  //margin-bottom: 2%;
   align-items: center;
+  
   
  }
 
@@ -451,11 +473,9 @@ text-align: center;
 
 
 
-
-
 /* format mobile orientation portrait */
 
-/* Notes au correcteur de studi : j'ai modifié la largeur par rapport à celle visible sur la capture d'illustration du responsive dans le compte rendu du projet (premier dépôt) que je vous ai envoyer, la photo d'exemple du code n'est donc plus à jour je m'en excuse je corrigerai cela dans ma seconde version du compte rendu*/
+
 
 @media screen and (max-width:600px) and (orientation : portrait) { 
   
@@ -716,7 +736,11 @@ display: none;
       text-align: center;
       margin: 0;
     }
-
+    .bi-envelope{
+      height: auto;
+      width: 5%;
+      margin-left: 1%;
+    }
 
 
 
@@ -1355,7 +1379,11 @@ text-align: center;
   text-align: center;
   margin: 0;
 }
-
+.bi-envelope{
+  height: auto;
+  width: 5%;
+  margin-left: 1%;
+}
 
 }
 
