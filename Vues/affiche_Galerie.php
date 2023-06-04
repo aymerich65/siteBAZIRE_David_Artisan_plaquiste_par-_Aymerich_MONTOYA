@@ -17,7 +17,7 @@ $titrePage = "BAZIRE David artisan plaquiste - Galerie";
 
       $class = ($index === 0) ? 'gallery-image active' : 'gallery-image';
       ?>
-      <img class="<?php echo $class; ?>" src="<?php echo $filename; ?>" alt="<?php echo $image['description']; ?>" data-description="<?php echo $image['description']; ?>">
+      <img class="<?php echo $class; ?> " src="<?php echo $filename; ?>" alt="<?php echo $image['description']; ?>" data-description="<?php echo $image['description']; ?>">
 
     <?php } ?>
 

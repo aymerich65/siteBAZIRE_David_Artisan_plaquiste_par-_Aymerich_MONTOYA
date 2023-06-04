@@ -587,6 +587,18 @@ display: none;
           ;
       
       }
+
+      .gallerydescription{
+        text-align: center;
+        line-height: 2rem;
+        font-size: 1rem;
+        padding-left: 1%;
+        padding-right:  1%;
+      }
+    
+
+
+
       
       /* tableau de bord */
       .mpimputmobile{
@@ -792,7 +804,9 @@ display: none;
         
         
       }
-
+ 
+       
+   
 
       /* Page prestations */
 
@@ -1233,7 +1247,10 @@ display: none;
     text-align: center;
     line-height: 4rem;
     font-size: 2rem;
+    padding-left: 1%;
+    padding-right:  1%;
   }
+
   
 
 
