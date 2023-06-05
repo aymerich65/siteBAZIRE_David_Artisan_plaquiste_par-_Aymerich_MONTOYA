@@ -1150,6 +1150,10 @@
     max-width: 100%;
     overflow: hidden;
   }
+  .mentionslegalespolice {
+    text-decoration: none;
+    color: black;
+  }
   /* Boutons */
   .buttonstyle {
     margin-top: 2%;
