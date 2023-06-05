@@ -3,19 +3,7 @@
 
 
 
-            .mentionslegalesbloc{
-              padding-left: 1.5%;
-              padding-right: 1.5%;
-            }
-            .mentionslegalespolice{
-                margin-top: 6%;
-                font-size: 18px;
-                font-weight: 800px;
-                color: black;
-                text-decoration: none;
-             }
-
-        
+  
       
         .styleprestationtitle1{
             font-weight: 600;
@@ -32,7 +20,7 @@
           margin-left: 0.3%;
         }
         
-        
+
 
 
 
@@ -132,15 +120,11 @@
       
     }
     .textongletlandscape{
-      font-size: 2vh;
+      font-size: 1vw;
       text-decoration: none;
-      color: black;
-
-      
+      color: black;   
       //margin-top: auto;
-     // margin-bottom: auto;
-   
-      
+     // margin-bottom: auto;    
     }
 
 
@@ -222,12 +206,21 @@
 
 /* Page prestations*/
 
+.prestationsstyleh1{
+font-size: 1vw;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
 .prestationsstyle{
   padding-left: 1%;
   padding-right: 1%;
     background-color: white;
         width: 100%;
-}
+        font-size: 1vw;
+        padding-top: 2%;
+        padding-bottom: 2%;
+      }
   
 
 .connexionstyle{
@@ -238,9 +231,6 @@
         height: 40vh;
 }
   
-
-
-
 
 
       
@@ -304,11 +294,6 @@ text-align: center;
 
 
 
-
-
-
-
-
  /* Style du Pied de page */
 
  .footerstyle{
@@ -317,58 +302,47 @@ display: none;
 
 }
 
-
+.liensfooter{
+  margin-top: 4%;
+  text-align: center;
+}
 
 .footerlandscape{
   height: 30vh;
+  font-size: 1.2vw;
 position: relative;
+font-weight: 600;
 }
 
 .footertelstyle{
-  position: absolute;
-  bottom: 60%;
-  //margin: auto;
-text-align:center ;
-font-weight: 600;
-font-size: 1.5vw;
-padding-bottom: -5%;
-margin-left: 38.5%;
-margin-right: 40%;
+
+margin-bottom: 2%;
 }
 .footermailstyle{
-  margin-left: 42.9%;
-  margin-right: 40%;
-  font-weight: 600;
-  font-size: 1.5vw;
-  position: absolute;
-  bottom: 36%;
-  text-align: center;
+  margin-bottom: 2%;
  
 }
 
 .my-iconfooter {
-  width: 8%;
+  width: 1.2%;
   height: auto;
 
 }
-
+.lignementionlegales{
+  justify-content: center;
+  display: flex;
+}
 .mentionslegalespolicelandscape{
   border: 2px solid black;
   background-color: yellow;
   width: 20%;
-  height:16%;
-  //margin: auto;
-  margin-left: 40%;
-  margin-right: 40%;
-
-  position: absolute;
-  //bottom: -32%;
-  bottom: 20%;
-  //margin-bottom: 2%;
-  align-items: center;
+  height:6vh;
+ align-items: center;
   
   
  }
+
+
 
 .mentionslegalesstyle{
   color: black;
@@ -379,18 +353,16 @@ margin-right: 40%;
 
 
 
-
-
-
-
-
  /* style des images en galerie */
 
 
 .h1gallerystyle{
   text-align: center;
-}
 
+}
+.h1gallerystylelandscape h1{
+  font-size: 2vw;
+}
 
 
 .gallerybackground{
@@ -404,6 +376,7 @@ margin-right: 40%;
   width: 100%;
   padding: 3%;
   margin-bottom: 1%;
+  font-size: 1vw  ;
 
   
 }
@@ -419,7 +392,7 @@ margin-right: 40%;
   
 }
 
-        }
+        
 
 
 .containeradminstyle{
@@ -447,7 +420,102 @@ text-align: center;
   margin-top:1%;
  }
 
+ /*Mentions légales*/
+ .mentionlegalesh2style{
+font-size: 1vw;
+margin-bottom: 2%;
+font-weight: 600;
 
+}
+
+
+ .mentionslegalesbloc{
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+   font-size: 1vw;
+
+}
+.mentionslegalespolice{
+    margin-top: 6%;
+   
+    font-weight: 800px;
+    //color: black;
+    text-decoration: none;
+ }
+
+
+        /*Tableau de bord*/
+        
+        .h1tableaudebord{
+          text-align: center;
+        
+         }
+        
+         .h2tableau{
+          text-align: left;
+        
+        }
+        
+        .tableadminpagestyle {
+          border: 1px solid black;
+          background-color: white;
+          font-size: 1vw;
+          width: 95%;
+          font-weight: bold;
+          table-layout: fixed;
+          margin-top: 0%;
+          margin-bottom: 1%;
+          margin-left: 1%;
+          margin-right: 1%;
+          max-width: 95%;
+          max-height: 40%;
+          overflow-y: scroll;
+        
+        }
+        
+        .tableadminpagestyle th, .tableadminpagestyle td {
+          width: 50%;
+          word-wrap: break-word;  
+          padding-right: 10px;
+          padding-bottom: 1%;
+          
+         
+        }
+        
+        .h2adminpagestyle{
+        margin-top: 2%;
+        
+        
+        }
+        
+        .imputidstyle{
+          margin-bottom: 2%;
+        }
+        
+        .textareadesriptionstyle{
+          margin-bottom: 2%;
+        }
+        
+        .selectimagestyle{
+          margin-bottom: 2%;
+        }
+        
+        .containeradminstyle{
+          max-width: 100%;
+          overflow: hidden;
+          padding-left: 1%;
+          padding-right: 1%;
+        }
+        
+        
+        .deconnexionpageadminstyle{
+          margin-top: 6%;
+        }
+
+
+
+
+}
 
 
 
@@ -929,6 +997,22 @@ margin-top: 5%;
           /* Centrer le texte verticalement */
           line-height: 1.5em;
         }
+
+
+        .mentionslegalesbloc{
+          padding-left: 1.5%;
+          padding-right: 1.5%;
+        }
+        .mentionslegalespolice{
+            margin-top: 6%;
+            font-size: 18px;
+            font-weight: 800px;
+            color: black;
+            text-decoration: none;
+         }
+
+
+
       }
 
 
@@ -1140,24 +1224,7 @@ display: none;
   font-size: 1.4rem;
   margin-top: 16%;
  
-
-  
-  
-  //background-color: rgb(200, 0, 130);
-
       }
-
-
-
-
-
-      
-
-
-
-
-
-
 
 
  /* Style du Pied de page */
@@ -1267,11 +1334,6 @@ display: none;
 
 
 
-
-
-
-
-
 //Pageconnexion
 
 
@@ -1341,11 +1403,6 @@ top: 20%;
 
 
 
-
-
-
-
-
 /* Page contact*/
 
 .pagecontactstyle{
@@ -1407,6 +1464,94 @@ text-align: center;
   margin-left: 1%;
 
 }
+
+.mentionslegalesbloc{
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+.mentionslegalespolice{
+    margin-top: 6%;
+    font-size: 18px;
+    font-weight: 800px;
+    color: black;
+    text-decoration: none;
+ }
+
+ /*Page admin*/
+
+
+ .h1tableaudebord{
+  text-align: center;
+ }
+
+ .h2tableau{
+  font-size: 16px;
+  text-align: center;
+
+}
+
+.tableadminpagestyle {
+  border: 1px solid black;
+  background-color: white;
+  font-size: 8px;
+  width: 95%;
+  font-weight: bold;
+  table-layout: fixed;
+
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  max-width: 95%;
+  max-height: 40%;
+  overflow-y: scroll;
+
+}
+
+.tableadminpagestyle th, .tableadminpagestyle td {
+  width: 50%;
+  word-wrap: break-word;  
+  padding-right: 10px;
+  padding-bottom: 1%;
+  
+ 
+}
+
+
+
+
+.h2adminpagestyle{
+margin-top: 5%;
+
+
+}
+
+.imputidstyle{
+  margin-bottom: 5%;
+}
+
+.textareadesriptionstyle{
+  margin-bottom: 5%;
+}
+
+.selectimagestyle{
+  margin-bottom: 5%;
+}
+
+.containeradminstyle{
+  max-width: 100%;
+  overflow: hidden;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+
+.deconnexionpageadminstyle{
+  margin-top: 6%;
+}
+
+
+
 
 }
 
@@ -1585,18 +1730,6 @@ margin-top: 16%;
       }
 
 
-
-
-
-      
-
-
-
-
-
-
-
-
  /* Style du Pied de page */
  .footerlandscape{
   display:none;
@@ -1617,8 +1750,8 @@ margin-top: 16%;
           margin-top: 2%;
           background-color: yellow;
           border : 4px solid rgb(0, 0, 0);
-          width:50%;  
-          height: 5vh;
+          width:25%;  
+          height: 3vh;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1641,6 +1774,7 @@ margin-top: 16%;
 
 .h1gallerystyle{
   text-align: center;
+
 }
 
 
@@ -1656,6 +1790,7 @@ margin-top: 16%;
   width: 100%;
   padding: 3%;
   margin-bottom: 1%;
+  font-size: 1vw  ;
 
   
 }
@@ -1672,8 +1807,23 @@ margin-top: 16%;
 }
 
         
+/*Page admin */
+.tableadminpagestyle {
+  border: 1px solid black;
+  background-color: white;
+  font-size: 1vw;
+  width: 95%;
+  font-weight: bold;
+  table-layout: fixed;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  max-width: 95%;
+  max-height: 40%;
+  overflow-y: scroll;
 
-
+}
 .containeradminstyle{
   padding: 1%;
 }
@@ -1848,7 +1998,45 @@ text-align: center;
 }
 
 
+ /*Mentions légales*/
+ .mentionlegalesh2style{
+  font-size: 1vw;
+  margin-bottom: 2%;
+  font-weight: 600;
+  
+  }
+  
+  
+   .mentionslegalesbloc{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+     font-size: 1vw;
+  
+  }
+  .mentionslegalespolice{
+      margin-top: 6%;
+     
+      font-weight: 800px;
+      //color: black;
+      text-decoration: none;
+   }
+  
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

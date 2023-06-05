@@ -1,18 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-.mentionslegalesbloc {
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-}
-
-.mentionslegalespolice {
-  margin-top: 6%;
-  font-size: 18px;
-  font-weight: 800px;
-  color: black;
-  text-decoration: none;
-}
-
 .styleprestationtitle1 {
   font-weight: 600;
   color: rgb(0, 0, 0);
@@ -98,7 +85,7 @@
     margin-left: 6%;
   }
   .textongletlandscape {
-    font-size: 2vh;
+    font-size: 1vw;
     text-decoration: none;
     color: black;
   }
@@ -161,11 +148,19 @@
     font-weight: 300;
   }
   /* Page prestations*/
+  .prestationsstyleh1 {
+    font-size: 1vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
   .prestationsstyle {
     padding-left: 1%;
     padding-right: 1%;
     background-color: white;
     width: 100%;
+    font-size: 1vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   .connexionstyle {
     padding-left: 1%;
@@ -219,42 +214,35 @@
   .footerstyle {
     display: none;
   }
+  .liensfooter {
+    margin-top: 4%;
+    text-align: center;
+  }
   .footerlandscape {
     height: 30vh;
+    font-size: 1.2vw;
     position: relative;
+    font-weight: 600;
   }
   .footertelstyle {
-    position: absolute;
-    bottom: 60%;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.5vw;
-    padding-bottom: -5%;
-    margin-left: 38.5%;
-    margin-right: 40%;
+    margin-bottom: 2%;
   }
   .footermailstyle {
-    margin-left: 42.9%;
-    margin-right: 40%;
-    font-weight: 600;
-    font-size: 1.5vw;
-    position: absolute;
-    bottom: 36%;
-    text-align: center;
+    margin-bottom: 2%;
   }
   .my-iconfooter {
-    width: 8%;
+    width: 1.2%;
     height: auto;
+  }
+  .lignementionlegales {
+    justify-content: center;
+    display: flex;
   }
   .mentionslegalespolicelandscape {
     border: 2px solid black;
     background-color: yellow;
     width: 20%;
-    height: 16%;
-    margin-left: 40%;
-    margin-right: 40%;
-    position: absolute;
-    bottom: 20%;
+    height: 6vh;
     align-items: center;
   }
   .mentionslegalesstyle {
@@ -267,6 +255,9 @@
   .h1gallerystyle {
     text-align: center;
   }
+  .h1gallerystylelandscape h1 {
+    font-size: 2vw;
+  }
   .gallerybackground {
     display: none;
   }
@@ -276,6 +267,7 @@
     width: 100%;
     padding: 3%;
     margin-bottom: 1%;
+    font-size: 1vw;
   }
   .image-container {
     display: flex;
@@ -286,36 +278,94 @@
     height: auto;
     margin: 5%;
   }
+  .containeradminstyle {
+    padding: 1%;
+  }
+  .h1tableaudebord {
+    margin: auto;
+    text-align: center;
+  }
+  .h2tableau {
+    margin-top: 2.5%;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+  .nomfichierstyle {
+    margin-top: 1%;
+  }
+  /*Mentions légales*/
+  .mentionlegalesh2style {
+    font-size: 1vw;
+    margin-bottom: 2%;
+    font-weight: 600;
+  }
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 1vw;
+  }
+  .mentionslegalespolice {
+    margin-top: 6%;
+    font-weight: 800px;
+    text-decoration: none;
+  }
+  /*Tableau de bord*/
+  .h1tableaudebord {
+    text-align: center;
+  }
+  .h2tableau {
+    text-align: left;
+  }
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1vw;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+  }
+  .tableadminpagestyle th, .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
+  }
+  .h2adminpagestyle {
+    margin-top: 2%;
+  }
+  .imputidstyle {
+    margin-bottom: 2%;
+  }
+  .textareadesriptionstyle {
+    margin-bottom: 2%;
+  }
+  .selectimagestyle {
+    margin-bottom: 2%;
+  }
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .deconnexionpageadminstyle {
+    margin-top: 6%;
+  }
 }
-.containeradminstyle {
-  padding: 1%;
-}
-
-.h1tableaudebord {
-  margin: auto;
-  text-align: center;
-}
-
-.h2tableau {
-  margin-top: 2.5%;
-}
-
-.h2adminpagestyle {
-  margin-top: 2.5%;
-}
-
-.h2adminpagestyle {
-  margin-top: 2.5%;
-}
-
-.h2adminpagestyle {
-  margin-top: 2.5%;
-}
-
-.nomfichierstyle {
-  margin-top: 1%;
-}
-
 /* format mobile orientation portrait */
 @media screen and (max-width: 600px) and (orientation: portrait) {
   body {
@@ -625,6 +675,17 @@
     /* Centrer le texte verticalement */
     line-height: 1.5em;
   }
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+  .mentionslegalespolice {
+    margin-top: 6%;
+    font-size: 18px;
+    font-weight: 800px;
+    color: black;
+    text-decoration: none;
+  }
 }
 /*Format tablette orientation portrait */
 @media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1024px) {
@@ -903,6 +964,67 @@
     width: 5%;
     margin-left: 1%;
   }
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+  .mentionslegalespolice {
+    margin-top: 6%;
+    font-size: 18px;
+    font-weight: 800px;
+    color: black;
+    text-decoration: none;
+  }
+  /*Page admin*/
+  .h1tableaudebord {
+    text-align: center;
+  }
+  .h2tableau {
+    font-size: 16px;
+    text-align: center;
+  }
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 8px;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+  }
+  .tableadminpagestyle th, .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
+  }
+  .h2adminpagestyle {
+    margin-top: 5%;
+  }
+  .imputidstyle {
+    margin-bottom: 5%;
+  }
+  .textareadesriptionstyle {
+    margin-bottom: 5%;
+  }
+  .selectimagestyle {
+    margin-bottom: 5%;
+  }
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .deconnexionpageadminstyle {
+    margin-top: 6%;
+  }
 }
 /*format desktop orientation portrait*/
 @media only screen and (orientation: portrait) and (min-width: 1024px) {
@@ -1033,8 +1155,8 @@
     margin-top: 2%;
     background-color: yellow;
     border: 4px solid rgb(0, 0, 0);
-    width: 50%;
-    height: 5vh;
+    width: 25%;
+    height: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1058,6 +1180,7 @@
     width: 100%;
     padding: 3%;
     margin-bottom: 1%;
+    font-size: 1vw;
   }
   .image-container {
     display: flex;
@@ -1067,6 +1190,22 @@
     width: 30%;
     height: auto;
     margin: 5%;
+  }
+  /*Page admin */
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1vw;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
   }
   .containeradminstyle {
     padding: 1%;
@@ -1183,5 +1322,21 @@
   .blocmail {
     text-align: center;
     margin: 0;
+  }
+  /*Mentions légales*/
+  .mentionlegalesh2style {
+    font-size: 1vw;
+    margin-bottom: 2%;
+    font-weight: 600;
+  }
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 1vw;
+  }
+  .mentionslegalespolice {
+    margin-top: 6%;
+    font-weight: 800px;
+    text-decoration: none;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -42,7 +42,7 @@ $titrePage = "BAZIRE David artisan plaquiste - Galerie";
 
 
 <div class="gallerybackgroundlandscape">
-  <div class="">
+  <div class="h1gallerystylelandscape">
     <h1>Réalisations</h1>
   </div>
   <div class=" image-container">
