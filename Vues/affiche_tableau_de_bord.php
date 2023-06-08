@@ -125,6 +125,13 @@ if (isset($_SESSION['jwt'])) {
 <div class="h2adminpagestyle">
   <h2 >Insérer un administrateur</h2>
 </div>
+
+
+<button id="afficher-admin" >Afficher les administrateurs</button>
+<div id="admin-container" class="blocafficheadmin"></div>
+
+
+
 <form action="Modeles/insertion_admin.php" method="post">
   <label for="id">ID:</label>
   <input type="text" id="id" name="id" pattern="\d+" min="0" required>
@@ -174,6 +181,7 @@ if (isset($_SESSION['jwt'])) {
 </form>
 </div>
 
+<script src="JS/recup_json_admins.js"></script>
 <?php
 $contenu = ob_get_clean();
 require_once 'Layout.php';
