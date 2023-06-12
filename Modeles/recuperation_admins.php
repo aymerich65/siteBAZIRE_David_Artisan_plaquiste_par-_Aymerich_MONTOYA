@@ -8,20 +8,20 @@ $stmt = $pdo->prepare($query);
 $stmt->execute();
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Vérification si les données peuvent être encodées en JSON
+// Vérification si les données peuvent être encodées au format JSON 
 if ($result !== false) {
     $jsonResult = json_encode($result);
 
     if ($jsonResult !== false) {
-        // Les données peuvent être encodées en JSON
+ 
         header('Content-Type: application/json');
         echo $jsonResult;
     } else {
-        // Erreur d'encodage JSON
+       
         echo 'Erreur d\'encodage JSON';
     }
 } else {
-    // Erreur lors de la récupération des données
+    
     echo 'Erreur lors de la récupération des données';
 }
 ?>
