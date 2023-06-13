@@ -217,7 +217,7 @@
   }
   .bi-envelope {
     height: auto;
-    width: 2.2%;
+    width: 16px;
   }
   /* Style du Pied de page */
   .footerstyle {
@@ -523,11 +523,10 @@
   }
   /* Page contact*/
   .h1contactstyle {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 600;
   }
   .pagecontactstyle {
-    font-size: 1rem;
     color: rgb(0, 0, 0);
     font-weight: bold;
     padding-left: 1%;
@@ -541,7 +540,8 @@
     width: 90%;
     height: 90%;
     margin: auto;
-    font-size: 1rem;
+    font-size: 16px;
+    text-align: center;
   }
   .divh1 {
     text-align: center;
@@ -563,7 +563,7 @@
   }
   .bi-envelope {
     height: auto;
-    width: 5%;
+    width: 16px;
     margin-left: 1%;
   }
   /* style des images en galerie */
@@ -606,6 +606,7 @@
     width: 100%;
     padding-left: 2%;
     padding-right: 2%;
+    font-size: 16px;
   }
   /*Page admin*/
   .h1tableaudebord {
@@ -684,9 +685,13 @@
     /* Centrer le texte verticalement */
     line-height: 1.5em;
   }
+  .mentionlegalesh2style {
+    font-size: 20px;
+  }
   .mentionslegalesbloc {
     padding-left: 1.5%;
     padding-right: 1.5%;
+    font-size: 16px;
   }
   .mentionslegalespolice {
     margin-top: 6%;
@@ -868,16 +873,20 @@
   .gallerydescription {
     text-align: center;
     line-height: 4rem;
-    font-size: 2rem;
+    font-size: 16px;
     padding-left: 1%;
     padding-right: 1%;
   }
   /* Page prestations */
+  .prestationsstyleh1 {
+    font-size: 20px;
+  }
   .prestationsstyle {
     background-color: white;
     width: 100%;
     padding-left: 2%;
     padding-right: 2%;
+    font-size: 16px;
   }
   h1 {
     font-size: 3.5rem;
@@ -928,7 +937,7 @@
   }
   /* Page contact*/
   .pagecontactstyle {
-    font-size: 2rem;
+    font-size: 16px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     padding-left: 1%;
@@ -939,14 +948,14 @@
     overflow: hidden;
   }
   .h1contactstyle {
-    font-size: 3rem;
+    font-size: 20px;
     font-weight: 600;
   }
   .bloctextcontact {
     width: 50%;
     height: 50%;
     margin: auto;
-    font-size: 1rem;
+    text-align: center;
   }
   .divh1 {
     text-align: center;
@@ -1229,7 +1238,7 @@
   }
   .bi-envelope {
     height: auto;
-    width: 1.5%;
+    width: 16px;
   }
   /* Style du Pied de page */
   .footerstyle {
