@@ -24,7 +24,7 @@
 }
 
 /*Orientation  paysage*/
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 2000px) {
   body {
     overflow-y: scroll; /* Ajout de la propriété overflow-y */
     overflow-x: hidden;
@@ -1340,6 +1340,359 @@
     padding-left: 1.5%;
     padding-right: 1.5%;
     font-size: 16px;
+  }
+  .mentionslegalespolice {
+    margin-top: 6%;
+    font-weight: 800px;
+    text-decoration: none;
+  }
+  /*Tableau de bord*/
+  .h1tableaudebord {
+    text-align: center;
+  }
+  .h2tableau {
+    text-align: left;
+  }
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1vw;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+  }
+  .tableadminpagestyle th, .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
+  }
+  .h2adminpagestyle {
+    margin-top: 2%;
+  }
+  .imputidstyle {
+    margin-bottom: 2%;
+  }
+  .textareadesriptionstyle {
+    margin-bottom: 2%;
+  }
+  .selectimagestyle {
+    margin-bottom: 2%;
+  }
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .deconnexionpageadminstyle {
+    margin-top: 6%;
+  }
+}
+/*------------------------------------------------------------format très grands écrans----------------------------------------------------*/
+/*Orientation  paysage*/
+@media screen and (orientation: landscape) and (min-width: 2000px) {
+  body {
+    overflow-y: scroll; /* Ajout de la propriété overflow-y */
+    overflow-x: hidden;
+    width: 100%;
+    z-index: 0;
+    height: 100vh;
+    background: rgb(227, 224, 224);
+    font-family: "Inter", sans-serif;
+    background: rgb(227, 224, 224);
+    margin: 0;
+  }
+  .myheader {
+    width: 100vw;
+    height: 20%;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .headerstyle {
+    display: none;
+  }
+  .headertablette {
+    display: none;
+  }
+  .logolarge {
+    max-width: 100%;
+    height: 100%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .ongletsbloc {
+    position: absolute;
+    left: 8vw;
+    top: 5%;
+    display: flex;
+    word-wrap: none;
+    padding: 0;
+    z-index: 2;
+    left: 30%;
+    width: 100%;
+  }
+  .firstbuttonstyle {
+    position: relative;
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1.5px solid black;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonstyle {
+    position: relative;
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1.5px solid black;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
+  }
+  .textongletlandscape {
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+  }
+  /* Accueil */
+  .accueilportrait {
+    display: none;
+  }
+  .accueillandscape {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    min-height: 50vh;
+    width: 100%;
+    padding: 2;
+    margin: 0;
+  }
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
+  .imgaccueil01 {
+    top: 5%;
+    width: 16%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 56%;
+  }
+  .imgaccueil02 {
+    width: 24%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    right: 2%;
+    bottom: 12%;
+  }
+  .styleprestationtitle1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  .blocmenuiseries {
+    position: relative;
+    left: 15%;
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+  .prestations01 {
+    font-size: 6rem;
+  }
+  .styleprestationtitle2 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+  .blocisolation {
+    position: relative;
+    left: 5%;
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+  /* Page prestations*/
+  .prestationsstyleh1 {
+    font-size: 1.4vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .prestationsstyle {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    width: 100%;
+    font-size: 1.2vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .connexionstyle {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+  }
+  /* Page contact*/
+  .pagecontactstyle {
+    color: rgb(0, 0, 0);
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow: hidden;
+  }
+  .bloctextcontact {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    font-size: 1.2vw;
+    text-align: center;
+  }
+  .divh1 {
+    text-align: center;
+    margin-top: 2%;
+  }
+  .h1contactstyle {
+    font-weight: 600;
+    font-size: 1.4vw;
+    text-align: center;
+  }
+  .h2telstyle {
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 0%;
+  }
+  .blocmail {
+    font-size: 1.2vw;
+    text-align: center;
+    margin: 0;
+  }
+  .bi-envelope {
+    height: auto;
+    width: 1.2vw;
+  }
+  /* Style du Pied de page */
+  .footerstyle {
+    display: none;
+  }
+  .liensfooter {
+    margin-top: 4%;
+    text-align: center;
+  }
+  .footerlandscape {
+    height: 30vh;
+    font-size: 1.2vw;
+    position: relative;
+    font-weight: 600;
+  }
+  .footertelstyle {
+    margin-bottom: 2%;
+  }
+  .footermailstyle {
+    margin-bottom: 2%;
+  }
+  .my-iconfooter {
+    width: 1.2%;
+    height: auto;
+  }
+  .lignementionlegales {
+    justify-content: center;
+    display: flex;
+  }
+  .mentionslegalespolicelandscape {
+    border: 2px solid black;
+    background-color: yellow;
+    width: 20%;
+    height: 6vh;
+    align-items: center;
+  }
+  .mentionslegalesstyle {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2vw;
+  }
+  /* style des images en galerie */
+  .h1gallerystyle {
+    text-align: center;
+  }
+  .h1gallerystylelandscape h1 {
+    font-size: 2vw;
+  }
+  .gallerybackground {
+    display: none;
+  }
+  .gallerybackgroundlandscape {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 1%;
+    font-size: 1.2vw;
+  }
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .galeriebloc {
+    width: 30%;
+    height: auto;
+    margin: 5%;
+  }
+  .containeradminstyle {
+    padding: 1%;
+  }
+  .h1tableaudebord {
+    margin: auto;
+    text-align: center;
+  }
+  .h2tableau {
+    margin-top: 2.5%;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+  .nomfichierstyle {
+    margin-top: 1%;
+  }
+  /*Mentions légales*/
+  .mentionlegalesh2style {
+    font-size: 1.4vw;
+    margin-bottom: 2%;
+    font-weight: 600;
+  }
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 1.2vw;
   }
   .mentionslegalespolice {
     margin-top: 6%;
