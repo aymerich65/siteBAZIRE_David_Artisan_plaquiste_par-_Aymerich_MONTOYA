@@ -1,14 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-.styleprestationtitle1 {
-  font-weight: 600;
-  color: rgb(0, 0, 0);
-}
-
-.styleprestationtitle2 {
-  font-weight: 600;
-}
-
 .bi-envelope {
   height: auto;
   width: 1.5%;
@@ -157,9 +148,16 @@
   }
   /* Page prestations*/
   .prestationsstyleh1 {
-    font-size: 20px;
     margin-top: 2%;
     margin-bottom: 2%;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .prestationsstyleh2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 30px;
+    font-weight: 600;
   }
   .prestationsstyle {
     padding-left: 1%;
@@ -601,12 +599,21 @@
     position: relative;
   }
   /* Page prestations */
+  .prestationsstyleh1 {
+    font-size: 20px;
+  }
+  .prestationsstyleh2 {
+    font-size: 20px;
+    margin-top: 5%;
+  }
   .prestationsstyle {
     background-color: white;
     width: 100%;
     padding-left: 2%;
     padding-right: 2%;
     font-size: 16px;
+    padding-top: 5%;
+    padding-bottom: 3%;
   }
   /*Page admin*/
   .h1tableaudebord {
@@ -881,7 +888,13 @@
   .prestationsstyleh1 {
     font-size: 20px;
   }
+  .prestationsstyleh2 {
+    font-size: 20px;
+    margin-top: 5%;
+  }
   .prestationsstyle {
+    padding-top: 4%;
+    padding-bottom: 3%;
     background-color: white;
     width: 100%;
     padding-left: 2%;
@@ -1178,20 +1191,23 @@
   }
   /* Page prestations*/
   .prestationsstyleh1 {
-    font-size: 1vw;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    font-size: 0.94vw;
+  }
+  .prestationsstyleh2 {
+    font-size: 0.94vw;
+    margin-top: 5%;
   }
   .prestationsstyle {
     padding-left: 1%;
     padding-right: 1%;
     background-color: white;
     width: 100%;
-    font-size: 1vw;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    font-size: 0.84vw;
+    padding-top: 5%;
+    padding-bottom: 3%;
   }
   .connexionstyle {
+    font-size: 0.84vw;
     padding-left: 1%;
     padding-right: 1%;
     background-color: white;
@@ -1213,32 +1229,31 @@
     width: 50%;
     height: 50%;
     margin: auto;
-    font-size: 16px;
+    font-size: 0.84vw;
   }
   .divh1 {
     text-align: center;
     margin-top: 2%;
   }
   .h1contactstyle {
-    font-size: 2rem;
+    font-size: 1.68vw;
     font-weight: 600;
-    font-size: 18px;
     text-align: center;
   }
   .h2telstyle {
-    font-size: 18px;
+    font-size: 0.94vw;
     text-align: center;
     margin-top: 6%;
     margin-bottom: 0%;
   }
   .blocmail {
-    font-size: 18px;
+    font-size: 0.94vw;
     text-align: center;
     margin: 0;
   }
   .bi-envelope {
     height: auto;
-    width: 16px;
+    width: 0.84vw;
   }
   /* Style du Pied de page */
   .footerstyle {
@@ -1297,7 +1312,7 @@
     width: 100%;
     padding: 3%;
     margin-bottom: 1%;
-    font-size: 1vw;
+    font-size: 0.84vw;
   }
   .image-container {
     display: flex;
@@ -1308,45 +1323,52 @@
     height: auto;
     margin: 5%;
   }
-  .containeradminstyle {
-    padding: 1%;
-  }
-  .h1tableaudebord {
-    margin: auto;
-    text-align: center;
-  }
-  .h2tableau {
-    margin-top: 2.5%;
-  }
-  .h2adminpagestyle {
-    margin-top: 2.5%;
-  }
-  .h2adminpagestyle {
-    margin-top: 2.5%;
-  }
-  .h2adminpagestyle {
-    margin-top: 2.5%;
-  }
-  .nomfichierstyle {
-    margin-top: 1%;
-  }
   /*Mentions légales*/
   .mentionlegalesh2style {
-    font-size: 1vw;
+    font-size: 0.94vw;
     margin-bottom: 2%;
     font-weight: 600;
   }
   .mentionslegalesbloc {
     padding-left: 1.5%;
     padding-right: 1.5%;
-    font-size: 16px;
+    font-size: 0.84vw;
   }
   .mentionslegalespolice {
     margin-top: 6%;
+    font-size: 0.84vw;
     font-weight: 800px;
     text-decoration: none;
   }
   /*Tableau de bord*/
+  .containeradminstyle {
+    padding: 1%;
+    font-size: 0.84vw;
+  }
+  .h1tableaudebord {
+    margin: auto;
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  .h2tableau {
+    margin-top: 2.5%;
+    font-size: 2vw;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+    font-size: 2vw;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+    font-size: 2vw;
+  }
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+    font-size: 2vw;
+  }
+  .nomfichierstyle {
+    margin-top: 1%;
+  }
   .h1tableaudebord {
     text-align: center;
   }
@@ -1393,7 +1415,7 @@
     padding-right: 1%;
   }
   .deconnexionpageadminstyle {
-    margin-top: 6%;
+    margin-top: 2%;
   }
 }
 /*------------------------------------------------------------format très grands écrans----------------------------------------------------*/
@@ -1531,6 +1553,13 @@
   }
   /* Page prestations*/
   .prestationsstyleh1 {
+    font-size: 1.4vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: 600;
+  }
+  .prestationsstyleh2 {
+    font-weight: 600;
     font-size: 1.4vw;
     margin-top: 2%;
     margin-bottom: 2%;
