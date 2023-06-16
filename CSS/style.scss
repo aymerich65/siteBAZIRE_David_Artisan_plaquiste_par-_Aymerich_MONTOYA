@@ -1,17 +1,16 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 
-.bi-envelope{
-          height: auto;
-          width: 1.5%;
-          margin-left: 0.3%;
+
+.bi-envelope {
+  height: auto;
+  width: 1.5%;
+  margin-left: 0.3%;
 }
-  
-        
 
-.blocafficheadmin{
+
+
+.blocafficheadmin {
   background-color: white;
   border: 1.5px solid black;
   display: none;
@@ -29,49 +28,52 @@
 /*Orientation  paysage*/
 
 
-        @media screen and (orientation : landscape) and (max-width : 2000px){
-          body {
-            overflow-y: scroll; /* Ajout de la propriété overflow-y */
-            overflow-x:hidden;
-            width: 100%;
-            z-index: 0;
-            height: 100vh;
-            background: rgb(227, 224, 224);
-            font-family: 'Inter', sans-serif;
-            background: rgb(227, 224, 224);
-            margin: 0;
-          }
-          
-            
-          .myheader{
-            width: 100vw;
-            height: 20%;
-            overflow-x : hidden;
-            position: relative;
-          }
-          .headerstyle{
-            display: none;
-          }
-          .headertablette{
-            display: none;
-          }
+@media screen and (orientation : landscape) and (max-width : 2000px) {
+  body {
+    overflow-y: scroll;
+    /* Ajout de la propriété overflow-y */
+    overflow-x: hidden;
+    width: 100%;
+    z-index: 0;
+    height: 100vh;
+    background: rgb(227, 224, 224);
+    font-family: 'Inter', sans-serif;
+    background: rgb(227, 224, 224);
+    margin: 0;
+  }
 
 
-          .logolarge{
-            max-width: 100%;
-            height: 100%;
-            width: 98%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 1; 
-          }
+  .myheader {
+    width: 100vw;
+    height: 20%;
+    overflow-x: hidden;
+    position: relative;
+  }
 
-  .ongletsbloc{
+  .headerstyle {
+    display: none;
+  }
+
+  .headertablette {
+    display: none;
+  }
+
+
+  .logolarge {
+    max-width: 100%;
+    height: 100%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ongletsbloc {
     position: absolute;
-    left: 8vw; 
-    top:5%;
+    left: 8vw;
+    top: 5%;
     display: flex;
     word-wrap: none;
     //background-color: blue;
@@ -80,444 +82,462 @@
     left: 30%;
     //border: 2px solid black;
     width: 100%;
- 
 
-  
+
+
   }
 
-    .firstbuttonstyle{
-      position: relative;
-      margin-top: 2%;
-      background-color: yellow;
-      border : 1.5px solid black;
-      width:10%;  
-      height: 6vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
-    }
+  .firstbuttonstyle {
+    position: relative;
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1.5px solid black;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-
-
-
-    .buttonstyle{
-      
-      position: relative;
-      margin-top: 2%;
-      background-color: yellow;
-      border : 1.5px solid black;
-      width:10%;  
-      height: 6vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 6%;
-      
-    }
-    .textongletlandscape{
-      font-size: 1vw;
-      text-decoration: none;
-      color: black;   
-      //margin-top: auto;
-     // margin-bottom: auto;    
-    }
-
-
-        /* Accueil */
-
-        .accueilportrait{
-          display: none;
-        }
-        .accueillandscape{
-          display: flex;
-          position: relative;
-          background-color: rgb(255, 255, 255);
-          color: rgb(0, 0, 0);
-          font-weight: bold;
-          min-height: 50vh;
-          width:100%; 
-          padding: 2;
-          margin: 0;
-        }
-
-
-
-      
-      .accueil-image{
-          height: 10%;
-          width: 10%;
-      }
-      
-
-      .imgaccueil01{
-          top: 5%;
-          width: 16%;
-          height: auto;
-          position: absolute;
-          z-index: 2;
-          left: 56%;
-          
-      }
-      
-      .imgaccueil02{
-        width: 24%;
-        height: auto;
-          position: absolute;
-          z-index: 3;
-          right: 2%;
-          bottom: 12%;
-          ;
-      
-      }
-
-      .styleprestationtitle1{
-        font-size: 3vw;
-        font-weight: 900;
-      }
-      .blocmenuiseries{
-        position: relative;
-        left: 15%;
-        font-size: 1.5vw;
-        font-weight: 300;
-      }
-      .prestations01{
-        font-size: 6rem;
-      }
-
-
-   .styleprestationtitle2{
-        font-size: 3vw;
-        font-weight: 900;
-      }
-      .blocisolation{
-        position: relative;
-        left: 5%;
-        font-size: 1.5vw;
-        font-weight: 300;
-
-      }
-
-
-
-/* Page prestations*/
-
-.prestationsstyleh1{
-margin-top: 2%;
-margin-bottom: 2%;
-font-size: 30px;
-font-weight: 600;
-}
-
-.prestationsstyleh2{
-  margin-top: 2%;
-  margin-bottom: 2%;
-  font-size: 30px;
-  font-weight: 600;
   }
 
-.prestationsstyle{
-  padding-left: 1%;
-  padding-right: 1%;
+
+
+
+
+  .buttonstyle {
+
+    position: relative;
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1.5px solid black;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
+
+  }
+
+  .textongletlandscape {
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+    //margin-top: auto;
+    // margin-bottom: auto;    
+  }
+
+
+  /* Accueil */
+
+  .accueilportrait {
+    display: none;
+  }
+
+  .accueillandscape {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    min-height: 50vh;
+    width: 100%;
+    padding: 2;
+    margin: 0;
+  }
+
+
+
+
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
+
+
+  .imgaccueil01 {
+    top: 5%;
+    width: 16%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 56%;
+
+  }
+
+  .imgaccueil02 {
+    width: 24%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    right: 2%;
+    bottom: 12%;
+    ;
+
+  }
+
+  .styleprestationtitle1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  .blocmenuiseries {
+    position: relative;
+    left: 15%;
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+
+  .prestations01 {
+    font-size: 6rem;
+  }
+
+
+  .styleprestationtitle2 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  .blocisolation {
+    position: relative;
+    left: 5%;
+    font-size: 1.5vw;
+    font-weight: 300;
+
+  }
+
+
+
+  /* Page prestations*/
+
+  .prestationsstyleh1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .prestationsstyleh2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .prestationsstyle {
+    padding-left: 1%;
+    padding-right: 1%;
     background-color: white;
-        width: 100%;
-        font-size: 16px;
-        padding-top: 2%;
-        padding-bottom: 2%;
-      }
-  
+    width: 100%;
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
 
 
-/* Page connexion*/
-.connexionstyle{
-  padding-left: 1%;
-  padding-right: 1%;
+
+  /* Page connexion*/
+  .connexionstyle {
+    padding-left: 1%;
+    padding-right: 1%;
     background-color: white;
-        width: 100%;  
-        min-height: 40vh;
-        padding-bottom: 2%;
-}
-
-
-      
-/* Page contact*/
-
-.pagecontactstyle{
-
-  color: rgb(0, 0, 0);
-  //font-weight: bold;
-padding-left: 1%;
-padding-right: 1%;
-background-color: rgb(255, 255, 255);
-//height:80vh;
-width: 100%;
-margin-top: 1%;
-margin-bottom: 1%;
-overflow: hidden;
-
-}
-
-
-.bloctextcontact{
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  font-size: 16px;
-text-align: center;
-}
-
-
-.divh1{
-text-align: center;
- margin-top: 2%;
-}
-
-.h1contactstyle{
-  font-weight: 600;
-  font-size: 20px;
-  text-align: center;
-  
-  
-}
-
-.h2telstyle{
-  font-size: 16px;
-  text-align: center;
-  margin-top: 6%;
-  margin-bottom: 0%;
-}
-
-.blocmail{
-  font-size: 16px;
-  text-align: center;
-  margin: 0;
-}
-.bi-envelope{
-  height: auto;
-  width: 16px;
-}
+    width: 100%;
+    min-height: 40vh;
+    padding-bottom: 2%;
+  }
 
 
 
+  /* Page contact*/
 
- /* Style du Pied de page */
+  .pagecontactstyle {
 
- .footerstyle{
-display: none;
+    color: rgb(0, 0, 0);
+    //font-weight: bold;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(255, 255, 255);
+    //height:80vh;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow: hidden;
 
-
-}
-
-.liensfooter{
-  margin-top: 4%;
-  text-align: center;
-}
-
-.footerlandscape{
-  height: 30vh;
-  font-size: 1.2vw;
-position: relative;
-font-weight: 600;
-}
-
-.footertelstyle{
-
-margin-bottom: 2%;
-}
-.footermailstyle{
-  margin-bottom: 2%;
- 
-}
-
-.my-iconfooter {
-  width: 1.2%;
-  height: auto;
-
-}
-.lignementionlegales{
-  justify-content: center;
-  display: flex;
-}
-.mentionslegalespolicelandscape{
-  border: 2px solid black;
-  background-color: yellow;
-  width: 20%;
-  height:6vh;
- align-items: center;
-  
-  
- }
+  }
 
 
-
-.mentionslegalesstyle{
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
-   font-size: 1.2vw;
-}
-
-
-
- /* style des images en galerie */
+  .bloctextcontact {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
 
 
-.h1gallerystyle{
-  text-align: center;
+  .divh1 {
+    text-align: center;
+    margin-top: 2%;
+  }
 
-}
-.h1gallerystylelandscape h1{
-  font-size: 2vw;
-}
-
-
-.gallerybackground{
-  display: none;
-}
+  .h1contactstyle {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
 
 
-.gallerybackgroundlandscape{
-  display: block;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  padding: 3%;
-  margin-bottom: 1%;
-  font-size: 16px;
+  }
 
-  
-}
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.galeriebloc {
-  width: 30%; 
-  height: auto;
-  margin: 5%; 
-  
-}
-
-        
-
-
-.containeradminstyle{
-  padding: 1%;
-}
-
-.h1tableaudebord{
-  margin: auto; 
-text-align: center;
-}
-.h2tableau{
-  margin-top:2.5%;
- 
- } 
- .h2adminpagestyle{
-  margin-top:2.5%;
- } 
- .h2adminpagestyle{
-  margin-top:2.5%;
- } 
- .h2adminpagestyle{
-  margin-top:2.5%;
- } 
- .nomfichierstyle{
-  margin-top:1%;
- }
-
- /*Mentions légales*/
- .mentionlegalesh2style{
-font-size: 20px;
-margin-bottom: 2%;
-font-weight: 600;
-
-}
-
-
- .mentionslegalesbloc{
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-   font-size: 16px;
-
-}
-.mentionslegalespolice{
+  .h2telstyle {
+    font-size: 16px;
+    text-align: center;
     margin-top: 6%;
-   
+    margin-bottom: 0%;
+  }
+
+  .blocmail {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .bi-envelope {
+    height: auto;
+    width: 16px;
+  }
+
+
+
+
+  /* Style du Pied de page */
+
+  .footerstyle {
+    display: none;
+
+
+  }
+
+  .liensfooter {
+    margin-top: 4%;
+    text-align: center;
+  }
+
+  .footerlandscape {
+    height: 30vh;
+    font-size: 1.2vw;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .footertelstyle {
+
+    margin-bottom: 2%;
+  }
+
+  .footermailstyle {
+    margin-bottom: 2%;
+
+  }
+
+  .my-iconfooter {
+    width: 1.2%;
+    height: auto;
+
+  }
+
+  .lignementionlegales {
+    justify-content: center;
+    display: flex;
+  }
+
+  .mentionslegalespolicelandscape {
+    border: 2px solid black;
+    background-color: yellow;
+    width: 20%;
+    height: 6vh;
+    align-items: center;
+
+
+  }
+
+
+
+  .mentionslegalesstyle {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2vw;
+  }
+
+
+
+  /* style des images en galerie */
+
+
+  .h1gallerystyle {
+    text-align: center;
+
+  }
+
+  .h1gallerystylelandscape h1 {
+    font-size: 2vw;
+  }
+
+
+  .gallerybackground {
+    display: none;
+  }
+
+
+  .gallerybackgroundlandscape {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 1%;
+    font-size: 16px;
+
+
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galeriebloc {
+    width: 30%;
+    height: auto;
+    margin: 5%;
+
+  }
+
+
+
+
+  .containeradminstyle {
+    padding: 1%;
+  }
+
+  .h1tableaudebord {
+    margin: auto;
+    text-align: center;
+  }
+
+  .h2tableau {
+    margin-top: 2.5%;
+
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+
+  .nomfichierstyle {
+    margin-top: 1%;
+  }
+
+  /*Mentions légales*/
+  .mentionlegalesh2style {
+    font-size: 20px;
+    margin-bottom: 2%;
+    font-weight: 600;
+
+  }
+
+
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 16px;
+
+  }
+
+  .mentionslegalespolice {
+    margin-top: 6%;
+
     font-weight: 800px;
     //color: black;
     text-decoration: none;
- }
+  }
 
 
-        /*Tableau de bord*/
-        
-        .h1tableaudebord{
-          text-align: center;
-        
-         }
-        
-         .h2tableau{
-          text-align: left;
-        
-        }
-        
-        .tableadminpagestyle {
-          border: 1px solid black;
-          background-color: white;
-          font-size: 1vw;
-          width: 95%;
-          font-weight: bold;
-          table-layout: fixed;
-          margin-top: 0%;
-          margin-bottom: 1%;
-          margin-left: 1%;
-          margin-right: 1%;
-          max-width: 95%;
-          max-height: 40%;
-          overflow-y: scroll;
-        
-        }
-        
-        .tableadminpagestyle th, .tableadminpagestyle td {
-          width: 50%;
-          word-wrap: break-word;  
-          padding-right: 10px;
-          padding-bottom: 1%;
-          
-         
-        }
-        
-        .h2adminpagestyle{
-        margin-top: 2%;
-        
-        
-        }
-        
-        .imputidstyle{
-          margin-bottom: 2%;
-        }
-        
-        .textareadesriptionstyle{
-          margin-bottom: 2%;
-        }
-        
-        .selectimagestyle{
-          margin-bottom: 2%;
-        }
-        
-        .containeradminstyle{
-          max-width: 100%;
-          overflow: hidden;
-          padding-left: 1%;
-          padding-right: 1%;
-        }
-        
-        
-        .deconnexionpageadminstyle{
-          margin-top: 6%;
-        }
+  /*Tableau de bord*/
+
+  .h1tableaudebord {
+    text-align: center;
+
+  }
+
+  .h2tableau {
+    text-align: left;
+
+  }
+
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1vw;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+
+  }
+
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
+
+
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2%;
+
+
+  }
+
+  .imputidstyle {
+    margin-bottom: 2%;
+  }
+
+  .textareadesriptionstyle {
+    margin-bottom: 2%;
+  }
+
+  .selectimagestyle {
+    margin-bottom: 2%;
+  }
+
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+
+  .deconnexionpageadminstyle {
+    margin-top: 6%;
+  }
 
 
 
@@ -555,44 +575,46 @@ font-weight: 600;
 
 
 
-@media screen and (max-width:600px) and (orientation : portrait) { 
-  
+@media screen and (max-width:600px) and (orientation : portrait) {
 
-  body{
+
+  body {
     z-index: 0;
-     overflow-x: hidden; 
-     height: 100vh;
-      width: 100%;
-     background: rgb(227, 224, 224);
-     font-family: 'Inter', sans-serif;
- 
-   
-     }
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background: rgb(227, 224, 224);
+    font-family: 'Inter', sans-serif;
+
+
+  }
 
 
 
-  .logolarge{
+  .logolarge {
     display: none;
   }
 
-.ongletsbloc{    
-display: none;
-  }
-  .headertablette{
+  .ongletsbloc {
     display: none;
   }
 
-/*En tête : */
-.headerstyle{
-  max-width: 100%;
-  height: 12%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .headertablette {
+    display: none;
+  }
 
-} 
-  .imgheader{
-    max-width: 100%; 
+  /*En tête : */
+  .headerstyle {
+    max-width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .imgheader {
+    max-width: 100%;
     height: auto;
   }
 
@@ -601,447 +623,451 @@ display: none;
 
 
 
-        /* Accueil */
+  /* Accueil */
 
 
-        .accueillandscape{
-          display: none;
-        }
-        .gallerybackgroundlandscape{
-          display:none;
-                }
-        
-                .accueillandscape{
-                  display: none;
-                }
+  .accueillandscape {
+    display: none;
+  }
+
+  .gallerybackgroundlandscape {
+    display: none;
+  }
+
+  .accueillandscape {
+    display: none;
+  }
 
 
-        .pageaccueilstyle{
-          font-size: 2.3vh;
-          color: rgb(0, 0, 0);
-          font-weight: bold;
-          padding-top: 1%;
-          background-color: rgb(255, 255, 255);
-          height: 50vh;
-          padding: 0;
-          margin: 0;
-          position: relative;
-          width:100%;
-      }
-      
-      .accueil-image{
-          height: 10%;
-          width: 10%;
-      }
-      
-      .container-fluid {
-          padding: 0;
-          margin: 0;
-          
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-       
-      }
-      
-      .imgaccueil01{
-          top: 5%;
-          width: 42%;
-          height: 28vh;
-          position: absolute;
-          z-index: 2;
-          left: 50%;
-          
-      }
-      
-      .imgaccueil02{
-        width: 50%;
-        height: 18vh;
-          position: absolute;
-          z-index: 3;
-          right: 3%;
-          bottom: 2%;
-          ;
-      
-      }
+  .pageaccueilstyle {
+    font-size: 2.3vh;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
 
-      .gallerydescription{
-        text-align: center;
-        line-height: 2rem;
-        font-size: 1rem;
-        padding-left: 1%;
-        padding-right:  1%;
-      }
-    
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
 
+  .container-fluid {
+    padding: 0;
+    margin: 0;
 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-      
-      /* tableau de bord */
-      .mpimputmobile{
-        margin-top: 3%;
-      }
-      
-    
-         
-     
-  
-    
- .colaccueilstyle01{
-          width: 50%;
-          height: 100%;
-          display: flex;
-          position: relative;
-          //background-color: rgb(149, 255, 0);
-      }
+  }
 
-    .styleprestationtitle1{
-        font-size: 3vh;
-        font-weight: 700;
-        position: absolute;
-        top: 7%;
-      }
+  .imgaccueil01 {
+    top: 5%;
+    width: 42%;
+    height: 28vh;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
 
+  }
 
-      .blocparagrapheisolation{
-        position: absolute;
-        top: 15.5%;
-        //background-color: red;
-        font-size: 1.9vh;
+  .imgaccueil02 {
+    width: 50%;
+    height: 18vh;
+    position: absolute;
+    z-index: 3;
+    right: 3%;
+    bottom: 2%;
+    ;
 
-      }   
+  }
 
-
-
-      .styleprestationtitle2{
-        font-size: 3vh;
-        font-weight: 600;
-        position: absolute;
-        top: 50%;
-      }
-
-.blocparagraphemenuiserie{
-  position: absolute;
-  top: 58.5%;
-  font-size: 1.9vh;
-
-      }
-
-
-
-
-
-
-
-
-      
-  
-
-        /* Style du Pied de page */
-        .footerlandscape{
-          display:none;
-        
-        }
-
-        .footerstyle{
-            height: 35vh;
-            max-width: 100%;
-            overflow: hidden;
-
-        }
-        
-        /* Boutons */
-        .buttonstyle{
-          margin-top: 2%;
-          background-color: yellow;
-          border : 2px solid rgb(0, 0, 0);
-          width:50%;  
-          height: 5vh; 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        
-        
-        }
-
-          .pagelinkpolice{
-              color: black;            
-              font-weight: bold;
-              font-size: 80%;
-              text-decoration: none;
-          }
-
-/* Page contact*/
-
-.h1contactstyle{
-  font-size: 20px;
-  font-weight: 600;
-}
-
-
-
-        .pagecontactstyle{
-          //font-size: 16px;
-          color: rgb(0, 0, 0);
-          font-weight: bold;
-        padding-left: 1%;
-        padding-right: 1%;
-        background-color: rgb(255, 255, 255);
-        
-        margin-top: 1%;
-        margin-bottom: 1%;
-        overflow: hidden;
-     }
-
-
-     .bloctextcontact{
-      width: 90%;
-      height: 90%;
-      margin: auto;
-      font-size: 16px;
-      text-align : center;
-    
-    }
-    
-    
-    .divh1{
+  .gallerydescription {
     text-align: center;
-     margin-top: 2%;
-    }
-    
-    .h1contactstyle{
-      font-size: 2rem;
-      font-weight: 600;
-      text-align: center;
-     
-    }
-    
-    .h2telstyle{
-      text-align: center;
-      margin-top: 6%;
-      margin-bottom: 0%;
-    }
-    
-    .blocmail{
-      text-align: center;
-      margin: 0;
-    }
-    .bi-envelope{
-      height: auto;
-      width: 16px;
-      margin-left: 1%;
-    }
+    line-height: 2rem;
+    font-size: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 
 
 
-    /* style des images en galerie */
- 
-    
-    .gallerybackgroundlandscape{
-      display:none;
-            }
-
-    .gallerybloc {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 400px;
-        overflow: hidden;
-        
-      }
-    
-      .h1gallerystyle{
-        text-align: center;
-      }
-
-      .gallery-image {
-        max-width: 100%;
-        max-height: 100%;
-        display: none;
-      }
-      
-      .gallery-image.active {
-        display: block;
-      }
 
 
-      .my-icon {
-        width: 15%;
-        height: auto;
-        background-color: yellow;
-      }
-
-      .gallerybackground{
-        background-color: white;
-      }
-
-      .gallerybuttonline{
-        display: flex;
-        //justify-content: center;
-        position: relative;
-        
-        
-      }
- 
-       
-   
-
-      /* Page prestations */
-
-      .prestationsstyleh1{
-        font-size: 20px;
-      
-      }
+  /* tableau de bord */
+  .mpimputmobile {
+    margin-top: 3%;
+  }
 
 
-      .prestationsstyleh2{
-        font-size: 20px;
-        margin-top: 5%;
-      }
-
-      .prestationsstyle{
-        background-color: white;
-        width: 100%;
-        padding-left: 2%;
-        padding-right: 2%;
-        font-size: 16px;
-        padding-top: 5%;
-        padding-bottom: 3%;
-      }
-
-/*Page admin*/
 
 
- .h1tableaudebord{
-  text-align: center;
- }
 
- .h2tableau{
-  font-size: 16px;
-  text-align: center;
+
+  .colaccueilstyle01 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    //background-color: rgb(149, 255, 0);
+  }
+
+  .styleprestationtitle1 {
+    font-size: 3vh;
+    font-weight: 700;
+    position: absolute;
+    top: 7%;
+  }
+
+
+  .blocparagrapheisolation {
+    position: absolute;
+    top: 15.5%;
+    //background-color: red;
+    font-size: 1.9vh;
+
+  }
+
+
+
+  .styleprestationtitle2 {
+    font-size: 3vh;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+  }
+
+  .blocparagraphemenuiserie {
+    position: absolute;
+    top: 58.5%;
+    font-size: 1.9vh;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* Style du Pied de page */
+  .footerlandscape {
+    display: none;
+
+  }
+
+  .footerstyle {
+    height: 35vh;
+    max-width: 100%;
+    overflow: hidden;
+
+  }
+
+  /* Boutons */
+  .buttonstyle {
+    margin-top: 2%;
+    background-color: yellow;
+    border: 2px solid rgb(0, 0, 0);
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .pagelinkpolice {
+    color: black;
+    font-weight: bold;
+    font-size: 80%;
+    text-decoration: none;
+  }
+
+  /* Page contact*/
+
+  .h1contactstyle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+
+  .pagecontactstyle {
+    //font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(255, 255, 255);
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow: hidden;
+  }
+
+
+  .bloctextcontact {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+
+  }
+
+
+  .divh1 {
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .h1contactstyle {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+  }
+
+  .h2telstyle {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 0%;
+  }
+
+  .blocmail {
+    text-align: center;
+    margin: 0;
+  }
+
+  .bi-envelope {
+    height: auto;
+    width: 16px;
+    margin-left: 1%;
+  }
+
+
+
+  /* style des images en galerie */
+
+
+  .gallerybackgroundlandscape {
+    display: none;
+  }
+
+  .gallerybloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+
+  }
+
+  .h1gallerystyle {
+    text-align: center;
+  }
+
+  .gallery-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+  }
+
+  .gallery-image.active {
+    display: block;
+  }
+
+
+  .my-icon {
+    width: 15%;
+    height: auto;
+    background-color: yellow;
+  }
+
+  .gallerybackground {
+    background-color: white;
+  }
+
+  .gallerybuttonline {
+    display: flex;
+    //justify-content: center;
+    position: relative;
+
+
+  }
+
+
+
+
+  /* Page prestations */
+
+  .prestationsstyleh1 {
+    font-size: 20px;
+
+  }
+
+
+  .prestationsstyleh2 {
+    font-size: 20px;
+    margin-top: 5%;
+  }
+
+  .prestationsstyle {
+    background-color: white;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 16px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+
+  /*Page admin*/
+
+
+  .h1tableaudebord {
+    text-align: center;
+  }
+
+  .h2tableau {
+    font-size: 16px;
+    text-align: center;
+
+  }
+
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 8px;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+
+  }
+
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
+
+
+  }
+
+
+
+
+  .h2adminpagestyle {
+    margin-top: 5%;
+
+
+  }
+
+  .imputidstyle {
+    margin-bottom: 5%;
+  }
+
+  .textareadesriptionstyle {
+    margin-bottom: 5%;
+  }
+
+  .selectimagestyle {
+    margin-bottom: 5%;
+  }
+
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+
+  .deconnexionpageadminstyle {
+    margin-top: 6%;
+  }
+
+
+
+
+
+  /* Style du Pied de page */
+  .footerlandscape {
+    display: none;
+
+  }
+
+  .footerstyle {
+    height: 35vh;
+    max-width: 100%;
+    overflow: hidden;
+
+  }
+
+  .buttonstyle {
+    margin-top: 2%;
+    background-color: yellow;
+    border: 0.8% solid rgb(0, 0, 0);
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagelinkpolice {
+    color: black;
+    font-weight: bold;
+    font-size: 80%;
+    text-decoration: none;
+    /* Centrer le texte verticalement */
+    line-height: 1.5em;
+  }
+
+  .mentionlegalesh2style {
+    font-size: 20px;
+  }
+
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 16px;
+  }
+
+
+
+  .mentionslegalespolice {
+    margin-top: 6%;
+    font-size: 18px;
+    font-weight: 800px;
+    color: black;
+    text-decoration: none;
+  }
+
+
 
 }
-
-.tableadminpagestyle {
-  border: 1px solid black;
-  background-color: white;
-  font-size: 8px;
-  width: 95%;
-  font-weight: bold;
-  table-layout: fixed;
-
-  margin-top: 0%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  max-width: 95%;
-  max-height: 40%;
-  overflow-y: scroll;
-
-}
-
-.tableadminpagestyle th, .tableadminpagestyle td {
-  width: 50%;
-  word-wrap: break-word;  
-  padding-right: 10px;
-  padding-bottom: 1%;
-  
- 
-}
-
-
-
-
-.h2adminpagestyle{
-margin-top: 5%;
-
-
-}
-
-.imputidstyle{
-  margin-bottom: 5%;
-}
-
-.textareadesriptionstyle{
-  margin-bottom: 5%;
-}
-
-.selectimagestyle{
-  margin-bottom: 5%;
-}
-
-.containeradminstyle{
-  max-width: 100%;
-  overflow: hidden;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-
-.deconnexionpageadminstyle{
-  margin-top: 6%;
-}
-
-
-
-
-
-        /* Style du Pied de page */
-        .footerlandscape{
-          display:none;
-        
-        }
-
-        .footerstyle{
-            height: 35vh;
-            max-width: 100%;
-            overflow: hidden;
-
-        }
-
-        .buttonstyle{
-          margin-top: 2%;
-          background-color: yellow;
-          border : 0.8% solid rgb(0, 0, 0);
-          width:50%;  
-          height: 5vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        
-        .pagelinkpolice{
-          color: black;
-          font-weight: bold;
-          font-size: 80%;
-          text-decoration: none;
-          /* Centrer le texte verticalement */
-          line-height: 1.5em;
-        }
-
-         .mentionlegalesh2style{
-          font-size: 20px;
-         }
-        .mentionslegalesbloc{
-          padding-left: 1.5%;
-          padding-right: 1.5%;
-          font-size: 16px;
-        }
-
-
-
-        .mentionslegalespolice{
-            margin-top: 6%;
-            font-size: 18px;
-            font-weight: 800px;
-            color: black;
-            text-decoration: none;
-         }
-
-
-
-      }
 
 
 
@@ -1099,498 +1125,503 @@ margin-top: 5%;
 
 
 
-  body{
+  body {
     z-index: 0;
-     overflow-x: hidden; 
-     height: 100vh;
-      width: 100%;
-     background: rgb(227, 224, 224);
-     font-family: 'Inter', sans-serif;
- 
-   
-     }
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background: rgb(227, 224, 224);
+    font-family: 'Inter', sans-serif;
+
+
+  }
 
 
 
-/*En tête : */
+  /*En tête : */
 
 
-.logolarge{
-  display: none;
-}
+  .logolarge {
+    display: none;
+  }
 
-.ongletsbloc{    
-display: none;
-}
+  .ongletsbloc {
+    display: none;
+  }
 
-/*En tête : */
-.headerstyle{
- display: none;
-} 
+  /*En tête : */
+  .headerstyle {
+    display: none;
+  }
 
-.headertablette{
- 
-  max-width: 100%;
-  height: 12%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+  .headertablette {
 
-
-
-
-
-.imgheader{
-  position: relative;
-  top:5%;
-    width: 100%; 
-  height: auto;
-}
-
-
-
-
-        /* Accueil */
-
-        .accueillandscape{
-          display: none;
-        }
-
-        .pageaccueilstyle{
-          font-size: 18px;
-          color: rgb(0, 0, 0);
-          font-weight: bold;
-          padding-top: 1%;
-          background-color: rgb(255, 255, 255);
-          height: 50vh;
-          padding: 4%;
-          margin: 0;
-          position: relative;
-          width:100%;
-          
-   
-      }
-      
-      .accueil-image{
-          height: 10%;
-          width: 10%;
-      }
-      
-      .container-fluid {
-          padding: 0;
-          
-          margin: 0;
-          
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-      }
-      
-      .imgaccueil01{
-          top: 1.5%;
-          width: 32%;
-          height: 28vh;
-          position: absolute;
-          z-index: 2;
-          left: 55%;
-          
-      }
-      
-      .imgaccueil02{
-        width: 38%;
-        height:18vh ;
-          position: absolute;
-          z-index: 3;
-          right: 11%;
-          bottom: 1.5%;
-          ;
-      
-      }
-
-    
- .colaccueilstyle01{
-          width: 50%;
-          height: 100%;
-          display: flex;
-          position: relative;
-          
-         
-      }
-
-    .styleprestationtitle1{
-      font-size: 2.4rem;
-        font-weight: 700;
-        position: absolute;
-        top: 1%;
-      }
-
-
-      .blocparagrapheisolation{
-        position: absolute;
-        top: 15.5%;   
-      font-size: 1.4rem;
- 
-      }   
-
-
-
-      .styleprestationtitle2{
-        font-size: 2.4rem;
-        font-weight: 600;
-        position: absolute;
-        top: 49.5%;
-        margin-top: 10%;
-  
-      }
-
-.blocparagraphemenuiserie{
-  position: absolute;
-  top: 58.5%;
-  font-size: 1.4rem;
-  margin-top: 16%;
- 
-      }
-
-
- /* Style du Pied de page */
- .footerlandscape{
-  display:none;
-
-}
-
- .footerstyle{
-  height: 35vh;
-  max-width: 100%;
-  overflow: hidden;
-
-}
-
-
-
-        /* Boutons */
-        .buttonstyle{
-          margin-top: 2%;
-  background-color: yellow;
-  border: 4px solid rgb(0, 0, 0);
-  width: 50%;
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-        }
-
-          .pagelinkpolice{
-              color: black;            
-              font-weight: bold;
-              font-size: 2rem;
-              text-decoration: none;
-          }
+    max-width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
 
 
 
 
 
-/* style des images en galerie */
-
-.gallerybackgroundlandscape{
-  display:none;
-        }
-
-.gallerybloc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  overflow: hidden;
-  
-}
-
-.h1gallerystyle{
-  text-align: center;
-}
-
-.gallery-image {
-  max-width: 100%;
-  max-height: 100%;
-  display: none;
-}
-
-.gallery-image.active {
-  display: block;
-}
+  .imgheader {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: auto;
+  }
 
 
-.my-icon {
-  width: 8%;
-  height: auto;
-  background-color: yellow;
-}
 
-.gallerybackground{
-  background-color: white;
-  
-}
 
-.gallerybuttonline{
-  display: flex;
-  //justify-content: center;
-  position: relative;
-}
-  
-  .gallerydescription{
+  /* Accueil */
+
+  .accueillandscape {
+    display: none;
+  }
+
+  .pageaccueilstyle {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    padding: 4%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+
+
+  }
+
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
+
+  .container-fluid {
+    padding: 0;
+
+    margin: 0;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .imgaccueil01 {
+    top: 1.5%;
+    width: 32%;
+    height: 28vh;
+    position: absolute;
+    z-index: 2;
+    left: 55%;
+
+  }
+
+  .imgaccueil02 {
+    width: 38%;
+    height: 18vh;
+    position: absolute;
+    z-index: 3;
+    right: 11%;
+    bottom: 1.5%;
+    ;
+
+  }
+
+
+  .colaccueilstyle01 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+
+  }
+
+  .styleprestationtitle1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: absolute;
+    top: 1%;
+  }
+
+
+  .blocparagrapheisolation {
+    position: absolute;
+    top: 15.5%;
+    font-size: 1.4rem;
+
+  }
+
+
+
+  .styleprestationtitle2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    position: absolute;
+    top: 49.5%;
+    margin-top: 10%;
+
+  }
+
+  .blocparagraphemenuiserie {
+    position: absolute;
+    top: 58.5%;
+    font-size: 1.4rem;
+    margin-top: 16%;
+
+  }
+
+
+  /* Style du Pied de page */
+  .footerlandscape {
+    display: none;
+
+  }
+
+  .footerstyle {
+    height: 35vh;
+    max-width: 100%;
+    overflow: hidden;
+
+  }
+
+
+
+  /* Boutons */
+  .buttonstyle {
+    margin-top: 2%;
+    background-color: yellow;
+    border: 4px solid rgb(0, 0, 0);
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagelinkpolice {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+
+
+
+
+  /* style des images en galerie */
+
+  .gallerybackgroundlandscape {
+    display: none;
+  }
+
+  .gallerybloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+
+  }
+
+  .h1gallerystyle {
+    text-align: center;
+  }
+
+  .gallery-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+  }
+
+  .gallery-image.active {
+    display: block;
+  }
+
+
+  .my-icon {
+    width: 8%;
+    height: auto;
+    background-color: yellow;
+  }
+
+  .gallerybackground {
+    background-color: white;
+
+  }
+
+  .gallerybuttonline {
+    display: flex;
+    //justify-content: center;
+    position: relative;
+  }
+
+  .gallerydescription {
     text-align: center;
     line-height: 4rem;
     font-size: 16px;
     padding-left: 1%;
-    padding-right:  1%;
+    padding-right: 1%;
   }
 
-  
-
-
-      /* Page prestations */
-
-      .prestationsstyleh1{
-        
-        font-size: 20px;
-
-      }
-
-      .prestationsstyleh2{
-        font-size: 20px;
-        margin-top: 5%;
-      }
-      .prestationsstyle{
-        padding-top: 4%;
-        padding-bottom: 3%;
-        background-color: white;
-        width: 100%;
-        padding-left: 2%;
-        padding-right: 2%;
-        font-size: 16px;
-      }
 
 
 
-//Pageconnexion
+  /* Page prestations */
 
+  .prestationsstyleh1 {
 
-h1{
-  font-size: 3.5rem;
-}
+    font-size: 20px;
 
-.formularcontainer {
-  margin-top: 2%;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 10vh 10vh 5vh;
-  gap: 10px;
-  height: 50vh;
-  grid-template-areas:
-    "imputlabelA imputB"
-    "imputlabelC imputD"
-    "formularbutton formularbutton";
-}
+  }
 
-.imputlabelA {
-  grid-area: imputlabelA;
-  text-align: center;
-  font-size: 2rem;
-  align-self: center;
-  
+  .prestationsstyleh2 {
+    font-size: 20px;
+    margin-top: 5%;
+  }
 
-
-}
-
-.imputlabelC {
-  grid-area: imputlabelC;
-  text-align: center;
-  font-size: 2rem;
-  align-self: center;
-
-}
-
-.imputstyle{
-  margin-left: 1%;
-  margin-right: 0;
-display: inline-block;
-}
-
-.imputdimension {
-height:3rem;
-width: 90%;
-margin: 1%;
-padding: 5%;
-border : 1.5px solid black;
-position: relative;
-top: 20%;
-}
-
-.formularbuttoncontainer{
-  grid-area: formularbutton;
-}
-.formularbuttonstyle{
-  
-  width: 20%;
-  height: 3.5vh;
-  
-  position: relative;
-  left: 10%;
-}
+  .prestationsstyle {
+    padding-top: 4%;
+    padding-bottom: 3%;
+    background-color: white;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 16px;
+  }
 
 
 
-
-/* Page contact*/
-
-.pagecontactstyle{
-  font-size: 16px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-padding-left: 1%;
-padding-right: 1%;
-background-color: rgb(255, 255, 255);
-
-margin-top: 1%;
-margin-bottom: 1%;
-overflow: hidden;
-
-}
-.h1contactstyle{
-  font-size: 20px;
-  font-weight: 600;
-}
+  //Pageconnexion
 
 
-.bloctextcontact{
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  //font-size: 1rem;
-  text-align : center;
-}
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .formularcontainer {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10vh 10vh 5vh;
+    gap: 10px;
+    height: 50vh;
+    grid-template-areas:
+      "imputlabelA imputB"
+      "imputlabelC imputD"
+      "formularbutton formularbutton";
+  }
+
+  .imputlabelA {
+    grid-area: imputlabelA;
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
 
 
-.divh1{
-text-align: center;
- margin-top: 2%;
-}
 
-.h1contactstyle{
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
- 
-}
+  }
 
-.h2telstyle{
-  text-align: center;
-  margin-top: 6%;
-  margin-bottom: 0%;
+  .imputlabelC {
+    grid-area: imputlabelC;
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
+
+  }
+
+  .imputstyle {
+    margin-left: 1%;
+    margin-right: 0;
+    display: inline-block;
+  }
+
+  .imputdimension {
+    height: 3rem;
+    width: 90%;
+    margin: 1%;
+    padding: 5%;
+    border: 1.5px solid black;
+    position: relative;
+    top: 20%;
+  }
+
+  .formularbuttoncontainer {
+    grid-area: formularbutton;
+  }
+
+  .formularbuttonstyle {
+
+    width: 20%;
+    height: 3.5vh;
+
+    position: relative;
+    left: 10%;
+  }
+
+
+
+
+  /* Page contact*/
+
+  .pagecontactstyle {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(255, 255, 255);
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow: hidden;
+
+  }
+
+  .h1contactstyle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  .bloctextcontact {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    //font-size: 1rem;
+    text-align: center;
+  }
+
+
+  .divh1 {
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .h1contactstyle {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+  }
+
+  .h2telstyle {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 0%;
     font-size: 1rem;
-}
+  }
 
-.blocmail{
-  text-align: center;
-  margin: 0;  
-  font-size: 1rem;
+  .blocmail {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
 
-}
-.bi-envelope{
-  height: auto;
-  width: 5%;
-  margin-left: 1%;
+  }
 
-}
+  .bi-envelope {
+    height: auto;
+    width: 5%;
+    margin-left: 1%;
 
-.mentionslegalesbloc{
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-}
+  }
 
-.mentionslegalespolice{
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+
+  .mentionslegalespolice {
     margin-top: 6%;
     font-size: 18px;
     font-weight: 800px;
     color: black;
     text-decoration: none;
- }
+  }
 
- /*Page admin*/
-
-
- .h1tableaudebord{
-  text-align: center;
- }
-
- .h2tableau{
-  font-size: 16px;
-  text-align: center;
-
-}
-
-.tableadminpagestyle {
-  border: 1px solid black;
-  background-color: white;
-  font-size: 8px;
-  width: 95%;
-  font-weight: bold;
-  table-layout: fixed;
-
-  margin-top: 0%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  max-width: 95%;
-  max-height: 40%;
-  overflow-y: scroll;
-
-}
-
-.tableadminpagestyle th, .tableadminpagestyle td {
-  width: 50%;
-  word-wrap: break-word;  
-  padding-right: 10px;
-  padding-bottom: 1%;
-  
- 
-}
+  /*Page admin*/
 
 
+  .h1tableaudebord {
+    text-align: center;
+  }
+
+  .h2tableau {
+    font-size: 16px;
+    text-align: center;
+
+  }
+
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 8px;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+
+  }
+
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
 
 
-.h2adminpagestyle{
-margin-top: 5%;
+  }
 
 
-}
-
-.imputidstyle{
-  margin-bottom: 5%;
-}
-
-.textareadesriptionstyle{
-  margin-bottom: 5%;
-}
-
-.selectimagestyle{
-  margin-bottom: 5%;
-}
-
-.containeradminstyle{
-  max-width: 100%;
-  overflow: hidden;
-  padding-left: 1%;
-  padding-right: 1%;
-}
 
 
-.deconnexionpageadminstyle{
-  margin-top: 6%;
-}
+  .h2adminpagestyle {
+    margin-top: 5%;
+
+
+  }
+
+  .imputidstyle {
+    margin-bottom: 5%;
+  }
+
+  .textareadesriptionstyle {
+    margin-bottom: 5%;
+  }
+
+  .selectimagestyle {
+    margin-bottom: 5%;
+  }
+
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+
+  .deconnexionpageadminstyle {
+    margin-top: 6%;
+  }
 
 
 
@@ -1603,10 +1634,11 @@ margin-top: 5%;
 
 
 
-@media screen and  (orientation : portrait) and (min-width: 1024px) {
+@media screen and (orientation : portrait) and (min-width: 1024px) {
   body {
-    overflow-y: scroll; /* Ajout de la propriété overflow-y */
-    overflow-x:hidden;
+    overflow-y: scroll;
+    /* Ajout de la propriété overflow-y */
+    overflow-x: hidden;
     width: 100%;
     z-index: 0;
     height: 100vh;
@@ -1615,23 +1647,25 @@ margin-top: 5%;
     background: rgb(227, 224, 224);
     margin: 0;
   }
-  
-    
-  .myheader{
+
+
+  .myheader {
     width: 100vw;
     height: 20%;
-    overflow-x : hidden;
+    overflow-x: hidden;
     position: relative;
   }
-  .headerstyle{
+
+  .headerstyle {
     display: none;
   }
-  .headertablette{
+
+  .headertablette {
     display: none;
   }
 
 
-  .logolarge{
+  .logolarge {
     max-width: 100%;
     height: 100%;
     width: 98%;
@@ -1639,454 +1673,472 @@ margin-top: 5%;
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
   }
 
-.ongletsbloc{
-position: absolute;
-left: 8vw; 
-top:5%;
-display: flex;
-word-wrap: none;
-//background-color: blue;
-padding: 0;
-z-index: 2;
-left: 30%;
-//border: 2px solid black;
-width: 100%;
+  .ongletsbloc {
+    position: absolute;
+    left: 8vw;
+    top: 5%;
+    display: flex;
+    word-wrap: none;
+    //background-color: blue;
+    padding: 0;
+    z-index: 2;
+    left: 30%;
+    //border: 2px solid black;
+    width: 100%;
 
 
 
-}
+  }
 
-.firstbuttonstyle{
-position: relative;
-margin-top: 2%;
-background-color: yellow;
-border : 1.5px solid black;
-width:10%;  
-height: 2vh;
-display: flex;
-justify-content: center;
-align-items: center;
+  .firstbuttonstyle {
+    position: relative;
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1.5px solid black;
+    width: 10%;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-}
-
-
-
-
-
-.buttonstyle{
-
-position: relative;
-margin-top: 2%;
-background-color: yellow;
-border : 1.5px solid black;
-width:10%;  
-height: 2vh;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: 6%;
-
-}
-.textongletlandscape{
-font-size: 1vw;
-text-decoration: none;
-color: black;   
-//margin-top: auto;
-// margin-bottom: auto;    
-}
-
-
-/* Accueil */
-
-.accueilportrait{
-  display: none;
-}
-.accueillandscape{
-  display: flex;
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  min-height: 25vh;
-  width:100%; 
-  padding: 2;
-  margin: 0;
-}
-
-
-
-
-.accueil-image{
-  height: 10%;
-  width: 10%;
-}
-
-
-.imgaccueil01{
-  top: 5%;
-  width: 16%;
-  height: auto;
-  position: absolute;
-  z-index: 2;
-  left: 56%;
-  
-}
-
-.imgaccueil02{
-width: 24%;
-height: auto;
-  position: absolute;
-  z-index: 3;
-  right: 2%;
-  //bottom: 0%;
-  top: 30%;
-  
-
-}
-
-.styleprestationtitle1{
-font-size: 3vw;
-font-weight: 900;
-}
-.blocmenuiseries{
-position: relative;
-left: 15%;
-font-size: 1.5vw;
-font-weight: 300;
-}
-.prestations01{
-font-size: 6rem;
-}
-
-
-.styleprestationtitle2{
-font-size: 3vw;
-font-weight: 900;
-}
-.blocisolation{
-position: relative;
-left: 5%;
-font-size: 1.5vw;
-font-weight: 300;
-
-}
-
-
-
-/* Page prestations*/
-
-.prestationsstyleh1{
-font-size: 0.94vw;
-}
-
-.prestationsstyleh2{
-  font-size: 0.94vw;
-  margin-top: 5%;
   }
 
 
-.prestationsstyle{
-padding-left: 1%;
-padding-right: 1%;
-background-color: white;
-width: 100%;
-font-size: 0.84vw;
-padding-top: 5%;
-padding-bottom: 3%;
-}
-
-
-.connexionstyle{
-font-size: 0.84vw;
-padding-left: 1%;
-padding-right: 1%;
-background-color: white;
-width: 100%;
-height: 40vh;
-}
 
 
 
+  .buttonstyle {
 
-/* Page contact*/
+    position: relative;
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1.5px solid black;
+    width: 10%;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
 
-.pagecontactstyle{
-
-color: rgb(0, 0, 0);
-//font-weight: bold;
-padding-left: 1%;
-padding-right: 1%;
-background-color: rgb(255, 255, 255);
-//height:80vh;
-width: 100%;
-margin-top: 1%;
-margin-bottom: 1%;
-overflow: hidden;
-
-}
-
-
-.bloctextcontact{
-width: 50%;
-height: 50%;
-margin: auto;
-font-size: 0.84vw;
-
-
-}
-
-
-.divh1{
-text-align: center;
-margin-top: 2%;
-}
-
-.h1contactstyle{
-font-size: 1.68vw;
-font-weight: 600;
-text-align: center;
-
-}
-
-.h2telstyle{
-  font-size: 0.94vw;
-text-align: center;
-margin-top: 6%;
-margin-bottom: 0%;
-}
-
-.blocmail{
-  font-size: 0.94vw;
-text-align: center;
-margin: 0;
-}
-.bi-envelope{
-height: auto;
-width: 0.84vw;
-}
-
-
-
-
-/* Style du Pied de page */
-
-.footerstyle{
-display: none;
-
-
-}
-
-.liensfooter{
-margin-top: 4%;
-text-align: center;
-}
-
-.footerlandscape{
-height: 30vh;
-font-size: 1.2vw;
-position: relative;
-font-weight: 600;
-}
-
-.footertelstyle{
-
-margin-bottom: 2%;
-}
-.footermailstyle{
-margin-bottom: 2%;
-
-}
-
-.my-iconfooter {
-width: 1.2%;
-height: auto;
-
-}
-.lignementionlegales{
-justify-content: center;
-display: flex;
-}
-.mentionslegalespolicelandscape{
-border: 2px solid black;
-background-color: yellow;
-width: 20%;
-height:2vh;
-align-items: center;
-}
-
-
-
-.mentionslegalesstyle{
-color: black;
-text-decoration: none;
-font-weight: 700;
-font-size: 0.8vh;
-}
-
-
-
-/* style des images en galerie */
-
-
-.h1gallerystyle{
-text-align: center;
-
-}
-.h1gallerystylelandscape h1{
-font-size: 2vw;
-}
-
-
-.gallerybackground{
-display: none;
-}
-
-
-.gallerybackgroundlandscape{
-display: block;
-background-color: rgb(255, 255, 255);
-width: 100%;
-padding: 3%;
-margin-bottom: 1%;
-font-size: 0.84vw;
-
-
-}
-.image-container {
-display: flex;
-flex-wrap: wrap;
-}
-
-.galeriebloc {
-width: 30%; 
-height: auto;
-margin: 5%; 
-
-}
-
-
-/*Mentions légales*/
-.mentionlegalesh2style{
-font-size: 0.94vw;
-margin-bottom: 2%;
-font-weight: 600;
-
-}
-
-
-.mentionslegalesbloc{
-padding-left: 1.5%;
-padding-right: 1.5%;
-font-size: 0.84vw;
-
-}
-.mentionslegalespolice{
-margin-top: 6%;
-font-size: 0.84vw;
-font-weight: 800px;
-//color: black;
-text-decoration: none;
-}
-
-
-/*Tableau de bord*/
-
-
-.containeradminstyle{
-  padding: 1%;
-  font-size: 0.84vw;
   }
-  
-  .h1tableaudebord{
-  margin: auto; 
-  text-align: center;
-  font-size: 2.5vw;
+
+  .textongletlandscape {
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+    //margin-top: auto;
+    // margin-bottom: auto;    
   }
-  .h2tableau{
-  margin-top:2.5%;
-  font-size: 2vw;
-  } 
-  .h2adminpagestyle{
-  margin-top:2.5%;
-  font-size: 2vw;
-  } 
-  .h2adminpagestyle{
-  margin-top:2.5%;
-  font-size: 2vw;
-  } 
-  .h2adminpagestyle{
-  margin-top:2.5%;
-  font-size: 2vw;
-  } 
-  .nomfichierstyle{
-  margin-top:1%;
+
+
+  /* Accueil */
+
+  .accueilportrait {
+    display: none;
   }
-  
-.h1tableaudebord{
-  text-align: center;
 
- }
-
- .h2tableau{
-  text-align: left;
-
-}
-
-.tableadminpagestyle {
-  border: 1px solid black;
-  background-color: white;
-  font-size: 1vw;
-  width: 95%;
-  font-weight: bold;
-  table-layout: fixed;
-  margin-top: 0%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  max-width: 95%;
-  max-height: 40%;
-  overflow-y: scroll;
-
-}
-
-.tableadminpagestyle th, .tableadminpagestyle td {
-  width: 50%;
-  word-wrap: break-word;  
-  padding-right: 10px;
-  padding-bottom: 1%;
-}
-
-.h2adminpagestyle{
-margin-top: 2%;
-
-}
-
-.imputidstyle{
-  margin-bottom: 2%;
-}
-
-.textareadesriptionstyle{
-  margin-bottom: 2%;
-}
-
-.selectimagestyle{
-  margin-bottom: 2%;
-}
-
-.containeradminstyle{
-  max-width: 100%;
-  overflow: hidden;
-  padding-left: 1%;
-  padding-right: 1%;
-}
+  .accueillandscape {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    min-height: 25vh;
+    width: 100%;
+    padding: 2;
+    margin: 0;
+  }
 
 
-.deconnexionpageadminstyle{
-  margin-top: 2%;
-}
+
+
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
+
+
+  .imgaccueil01 {
+    top: 5%;
+    width: 16%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 56%;
+
+  }
+
+  .imgaccueil02 {
+    width: 24%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    right: 2%;
+    //bottom: 0%;
+    top: 30%;
+
+
+  }
+
+  .styleprestationtitle1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  .blocmenuiseries {
+    position: relative;
+    left: 15%;
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+
+  .prestations01 {
+    font-size: 6rem;
+  }
+
+
+  .styleprestationtitle2 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  .blocisolation {
+    position: relative;
+    left: 5%;
+    font-size: 1.5vw;
+    font-weight: 300;
+
+  }
+
+
+
+  /* Page prestations*/
+
+  .prestationsstyleh1 {
+    font-size: 0.94vw;
+  }
+
+  .prestationsstyleh2 {
+    font-size: 0.94vw;
+    margin-top: 5%;
+  }
+
+
+  .prestationsstyle {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    width: 100%;
+    font-size: 0.84vw;
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+
+
+  .connexionstyle {
+    font-size: 0.84vw;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+  }
+
+
+
+
+  /* Page contact*/
+
+  .pagecontactstyle {
+
+    color: rgb(0, 0, 0);
+    //font-weight: bold;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(255, 255, 255);
+    //height:80vh;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow: hidden;
+
+  }
+
+
+  .bloctextcontact {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    font-size: 0.84vw;
+
+
+  }
+
+
+  .divh1 {
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .h1contactstyle {
+    font-size: 1.68vw;
+    font-weight: 600;
+    text-align: center;
+
+  }
+
+  .h2telstyle {
+    font-size: 0.94vw;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 0%;
+  }
+
+  .blocmail {
+    font-size: 0.94vw;
+    text-align: center;
+    margin: 0;
+  }
+
+  .bi-envelope {
+    height: auto;
+    width: 0.84vw;
+  }
+
+
+
+
+  /* Style du Pied de page */
+
+  .footerstyle {
+    display: none;
+
+
+  }
+
+  .liensfooter {
+    margin-top: 4%;
+    text-align: center;
+  }
+
+  .footerlandscape {
+    height: 30vh;
+    font-size: 1.2vw;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .footertelstyle {
+
+    margin-bottom: 2%;
+  }
+
+  .footermailstyle {
+    margin-bottom: 2%;
+
+  }
+
+  .my-iconfooter {
+    width: 1.2%;
+    height: auto;
+
+  }
+
+  .lignementionlegales {
+    justify-content: center;
+    display: flex;
+  }
+
+  .mentionslegalespolicelandscape {
+    border: 2px solid black;
+    background-color: yellow;
+    width: 20%;
+    height: 2vh;
+    align-items: center;
+  }
+
+
+
+  .mentionslegalesstyle {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8vh;
+  }
+
+
+
+  /* style des images en galerie */
+
+
+  .h1gallerystyle {
+    text-align: center;
+
+  }
+
+  .h1gallerystylelandscape h1 {
+    font-size: 2vw;
+  }
+
+
+  .gallerybackground {
+    display: none;
+  }
+
+
+  .gallerybackgroundlandscape {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 1%;
+    font-size: 0.84vw;
+
+
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galeriebloc {
+    width: 30%;
+    height: auto;
+    margin: 5%;
+
+  }
+
+
+  /*Mentions légales*/
+  .mentionlegalesh2style {
+    font-size: 0.94vw;
+    margin-bottom: 2%;
+    font-weight: 600;
+
+  }
+
+
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 0.84vw;
+
+  }
+
+  .mentionslegalespolice {
+    margin-top: 6%;
+    font-size: 0.84vw;
+    font-weight: 800px;
+    //color: black;
+    text-decoration: none;
+  }
+
+
+  /*Tableau de bord*/
+
+
+  .containeradminstyle {
+    padding: 1%;
+    font-size: 0.84vw;
+  }
+
+  .h1tableaudebord {
+    margin: auto;
+    text-align: center;
+    font-size: 2.5vw;
+  }
+
+  .h2tableau {
+    margin-top: 2.5%;
+    font-size: 2vw;
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+    font-size: 2vw;
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+    font-size: 2vw;
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+    font-size: 2vw;
+  }
+
+  .nomfichierstyle {
+    margin-top: 1%;
+  }
+
+  .h1tableaudebord {
+    text-align: center;
+
+  }
+
+  .h2tableau {
+    text-align: left;
+
+  }
+
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1vw;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+
+  }
+
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2%;
+
+  }
+
+  .imputidstyle {
+    margin-bottom: 2%;
+  }
+
+  .textareadesriptionstyle {
+    margin-bottom: 2%;
+  }
+
+  .selectimagestyle {
+    margin-bottom: 2%;
+  }
+
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+
+  .deconnexionpageadminstyle {
+    margin-top: 2%;
+  }
 
 }
 
@@ -2106,10 +2158,11 @@ margin-top: 2%;
 /*Orientation  paysage*/
 
 
-@media screen and (orientation : landscape)  and (min-width : 2000px){
+@media screen and (orientation : landscape) and (min-width : 2000px) {
   body {
-    overflow-y: scroll; /* Ajout de la propriété overflow-y */
-    overflow-x:hidden;
+    overflow-y: scroll;
+    /* Ajout de la propriété overflow-y */
+    overflow-x: hidden;
     width: 100%;
     z-index: 0;
     height: 100vh;
@@ -2118,23 +2171,25 @@ margin-top: 2%;
     background: rgb(227, 224, 224);
     margin: 0;
   }
-  
-    
-  .myheader{
+
+
+  .myheader {
     width: 100vw;
     height: 20%;
-    overflow-x : hidden;
+    overflow-x: hidden;
     position: relative;
   }
-  .headerstyle{
+
+  .headerstyle {
     display: none;
   }
-  .headertablette{
+
+  .headertablette {
     display: none;
   }
 
 
-  .logolarge{
+  .logolarge {
     max-width: 100%;
     height: 100%;
     width: 98%;
@@ -2142,533 +2197,498 @@ margin-top: 2%;
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
   }
 
-.ongletsbloc{
-position: absolute;
-left: 8vw; 
-top:5%;
-display: flex;
-word-wrap: none;
-//background-color: blue;
-padding: 0;
-z-index: 2;
-left: 30%;
-//border: 2px solid black;
-width: 100%;
+  .ongletsbloc {
+    position: absolute;
+    left: 8vw;
+    top: 5%;
+    display: flex;
+    word-wrap: none;
+    //background-color: blue;
+    padding: 0;
+    z-index: 2;
+    left: 30%;
+    //border: 2px solid black;
+    width: 100%;
 
 
 
-}
-
-.firstbuttonstyle{
-position: relative;
-margin-top: 2%;
-background-color: yellow;
-border : 1.5px solid black;
-width:10%;  
-height: 6vh;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-
-
-
-
-.buttonstyle{
-
-position: relative;
-margin-top: 2%;
-background-color: yellow;
-border : 1.5px solid black;
-width:10%;  
-height: 6vh;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: 6%;
-
-}
-.textongletlandscape{
-font-size: 1vw;
-text-decoration: none;
-color: black;   
-//margin-top: auto;
-// margin-bottom: auto;    
-}
-
-
-/* Accueil */
-
-.accueilportrait{
-  display: none;
-}
-.accueillandscape{
-  display: flex;
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  min-height: 50vh;
-  width:100%; 
-  padding: 2;
-  margin: 0;
-}
-
-
-
-
-.accueil-image{
-  height: 10%;
-  width: 10%;
-}
-
-
-.imgaccueil01{
-  top: 5%;
-  width: 16%;
-  height: auto;
-  position: absolute;
-  z-index: 2;
-  left: 56%;
-  
-}
-
-.imgaccueil02{
-width: 24%;
-height: auto;
-  position: absolute;
-  z-index: 3;
-  right: 2%;
-  bottom: 12%;
-  
-}
-
-.styleprestationtitle1{
-font-size: 3vw;
-font-weight: 900;
-}
-.blocmenuiseries{
-position: relative;
-left: 15%;
-font-size: 1.5vw;
-font-weight: 300;
-}
-.prestations01{
-font-size: 6rem;
-}
-
-
-.styleprestationtitle2{
-font-size: 3vw;
-font-weight: 900;
-}
-.blocisolation{
-position: relative;
-left: 5%;
-font-size: 1.5vw;
-font-weight: 300;
-
-}
-
-
-
-/* Page prestations*/
-
-.prestationsstyleh1{
-font-size: 1.4vw;
-margin-top: 2%;
-margin-bottom: 2%;
-font-weight: 600;
-
-}
-
-.prestationsstyleh2{
-  font-weight: 600;
-  font-size: 1.4vw;
-  margin-top: 2%;
-  margin-bottom: 2%;
   }
 
-.prestationsstyle{
-padding-left: 1%;
-padding-right: 1%;
-background-color: white;
-width: 100%;
-font-size: 1.2vw;
-padding-top: 2%;
-padding-bottom: 2%;
-}
+  .firstbuttonstyle {
+    position: relative;
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1.5px solid black;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-/* Page connexion*/
-.connexionstyle{
-padding-left: 1%;
-padding-right: 1%;
-background-color: white;
-width: 100%;
-height: 40vh;
-font-size: 1.2vw;
-}
-.connexionstyle h1{
-  padding-left: 1%;
-  padding-right: 1%;
-  background-color: white;
-  width: 100%;
-  height: 40vh;
-  font-size: 1.6vw;
   }
-  .connexionstyle label{
+
+
+
+
+
+  .buttonstyle {
+
+    position: relative;
+    margin-top: 2%;
+    background-color: yellow;
+    border: 1.5px solid black;
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
+
+  }
+
+  .textongletlandscape {
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+    //margin-top: auto;
+    // margin-bottom: auto;    
+  }
+
+
+  /* Accueil */
+
+  .accueilportrait {
+    display: none;
+  }
+
+  .accueillandscape {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    min-height: 50vh;
+    width: 100%;
+    padding: 2;
+    margin: 0;
+  }
+
+
+
+
+  .accueil-image {
+    height: 10%;
+    width: 10%;
+  }
+
+
+  .imgaccueil01 {
+    top: 5%;
+    width: 16%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 56%;
+
+  }
+
+  .imgaccueil02 {
+    width: 24%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    right: 2%;
+    bottom: 12%;
+
+  }
+
+  .styleprestationtitle1 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  .blocmenuiseries {
+    position: relative;
+    left: 15%;
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+
+  .prestations01 {
+    font-size: 6rem;
+  }
+
+
+  .styleprestationtitle2 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  .blocisolation {
+    position: relative;
+    left: 5%;
+    font-size: 1.5vw;
+    font-weight: 300;
+
+  }
+
+
+
+  /* Page prestations*/
+
+  .prestationsstyleh1 {
+    font-size: 1.4vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: 600;
+
+  }
+
+  .prestationsstyleh2 {
+    font-weight: 600;
+    font-size: 1.4vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .prestationsstyle {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    width: 100%;
+    font-size: 1.2vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  /* Page connexion*/
+  .connexionstyle {
     padding-left: 1%;
     padding-right: 1%;
     background-color: white;
     width: 100%;
     height: 40vh;
     font-size: 1.2vw;
-    }
+  }
+
+  .connexionstyle h1 {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+    font-size: 1.6vw;
+  }
+
+  .connexionstyle label {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+    font-size: 1.2vw;
+  }
 
 
 
 
 
 
-/* Page contact*/
+  /* Page contact*/
 
-.pagecontactstyle{
+  .pagecontactstyle {
 
-color: rgb(0, 0, 0);
-//font-weight: bold;
-padding-left: 1%;
-padding-right: 1%;
-background-color: rgb(255, 255, 255);
-//height:80vh;
-width: 100%;
-margin-top: 1%;
-margin-bottom: 1%;
-overflow: hidden;
+    color: rgb(0, 0, 0);
+    //font-weight: bold;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(255, 255, 255);
+    //height:80vh;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow: hidden;
+
+  }
+
+
+  .bloctextcontact {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    font-size: 1.2vw;
+    text-align: center;
+  }
+
+
+  .divh1 {
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .h1contactstyle {
+    font-weight: 600;
+    font-size: 1.4vw;
+    text-align: center;
+
+
+  }
+
+  .h2telstyle {
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 0%;
+  }
+
+  .blocmail {
+    font-size: 1.2vw;
+    text-align: center;
+    margin: 0;
+  }
+
+  .bi-envelope {
+    height: auto;
+    width: 1.2vw;
+  }
+
+
+
+
+  /* Style du Pied de page */
+
+  .footerstyle {
+    display: none;
+
+
+  }
+
+  .liensfooter {
+    margin-top: 4%;
+    text-align: center;
+  }
+
+  .footerlandscape {
+    height: 30vh;
+    font-size: 1.2vw;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .footertelstyle {
+
+    margin-bottom: 2%;
+  }
+
+  .footermailstyle {
+    margin-bottom: 2%;
+
+  }
+
+  .my-iconfooter {
+    width: 1.2%;
+    height: auto;
+
+  }
+
+  .lignementionlegales {
+    justify-content: center;
+    display: flex;
+  }
+
+  .mentionslegalespolicelandscape {
+    border: 2px solid black;
+    background-color: yellow;
+    width: 20%;
+    height: 6vh;
+    align-items: center;
+
+
+  }
+
+
+
+  .mentionslegalesstyle {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2vw;
+  }
+
+
+
+  /* style des images en galerie */
+
+
+  .h1gallerystyle {
+    text-align: center;
+
+  }
+
+  .h1gallerystylelandscape h1 {
+    font-size: 2vw;
+  }
+
+
+  .gallerybackground {
+    display: none;
+  }
+
+
+  .gallerybackgroundlandscape {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 1%;
+    font-size: 1.2vw;
+
+
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galeriebloc {
+    width: 30%;
+    height: auto;
+    margin: 5%;
+
+  }
+
+
+
+
+  .containeradminstyle {
+    padding: 1%;
+  }
+
+  .h1tableaudebord {
+    margin: auto;
+    text-align: center;
+  }
+
+  .h2tableau {
+    margin-top: 2.5%;
+
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2.5%;
+  }
+
+  .nomfichierstyle {
+    margin-top: 1%;
+  }
+
+  /*Mentions légales*/
+  .mentionlegalesh2style {
+    font-size: 1.4vw;
+    margin-bottom: 2%;
+    font-weight: 600;
+
+  }
+
+
+  .mentionslegalesbloc {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 1.2vw;
+
+  }
+
+  .mentionslegalespolice {
+    margin-top: 6%;
+
+    font-weight: 800px;
+    //color: black;
+    text-decoration: none;
+  }
+
+
+  /*Tableau de bord*/
+
+  .h1tableaudebord {
+    text-align: center;
+
+  }
+
+  .h2tableau {
+    text-align: left;
+
+  }
+
+  .tableadminpagestyle {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1vw;
+    width: 95%;
+    font-weight: bold;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 95%;
+    max-height: 40%;
+    overflow-y: scroll;
+
+  }
+
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
+    width: 50%;
+    word-wrap: break-word;
+    padding-right: 10px;
+    padding-bottom: 1%;
+
+
+  }
+
+  .h2adminpagestyle {
+    margin-top: 2%;
+
+
+  }
+
+  .imputidstyle {
+    margin-bottom: 2%;
+  }
+
+  .textareadesriptionstyle {
+    margin-bottom: 2%;
+  }
+
+  .selectimagestyle {
+    margin-bottom: 2%;
+  }
+
+  .containeradminstyle {
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+
+  .deconnexionpageadminstyle {
+    margin-top: 6%;
+  }
+
+
+
 
 }
-
-
-.bloctextcontact{
-width: 50%;
-height: 50%;
-margin: auto;
-font-size: 1.2vw;
-text-align: center;
-}
-
-
-.divh1{
-text-align: center;
-margin-top: 2%;
-}
-
-.h1contactstyle{
-font-weight: 600;
-font-size: 1.4vw;
-text-align: center;
-
-
-}
-
-.h2telstyle{
-  font-size: 1.2vw;
-text-align: center;
-margin-top: 6%;
-margin-bottom: 0%;
-}
-
-.blocmail{
-  font-size: 1.2vw;
-text-align: center;
-margin: 0;
-}
-.bi-envelope{
-height: auto;
-width: 1.2vw;
-}
-
-
-
-
-/* Style du Pied de page */
-
-.footerstyle{
-display: none;
-
-
-}
-
-.liensfooter{
-margin-top: 4%;
-text-align: center;
-}
-
-.footerlandscape{
-height: 30vh;
-font-size: 1.2vw;
-position: relative;
-font-weight: 600;
-}
-
-.footertelstyle{
-
-margin-bottom: 2%;
-}
-.footermailstyle{
-margin-bottom: 2%;
-
-}
-
-.my-iconfooter {
-width: 1.2%;
-height: auto;
-
-}
-.lignementionlegales{
-justify-content: center;
-display: flex;
-}
-.mentionslegalespolicelandscape{
-border: 2px solid black;
-background-color: yellow;
-width: 20%;
-height:6vh;
-align-items: center;
-
-
-}
-
-
-
-.mentionslegalesstyle{
-color: black;
-text-decoration: none;
-font-weight: 700;
-font-size: 1.2vw;
-}
-
-
-
-/* style des images en galerie */
-
-
-.h1gallerystyle{
-text-align: center;
-
-}
-.h1gallerystylelandscape h1{
-font-size: 2vw;
-}
-
-
-.gallerybackground{
-display: none;
-}
-
-
-.gallerybackgroundlandscape{
-display: block;
-background-color: rgb(255, 255, 255);
-width: 100%;
-padding: 3%;
-margin-bottom: 1%;
-font-size: 1.2vw;
-
-
-}
-.image-container {
-display: flex;
-flex-wrap: wrap;
-}
-
-.galeriebloc {
-width: 30%; 
-height: auto;
-margin: 5%; 
-
-}
-
-
-
-
-.containeradminstyle{
-padding: 1%;
-}
-
-.h1tableaudebord{
-margin: auto; 
-text-align: center;
-}
-.h2tableau{
-margin-top:2.5%;
-
-} 
-.h2adminpagestyle{
-margin-top:2.5%;
-} 
-.h2adminpagestyle{
-margin-top:2.5%;
-} 
-.h2adminpagestyle{
-margin-top:2.5%;
-} 
-.nomfichierstyle{
-margin-top:1%;
-}
-
-/*Mentions légales*/
-.mentionlegalesh2style{
-  font-size: 1.4vw;
-margin-bottom: 2%;
-font-weight: 600;
-
-}
-
-
-.mentionslegalesbloc{
-padding-left: 1.5%;
-padding-right: 1.5%;
-font-size: 1.2vw;
-
-}
-.mentionslegalespolice{
-margin-top: 6%;
-
-font-weight: 800px;
-//color: black;
-text-decoration: none;
-}
-
-
-/*Tableau de bord*/
-
-.h1tableaudebord{
-  text-align: center;
-
- }
-
- .h2tableau{
-  text-align: left;
-
-}
-
-.tableadminpagestyle {
-  border: 1px solid black;
-  background-color: white;
-  font-size: 1vw;
-  width: 95%;
-  font-weight: bold;
-  table-layout: fixed;
-  margin-top: 0%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
-  max-width: 95%;
-  max-height: 40%;
-  overflow-y: scroll;
-
-}
-
-.tableadminpagestyle th, .tableadminpagestyle td {
-  width: 50%;
-  word-wrap: break-word;  
-  padding-right: 10px;
-  padding-bottom: 1%;
-  
- 
-}
-
-.h2adminpagestyle{
-margin-top: 2%;
-
-
-}
-
-.imputidstyle{
-  margin-bottom: 2%;
-}
-
-.textareadesriptionstyle{
-  margin-bottom: 2%;
-}
-
-.selectimagestyle{
-  margin-bottom: 2%;
-}
-
-.containeradminstyle{
-  max-width: 100%;
-  overflow: hidden;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-
-.deconnexionpageadminstyle{
-  margin-top: 6%;
-}
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
