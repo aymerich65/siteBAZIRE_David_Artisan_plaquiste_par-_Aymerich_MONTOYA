@@ -17,7 +17,8 @@
 /*Orientation  paysage*/
 @media screen and (orientation: landscape) and (max-width: 2000px) {
   body {
-    overflow-y: scroll; /* Ajout de la propriété overflow-y */
+    overflow-y: scroll;
+    /* Ajout de la propriété overflow-y */
     overflow-x: hidden;
     width: 100%;
     z-index: 0;
@@ -113,15 +114,15 @@
     height: auto;
     position: absolute;
     z-index: 2;
-    left: 56%;
+    right: 2%;
   }
   .imgaccueil02 {
     width: 24%;
     height: auto;
     position: absolute;
     z-index: 3;
-    right: 2%;
-    bottom: 12%;
+    right: 20%;
+    top: 5%;
   }
   .styleprestationtitle1 {
     font-size: 3vw;
@@ -347,7 +348,8 @@
     max-height: 40%;
     overflow-y: scroll;
   }
-  .tableadminpagestyle th, .tableadminpagestyle td {
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
     width: 50%;
     word-wrap: break-word;
     padding-right: 10px;
@@ -440,21 +442,22 @@
     width: 100%;
     height: 100%;
   }
-  .imgaccueil01 {
-    top: 5%;
-    width: 42%;
-    height: 28vh;
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-  }
   .imgaccueil02 {
     width: 50%;
     height: 18vh;
     position: absolute;
     z-index: 3;
-    right: 3%;
-    bottom: 2%;
+    right: 4%;
+    top: 4%;
+  }
+  .imgaccueil01 {
+    top: 5%;
+    width: 36%;
+    height: 28vh;
+    position: absolute;
+    z-index: 2;
+    left: 56%;
+    top: 42%;
   }
   .gallerydescription {
     text-align: center;
@@ -603,10 +606,12 @@
   /* Page prestations */
   .prestationsstyleh1 {
     font-size: 20px;
+    font-weight: 900;
   }
   .prestationsstyleh2 {
     font-size: 20px;
     margin-top: 5%;
+    font-weight: 800;
   }
   .prestationsstyle {
     background-color: white;
@@ -640,7 +645,8 @@
     max-height: 40%;
     overflow-y: scroll;
   }
-  .tableadminpagestyle th, .tableadminpagestyle td {
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
     width: 50%;
     word-wrap: break-word;
     padding-right: 10px;
@@ -773,21 +779,21 @@
     width: 100%;
     height: 100%;
   }
+  .imgaccueil02 {
+    width: 46%;
+    height: 18vh;
+    position: absolute;
+    z-index: 3;
+    right: 4.5%;
+    top: 2%;
+  }
   .imgaccueil01 {
-    top: 1.5%;
+    top: 42%;
     width: 32%;
     height: 28vh;
     position: absolute;
     z-index: 2;
-    left: 55%;
-  }
-  .imgaccueil02 {
-    width: 38%;
-    height: 18vh;
-    position: absolute;
-    z-index: 3;
-    right: 11%;
-    bottom: 1.5%;
+    left: 58%;
   }
   .colaccueilstyle01 {
     width: 50%;
@@ -888,11 +894,13 @@
   }
   /* Page prestations */
   .prestationsstyleh1 {
+    font-weight: 900;
     font-size: 20px;
   }
   .prestationsstyleh2 {
     font-size: 20px;
     margin-top: 5%;
+    font-weight: 800;
   }
   .prestationsstyle {
     padding-top: 4%;
@@ -1031,7 +1039,8 @@
     max-height: 40%;
     overflow-y: scroll;
   }
-  .tableadminpagestyle th, .tableadminpagestyle td {
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
     width: 50%;
     word-wrap: break-word;
     padding-right: 10px;
@@ -1062,7 +1071,8 @@
 /*--------format desktop portrait -------------------- */
 @media screen and (orientation: portrait) and (min-width: 1024px) {
   body {
-    overflow-y: scroll; /* Ajout de la propriété overflow-y */
+    overflow-y: scroll;
+    /* Ajout de la propriété overflow-y */
     overflow-x: hidden;
     width: 100%;
     z-index: 0;
@@ -1158,15 +1168,15 @@
     height: auto;
     position: absolute;
     z-index: 2;
-    left: 56%;
+    right: 2%;
   }
   .imgaccueil02 {
     width: 24%;
     height: auto;
     position: absolute;
     z-index: 3;
-    right: 2%;
-    top: 30%;
+    right: 20%;
+    top: 10%;
   }
   .styleprestationtitle1 {
     font-size: 3vw;
@@ -1392,7 +1402,8 @@
     max-height: 40%;
     overflow-y: scroll;
   }
-  .tableadminpagestyle th, .tableadminpagestyle td {
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
     width: 50%;
     word-wrap: break-word;
     padding-right: 10px;
@@ -1424,7 +1435,8 @@
 /*Orientation  paysage*/
 @media screen and (orientation: landscape) and (min-width: 2000px) {
   body {
-    overflow-y: scroll; /* Ajout de la propriété overflow-y */
+    overflow-y: scroll;
+    /* Ajout de la propriété overflow-y */
     overflow-x: hidden;
     width: 100%;
     z-index: 0;
@@ -1520,15 +1532,15 @@
     height: auto;
     position: absolute;
     z-index: 2;
-    left: 56%;
+    right: 2%;
   }
   .imgaccueil02 {
     width: 24%;
     height: auto;
     position: absolute;
     z-index: 3;
-    right: 2%;
-    bottom: 12%;
+    right: 20%;
+    top: 5%;
   }
   .styleprestationtitle1 {
     font-size: 3vw;
@@ -1770,7 +1782,8 @@
     max-height: 40%;
     overflow-y: scroll;
   }
-  .tableadminpagestyle th, .tableadminpagestyle td {
+  .tableadminpagestyle th,
+  .tableadminpagestyle td {
     width: 50%;
     word-wrap: break-word;
     padding-right: 10px;

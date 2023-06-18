@@ -23,10 +23,8 @@ $titrePage = "BAZIRE David artisan plaquiste - Accueil";
     </div>
     </div>
     <div class="col-md-6 colaccueilstyle02">
-      <img class="imgaccueil01 img-fluid" src="images/pose_d'un_revetement.jpg" alt="image de travaux">
-      
       <img class="imgaccueil02 img-fluid" src="images/amenagement_de_combles_photo_1_.jpg" alt="image de travaux">
- 
+      <img class="imgaccueil01 img-fluid" src="images/pose_d'un_revetement.jpg" alt="image de travaux">
 
 
     </div>
