@@ -329,14 +329,22 @@
   /*Tableau de bord*/
   .h1tableaudebord {
     text-align: center;
+    font-weight: 600;
+    font-size: 4vw;
   }
   .h2tableau {
     text-align: left;
+    font-weight: 2vw;
+  }
+  .containeradminstyle h2 {
+    font-weight: 600;
+    margin-top: 8%;
+    margin-bottom: 1.5%;
   }
   .tableadminpagestyle {
     border: 1px solid black;
     background-color: white;
-    font-size: 1vw;
+    font-size: 1.4vw;
     width: 95%;
     font-weight: bold;
     table-layout: fixed;
@@ -357,6 +365,9 @@
   }
   .h2adminpagestyle {
     margin-top: 2%;
+  }
+  .containeradminstyle h2 {
+    font-weight: 600;
   }
   .imputidstyle {
     margin-bottom: 2%;
@@ -465,10 +476,6 @@
     font-size: 1rem;
     padding-left: 1%;
     padding-right: 1%;
-  }
-  /* tableau de bord */
-  .mpimputmobile {
-    margin-top: 3%;
   }
   .colaccueilstyle01 {
     width: 50%;
@@ -623,12 +630,18 @@
     padding-bottom: 3%;
   }
   /*Page admin*/
+  .mpimputmobile {
+    margin-top: 3%;
+  }
   .h1tableaudebord {
     text-align: center;
+    font-size: 9vw;
   }
   .h2tableau {
-    font-size: 16px;
     text-align: center;
+    font-weight: 600;
+    margin-top: 10%;
+    font-size: 4.5vw;
   }
   .tableadminpagestyle {
     border: 1px solid black;
@@ -651,6 +664,11 @@
     word-wrap: break-word;
     padding-right: 10px;
     padding-bottom: 1%;
+  }
+  .containeradminstyle h2 {
+    font-weight: 600;
+    margin-top: 15%;
+    margin-bottom: 6%;
   }
   .h2adminpagestyle {
     margin-top: 5%;
@@ -1019,15 +1037,17 @@
   /*Page admin*/
   .h1tableaudebord {
     text-align: center;
+    font-size: 9vw;
   }
   .h2tableau {
-    font-size: 16px;
+    font-size: 4.5vw;
     text-align: center;
+    font-weight: 600;
   }
   .tableadminpagestyle {
     border: 1px solid black;
     background-color: white;
-    font-size: 8px;
+    font-size: 1.6vw;
     width: 95%;
     font-weight: bold;
     table-layout: fixed;
@@ -1045,6 +1065,11 @@
     word-wrap: break-word;
     padding-right: 10px;
     padding-bottom: 1%;
+  }
+  .containeradminstyle h2 {
+    font-weight: 600;
+    margin-top: 15%;
+    margin-bottom: 6%;
   }
   .h2adminpagestyle {
     margin-top: 5%;
@@ -1360,7 +1385,7 @@
   .h1tableaudebord {
     margin: auto;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   .h2tableau {
     margin-top: 2.5%;
@@ -1386,6 +1411,9 @@
   }
   .h2tableau {
     text-align: left;
+  }
+  .containeradminstyle h2 {
+    font-weight: 600;
   }
   .tableadminpagestyle {
     border: 1px solid black;
@@ -1426,6 +1454,7 @@
     overflow: hidden;
     padding-left: 1%;
     padding-right: 1%;
+    font-size: 1.4vw;
   }
   .deconnexionpageadminstyle {
     margin-top: 2%;
@@ -1763,9 +1792,11 @@
   /*Tableau de bord*/
   .h1tableaudebord {
     text-align: center;
+    font-size: 4vw;
   }
   .h2tableau {
     text-align: left;
+    font-size: 2vw;
   }
   .tableadminpagestyle {
     border: 1px solid black;
@@ -1792,6 +1823,12 @@
   .h2adminpagestyle {
     margin-top: 2%;
   }
+  .containeradminstyle h2 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 2vw;
+    font-weight: 600;
+  }
   .imputidstyle {
     margin-bottom: 2%;
   }
@@ -1806,6 +1843,7 @@
     overflow: hidden;
     padding-left: 1%;
     padding-right: 1%;
+    font-size: 1.4vw;
   }
   .deconnexionpageadminstyle {
     margin-top: 6%;
