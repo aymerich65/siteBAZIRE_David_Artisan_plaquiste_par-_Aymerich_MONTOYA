@@ -127,7 +127,7 @@ if (isset($_SESSION['jwt'])) {
 </div>
 
 
-<button id="afficher-admin" >Afficher les administrateurs</button>
+<button id="afficher-admin" class="afficher-admin">Afficher les administrateurs</button>
 <div id="admin-container" class="blocafficheadmin"></div>
 
 

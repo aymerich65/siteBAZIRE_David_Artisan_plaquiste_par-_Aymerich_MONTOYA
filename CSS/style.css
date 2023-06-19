@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+/*Quelques règles css globales*/
 .bi-envelope {
   height: auto;
   width: 1.5%;
@@ -12,6 +13,10 @@
   display: none;
   width: 40%;
   margin-bottom: 2%;
+}
+
+.afficher-admin {
+  margin-bottom: 1%;
 }
 
 /*Orientation  paysage*/
@@ -344,7 +349,7 @@
   .tableadminpagestyle {
     border: 1px solid black;
     background-color: white;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     width: 95%;
     font-weight: bold;
     table-layout: fixed;
@@ -384,8 +389,11 @@
     padding-left: 1%;
     padding-right: 1%;
   }
+  .mpimputmobile {
+    margin-top: 2%;
+  }
   .deconnexionpageadminstyle {
-    margin-top: 6%;
+    margin-top: 2%;
   }
 }
 /* format mobile orientation portrait */
@@ -689,7 +697,8 @@
     padding-right: 1%;
   }
   .deconnexionpageadminstyle {
-    margin-top: 6%;
+    margin-top: 4%;
+    margin-bottom: 4%;
   }
   /* Style du Pied de page */
   .footerlandscape {
@@ -1089,8 +1098,12 @@
     padding-left: 1%;
     padding-right: 1%;
   }
+  .mpimputmobile {
+    margin-bottom: 2%;
+  }
   .deconnexionpageadminstyle {
-    margin-top: 6%;
+    margin-top: 1%;
+    margin-bottom: 4%;
   }
 }
 /*--------format desktop portrait -------------------- */
@@ -1845,7 +1858,10 @@
     padding-right: 1%;
     font-size: 1.4vw;
   }
+  .mpimputmobile {
+    margin-top: 2%;
+  }
   .deconnexionpageadminstyle {
-    margin-top: 6%;
+    margin-top: 2%;
   }
 }/*# sourceMappingURL=style.css.map */
