@@ -31,7 +31,7 @@
 /*Orientation  paysage*/
 
 
-@media screen and (orientation : landscape) and (max-width : 2000px) {
+@media screen and (orientation : landscape) and (max-width : 1999px) {
   body {
     overflow-y: scroll;
     /* Ajout de la propriété overflow-y */
@@ -594,7 +594,7 @@ margin-bottom: 1.5%;
 
 
 
-@media screen and (max-width:600px) and (orientation : portrait) {
+@media screen and (max-width:599px) and (orientation : portrait) {
 
 
   body {
@@ -1141,7 +1141,7 @@ margin-bottom: 1.5%;
 
 
 
-@media only screen and (orientation: portrait) and (min-width:600px) and (max-width: 1024px) {
+@media only screen and (orientation: portrait) and (min-width:600px) and (max-width: 1023px) {
 
 
 
